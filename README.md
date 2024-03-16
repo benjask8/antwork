@@ -18,7 +18,7 @@ Antwork es una empresa especializada en servicios de personal temporal, especial
 
 ## Fecha Límite
 
-La fecha límite para la finalización de este proyecto es el **1 de octubre de [Año]**.
+La fecha límite para la finalización de este proyecto es el **1 de octubre de 2024**.
 
 ## Contacto
 
