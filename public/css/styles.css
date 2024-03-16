@@ -1,11 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --bg: #fff;
+    --a-color: #221a50;
+    --btn-bg-color: #be2828;
+    --time: .4s;
+    --radius:2px;
 }
 
 body{
     background-color: var(--bg);
+   
 }
 
 *{
+    font-family: "Public Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
 
+
+/* google fonts icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/* google fonts icons  end*/
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #fff;
+}
+
+.header-logo{
+    width: 200px;
+}
+
+.header-logo-img{
+    width: 100%;
+}
+
+.header-btns{
+    display: none;
+}
+
+.header-links{
+    display: flex;
+}
+.header-links-a{
+    font-size: .8em;
+    color: var(--a-color);
+    background-color: #fff;
+    display: flex;
+    padding: 9px 14px; 
+    margin: 2px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+
+    transition: border var(--time);
+}
+
+.header-links-a:first-child{
+    background-color: var(--btn-bg-color);
+    color: #fff;
+}
+
+.header-links-a:first-child:hover{
+    border-color: transparent;
+}
+.header-links-a:hover{
+    border-color: var(--a-color);
 }
