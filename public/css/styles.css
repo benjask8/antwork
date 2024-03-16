@@ -9,11 +9,13 @@
 }
 
 body{
+    width: 100%;
     background-color: var(--bg);
    
 }
 
 *{
+    box-sizing: border-box;
     font-family: "Public Sans", sans-serif;
     margin: 0px;
     padding: 0px;
@@ -33,12 +35,106 @@ body{
 /* google fonts icons  end*/
 
 
+
+
+/* hero */
+.hero-swiper {
+    width: 100%;
+    height: 90vh;
+}
+
+.hero-swiper-slide-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-swiper-slide-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    filter: brightness(0.3); /* Aplica un filtro de brillo para oscurecer la imagen */
+    z-index: -1; /* Coloca el contenedor detrás del contenido */
+}
+.hero-swiper-slide{
+width: 100%;
+height: 100%;
+}
+.hero-swiper-slide-bg-1{
+    background-image: url(https://www.aaviasac.com/upload/servicios/carga-descarga-mercaderia.jpg);
+}
+
+
+.hero-swiper-slide-bg-2{
+    background-image: url(https://media.istockphoto.com/id/1387247460/es/foto/un-despachador-con-esc%C3%A1ner-en-las-manos-mirando-cajas-en-los-estantes-del-almac%C3%A9n.jpg?s=612x612&w=0&k=20&c=4KZ_kQYOGmV4MVkZ60PAw2GBfTDUbylRrFAoGZv3OeE=);
+}
+
+.hero-swiper-slide-bg-3{
+    background-image: url(https://vonhallerlaboratorios.com/attachments/Image/Von-Haller_-Trabaje-con-nosotros.jpg?template=generic);
+}
+
+.hero-swiper-slide-bg-4{
+    background-image: url(https://diswork.es/wp-content/uploads/2021/01/Header-desktop-contacto-1.jpg);
+}
+.hero-swiper-slide-title{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.hero-swiper-slide-info{
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 20px 0px;
+}
+
+.hero-swiper-slide-a{
+    color: #fff;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    border: 1px solid #fff;
+}
+.hero-swiper-slide-a:hover{
+    color: var(--btn-bg-color);
+    border-color: var(--btn-bg-color);
+
+    transition: all var(--time);
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    color: #fff !important;
+    font-weight: 900 !important;
+    font-size: 1em !important;
+}
+/* hero end */
+
+
+
+/* header */
 .header{
+    z-index: 1011211212;
+    position: sticky;
+    width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
     background-color: #fff;
+    top: 0px;
 }
 
 .header-logo{
@@ -46,7 +142,7 @@ body{
 }
 
 .header-logo-img{
-    width: 100%;
+    width: 70%;
 }
 
 .header-btns{
@@ -81,3 +177,5 @@ body{
 .header-links-a:hover{
     border-color: var(--a-color);
 }
+
+/* header end */
