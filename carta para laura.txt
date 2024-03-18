@@ -1,0 +1,40 @@
+[Nombre del Remitente]
+[Dirección del Remitente]
+[Teléfono del Remitente]
+Correo Electrónico del Remitente
+[Fecha]
+
+Antwork
+[Nombre del destinatario]
+[Dirección de Antwork]
+[Correo Electrónico de Antwork]
+
+Estimado equipo de Antwork,
+
+Es un placer dirigirme a ustedes en relación con el proyecto de desarrollo web para Antwork. Como desarrollador comprometido, deseo expresar mi entusiasmo por contribuir al éxito de su empresa a través de la creación de una plataforma en línea eficiente y efectiva.
+
+A lo largo del desarrollo del sitio web, me comprometo a implementar las siguientes funcionalidades clave:
+
+1. **Posibilidad de Envío de Currículum Vitae:**
+   La página web estará equipada con un formulario de envío de CV, lo que permitirá a los posibles candidatos remitir sus perfiles directamente a su correo electrónico. Esta función agilizará el proceso de selección de personal, optimizando su eficiencia.
+
+2. **Información Detallada sobre Antwork:**
+   Se incluirá una descripción exhaustiva de Antwork en la página web, resaltando su experiencia como empresa de personal temporal especializada en cargas y descargas. Este apartado servirá para destacar la competencia y los servicios ofrecidos por Antwork.
+
+3. **Atracción de Empresas:**
+   Se implementarán estrategias de marketing digital con el fin de atraer la atención de otras empresas interesadas en contratar los servicios de Antwork. Esto incluirá contenido persuasivo, testimonios de clientes satisfechos y llamados a la acción claros y efectivos.
+
+4. **Diseño Responsivo:**
+   La página web se diseñará con un enfoque responsivo, asegurando una visualización y funcionalidad óptimas en todos los dispositivos, incluyendo móviles, tabletas, computadoras portátiles y de escritorio. Esta medida garantizará una experiencia de usuario consistente y satisfactoria.
+
+Además, deseo informarles sobre la tarifa propuesta para el desarrollo del sitio web. El costo total del proyecto será de 55,000 pesos uruguayos, excluyendo el servicio de hosting. El hosting será responsabilidad de Antwork y será abonado mensualmente, con un costo de 15,000 pesos uruguayos para el primer mes y 10,000 pesos uruguayos para los meses siguientes. En caso de que el proyecto se complete antes del plazo establecido, se abonará la totalidad del costo acordado.
+
+El método de pago se realizará mediante débito automático, asegurando una transacción segura y eficiente.
+
+Quedo a su disposición para cualquier consulta adicional o discusión sobre el proyecto. Agradezco la oportunidad de colaborar con Antwork y estoy ansioso por comenzar a trabajar en este emocionante proyecto.
+
+Atentamente,
+
+[Benjamin Rosano]
+
+[Firma: _____________________]

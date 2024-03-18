@@ -3,9 +3,13 @@
 :root{
     --bg: #fff;
     --a-color: #221a50;
-    --btn-bg-color: #be2828;
-    --time: .4s;
+    --btn-bg-color: #e72929;
+    --time: .7s;
     --radius:2px;
+
+
+    --title-color:rgb(23, 29, 66);
+    --info-color:rgb(39, 39, 59);
 }
 
 body{
@@ -179,3 +183,164 @@ height: 100%;
 }
 
 /* header end */
+
+
+
+/* frequent_questions */
+
+.frequent_questions-box{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.frequent_questions-img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 30px 0px;
+}
+.frequent_questions-img img{
+    height: 400px;
+}
+.frequent_questions-text{
+    width: 50%;
+
+}
+.frequent_questions-text-title{
+    color: var(--title-color);
+    font-size: 3em;
+    font-weight: 900;
+}
+.frequent_questions-text-info{
+    font-size: 1.2em;
+    color: var(--info-color);
+    padding: 10px 0px;
+}
+.frequent_questions-text-ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.frequent_questions-text-ul-li{
+    
+}
+
+.frequent_questions-text-ul-li span{
+    color: var(--btn-bg-color);
+    font-size: 1.3em;
+    margin-right:5px ;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 24
+}
+.frequent_questions-text-ul-li-title{
+    color: var(--info-color);
+    display: flex;
+    margin: 2px 0px;
+    padding: 10px;
+    background-color: rgb(245, 207, 207);
+    cursor: pointer;
+    width: 100%;
+}
+.frequent_questions-text-ul-li-info{
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 10px;
+    transition: all var(--time) ;
+}
+.frequent_questions-text-ul-li-info-open{
+    padding: 20px 10px;
+    height: 100px;
+}
+
+/* frequent_questions end */
+
+
+
+
+
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    padding: 40px 0; /* Espaciado interno del footer */
+    font-family: Arial, sans-serif; /* Tipo de fuente del footer */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el logo del footer */
+.footer-logo img {
+    width: 100px; /* Ancho del logo */
+}
+
+/* Estilos para los enlaces de navegación del footer */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave del color del texto */
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700; /* Cambio de color al pasar el ratón sobre los enlaces */
+}
+
+/* Estilos para los íconos de redes sociales */
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-social ul li a {
+    color: #fff; /* Color de los íconos de redes sociales */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave del color de los íconos */
+}
+
+.footer-social ul li a:hover {
+    color: #ffd700; /* Cambio de color al pasar el ratón sobre los íconos */
+}
+
+/* Estilos para la información de derechos de autor */
+.footer-info p {
+    margin: 0;
+    text-align: center;
+}

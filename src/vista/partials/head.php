@@ -12,7 +12,7 @@
 
   <!-- Estilos css -->
   <link rel="stylesheet" href="public/css/styles.css">
-
+  <script src="https://kit.fontawesome.com/d1b7ca4fc4.js" crossorigin="anonymous"></script>
 
   <!-- recursos -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -32,7 +32,7 @@
       <a href="/" class="header-links-a">Servicios</a>
       <a href="/" class="header-links-a">Contacto</a>
       <a href="/" class="header-links-a">Personal</a>
-      <a href="/" class="header-links-a">Preguntas Frecuentes</a>
+      <a href="?c=index&m=frequent_questions" class="header-links-a">Preguntas Frecuentes</a>
       <a href="/" class="header-links-a">Trabaja Con Nosotros</a>
     </div>
 
