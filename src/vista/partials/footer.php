@@ -1,4 +1,6 @@
 </section>
+
+</section>
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-logo">
@@ -24,7 +26,12 @@
     <div class="footer-info">
         <p>Derechos de autor © <?php echo date("Y"); ?> Antwork. Todos los derechos reservados.</p>
     </div>
+    <div class="footer-credits">
+        <p>Desarrollado por Benjamin Rosano</p>
+        <p><a href="https://github.com/benjask8/">Visita mi Github</a></p>
+    </div>
 </footer>
+
 
 
 </body>

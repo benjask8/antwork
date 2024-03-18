@@ -19,7 +19,7 @@ const openInfo = (numeroPregunta) => {
     // Si la pregunta seleccionada no estaba abierta, la abre y cambia su ícono a "-"
     if (!isOpen) {
         questionInfos[numeroPregunta - 1].classList.add("frequent_questions-text-ul-li-info-open");
-        icons[numeroPregunta - 1].textContent = "remove";
+        icons[numeroPregunta].textContent = "remove";
     }
 }
 

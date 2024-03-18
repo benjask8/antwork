@@ -7,6 +7,7 @@
     --time: .7s;
     --radius:2px;
 
+    --w-hover-color:#ff5252;
 
     --title-color:rgb(23, 29, 66);
     --info-color:rgb(39, 39, 59);
@@ -263,15 +264,14 @@ height: 100%;
 
 
 
-
-
-
 /* Estilos para el footer */
 .footer {
-    background-color: #333; /* Color de fondo del footer */
+    background-color: #4c4a53; /* Color de fondo del footer */
     color: #fff; /* Color del texto del footer */
-    padding: 40px 0; /* Espaciado interno del footer */
+    padding: 40px 20px; /* Espaciado interno del footer */
+    padding-bottom: 100px;
     font-family: Arial, sans-serif; /* Tipo de fuente del footer */
+    position: relative; /* Para que el footer-credits se posicione correctamente */
 }
 
 /* Estilos para el contenido del footer */
@@ -306,11 +306,11 @@ height: 100%;
 .footer-links ul li a {
     color: #fff; /* Color del texto de los enlaces */
     text-decoration: none;
-    transition: color 0.3s ease; /* Transición suave del color del texto */
+    transition: color var(--time) ease; /* Transición suave del color del texto */
 }
 
 .footer-links ul li a:hover {
-    color: #ffd700; /* Cambio de color al pasar el ratón sobre los enlaces */
+    color: var(--w-hover-color); /* Cambio de color al pasar el ratón sobre los enlaces */
 }
 
 /* Estilos para los íconos de redes sociales */
@@ -332,15 +332,39 @@ height: 100%;
 .footer-social ul li a {
     color: #fff; /* Color de los íconos de redes sociales */
     text-decoration: none;
-    transition: color 0.3s ease; /* Transición suave del color de los íconos */
+    transition: color var(--time) ease; /* Transición suave del color de los íconos */
 }
 
 .footer-social ul li a:hover {
-    color: #ffd700; /* Cambio de color al pasar el ratón sobre los íconos */
+    color: var(--w-hover-color); /* Cambio de color al pasar el ratón sobre los íconos */
 }
 
 /* Estilos para la información de derechos de autor */
 .footer-info p {
     margin: 0;
     text-align: center;
+}
+
+/* Estilos para los créditos del footer */
+.footer-credits {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.footer-credits p {
+    margin: 5px 0;
+}
+
+.footer-credits a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color var(--time) ease;
+}
+
+.footer-credits a:hover {
+    color: var(--w-hover-color);
 }
