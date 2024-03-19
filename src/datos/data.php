@@ -31,7 +31,11 @@ $preguntasRespuestas = [
     ],
     [
         'pregunta' => '¿Cómo puedo contactar a Antwork para solicitar sus servicios?',
-        'respuesta' => 'Puedes contactar a Antwork a través de nuestra página web o llamando a nuestro número de teléfono. Estamos disponibles para atender tus consultas y solicitudes de servicio de forma rápida y eficiente.'
+        'respuesta' => 'De muchas Maneras no se'
+    ],
+    [
+        'pregunta' => '¿COmo estan todos?',
+        'respuesta' => 'Bien'
     ]
 ];
 ?>
