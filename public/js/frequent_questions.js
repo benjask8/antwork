@@ -1,6 +1,6 @@
 // Selecciona todos los elementos de los títulos de las preguntas y los íconos
 const questionTitles = document.querySelectorAll(".frequent_questions-text-ul-li-title");
-const icons = document.querySelectorAll(".material-symbols-outlined");
+const icons = document.querySelectorAll(".frequent_questions-icon");
 const questionInfos = document.querySelectorAll(".frequent_questions-text-ul-li-info");
 
 // Define la función para abrir la información
@@ -19,7 +19,7 @@ const openInfo = (numeroPregunta) => {
     // Si la pregunta seleccionada no estaba abierta, la abre y cambia su ícono a "-"
     if (!isOpen) {
         questionInfos[numeroPregunta - 1].classList.add("frequent_questions-text-ul-li-info-open");
-        icons[numeroPregunta].textContent = "remove";
+        icons[numeroPregunta - 1 ].textContent = "remove";
     }
 }
 

@@ -106,7 +106,7 @@ $preguntasRespuestas = array(
             <?php foreach ($preguntasRespuestas as $index => $preguntaRespuesta) { ?>
                 <li class="frequent_questions-text-ul-li">
                     <p id="question-title-<?php echo $index + 1; ?>" class="frequent_questions-text-ul-li-title">
-                        <span id="icon-<?php echo $index + 1; ?>" class="material-symbols-outlined">add</span> <?php echo $preguntaRespuesta['pregunta']; ?>
+                        <span id="icon-<?php echo $index + 1; ?>" class="material-symbols-outlined frequent_questions-icon">add</span> <?php echo $preguntaRespuesta['pregunta']; ?>
                     </p>
                     <p id="question-info-<?php echo $index + 1; ?>" class="frequent_questions-text-ul-li-info frequent_questions-text-ul-li-info-<?php echo $index + 1; ?>">
                         <?php echo $preguntaRespuesta['respuesta']; ?>

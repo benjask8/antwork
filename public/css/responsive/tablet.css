@@ -1,5 +1,5 @@
-/* header start */
-@media only screen and (max-width:1100px){
+@media only screen and (max-width: 1024px) {
+    /* header start */
     .header{
         padding: 10px 20px;
     }
@@ -67,5 +67,5 @@
         display: none;
     }
 
+    /* header end */
 }
-/* header end */

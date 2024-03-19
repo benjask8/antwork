@@ -12,6 +12,16 @@
 
   <!-- Estilos css -->
   <link rel="stylesheet" href="public/css/styles.css">
+
+  <!-- responsive  -->
+  <link rel="stylesheet" href="public/css/responsive/tv.css">
+  <link rel="stylesheet" href="public/css/responsive/pc.css">
+  <link rel="stylesheet" href="public/css/responsive/laptop.css">
+  <link rel="stylesheet" href="public/css/responsive/tablet.css">
+  <link rel="stylesheet" href="public/css/responsive/mobile.css">
+  <!-- responsive end -->
+  <!-- Estilos css end -->
+
   <script src="https://kit.fontawesome.com/d1b7ca4fc4.js" crossorigin="anonymous"></script>
 
   <!-- recursos -->
@@ -21,6 +31,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="public/js/head.js"></script>
 
 <body>
   <header class="header">
@@ -37,9 +48,14 @@
     </div>
 
     <div class="header-btns">
-      <button class="header-btns-btn">
+      <button id="header-btns-bars" class="header-btns-bars">
         <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <button id="header-btns-close" class="header-btns-close header-btns-hiden">
+        <span  class="material-symbols-outlined">close</span>
       </button>
     </div>
   </header>
+
   <section class="container-fluid">

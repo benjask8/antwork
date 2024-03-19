@@ -1,0 +1,20 @@
+@media only screen and (max-width: 470px) {
+    /* Estilos para teléfono celular */
+
+
+
+    /* .frequent_questions */
+    .frequent_questions{
+
+    }
+    .frequent_questions-img{
+        display: none;
+    }
+
+    .frequent_questions-text{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    /* .frequent_questions end */
+
+}
