@@ -1,25 +1,6 @@
 <?php
 require 'src/vista/partials/head.php';
 
-// Define un array con la información de las preguntas y respuestas
-$preguntasRespuestas = array(
-    array(
-        'pregunta' => '¿Cuáles son los servicios que ofrece Antwork?',
-        'respuesta' => 'Antwork ofrece servicios especializados en personal temporal para cargas y descargas. Contamos con personal capacitado y experimentado para cubrir las necesidades de tu empresa en este aspecto.'
-    ),
-    array(
-        'pregunta' => '¿Cómo puedo enviar mi currículum a Antwork?',
-        'respuesta' => 'Puedes enviar tu currículum a Antwork a través de nuestro formulario en línea. Una vez recibido, nuestro equipo revisará tu perfil y te contactará si tu experiencia y habilidades coinciden con nuestras necesidades actuales.'
-    ),
-    array(
-        'pregunta' => '¿Cómo puedo contactar a Antwork para solicitar sus servicios?',
-        'respuesta' => 'Puedes contactar a Antwork a través de nuestra página web o llamando a nuestro número de teléfono. Estamos disponibles para atender tus consultas y solicitudes de servicio de forma rápida y eficiente.'
-    ),
-    array(
-        'pregunta' => '¿Antwork ofrece servicios personalizados para empresas?',
-        'respuesta' => 'Sí, Antwork ofrece servicios personalizados para empresas que buscan soluciones específicas en cuanto a personal temporal para cargas y descargas. Contáctanos para conocer más sobre cómo podemos adaptarnos a las necesidades de tu empresa.'
-    )
-);
 ?>
 
 <div class="frequent_questions-box">

@@ -1,4 +1,5 @@
 <?php
+require 'src/datos/data.php';
 ?>
 <!doctype html>
 <html lang="en">

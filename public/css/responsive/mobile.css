@@ -1,7 +1,18 @@
 @media only screen and (max-width: 470px) {
     /* Estilos para teléfono celular */
 
-
+    /* HOME */
+    .hero-swiper{
+        padding: 0px;
+        height: 90vh;
+    }
+    .hero-swiper-slide-content{
+        padding: 0px;
+    }
+    .hero-swiper-slide-title{
+        font-size: 2.3em ;
+    }
+    /* HOME  END*/
 
     /* .frequent_questions */
     .frequent_questions{
