@@ -22,6 +22,44 @@ require 'src/vista/partials/head.php';
 </div>
 
 
+
+<div class="home-qualities">
+        <div class="home-qualities-qualitie">
+            <div class="home-qualities-qualitie-img">
+                <span class="material-symbols-outlined">
+                    savings
+                </span>
+            </div>
+            <div class="home-qualities-qualitie-text">
+                <p class="home-qualities-qualitie-text-title">Bajo Costo</p>
+                <p class="home-qualities-qualitie-text-info">Una informacion bastante detallada explicando la cualidad de la empresa en este apartado Lorem, ipsum dolor.</p>
+            </div>  
+        </div>
+        <div class="home-qualities-qualitie">
+            <div class="home-qualities-qualitie-img">
+                <span class="material-symbols-outlined">
+                    local_shipping
+                </span>
+            </div>
+            <div class="home-qualities-qualitie-text">
+                <p class="home-qualities-qualitie-text-title">Carga y Descarga</p>
+                <p class="home-qualities-qualitie-text-info">Una informacion bastante detallada explicando la cualidad de la empresa en este apartado Lorem, ipsum dolor.</p>
+            </div>  
+        </div>
+        <div class="home-qualities-qualitie">
+            <div class="home-qualities-qualitie-img">
+                <span class="material-symbols-outlined">
+                    schedule
+                </span>
+            </div>
+            <div class="home-qualities-qualitie-text">
+                <p class="home-qualities-qualitie-text-title">Trabajo Eficiente</p>
+                <p class="home-qualities-qualitie-text-info">Una informacion bastante detallada explicando la cualidad de la empresa en este apartado Lorem, ipsum dolor.</p>
+            </div>  
+        </div>
+
+    </div>
+
 <div class="frequent_questions-box">
     <div class="frequent_questions-img">
         <img src="https://www.shutterstock.com/image-photo/young-bearded-adult-business-man-600nw-1005607636.jpg" alt="">

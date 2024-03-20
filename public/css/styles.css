@@ -147,10 +147,9 @@ height: 100%;
     color: var(--info-color);
     background-color: #fff;
     display: flex;
-    padding: 9px 14px; 
+    padding: 14px 14px; 
     margin: 2px;
     font-weight: 700;
-    border-radius: var(--radius);
 
     transition: all var(--time);
 }
@@ -169,6 +168,68 @@ height: 100%;
 }
 
 /* header end */
+
+
+
+
+
+/* .home-qualities start */
+
+.home-qualities{
+    margin: 30px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.home-qualities-qualitie{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0px 20px;
+    transition: transform .3s;
+}
+.home-qualities-qualitie:hover{
+    transform: scale(1.01);
+}
+
+.home-qualities-qualitie-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.home-qualities-qualitie-img span{
+    font-size: 4em;
+    color: rgb(39, 206, 235);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+.home-qualities-qualitie-text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.home-qualities-qualitie-text-title{
+    text-transform: uppercase;
+    color: rgb(18, 18, 22);
+    font-size: 1.6em;
+    font-weight: 900;
+}
+.home-qualities-qualitie-text-info{
+    font-size: 1.2em;
+    color: rgb(25, 29, 66);
+}
+
+/* .home-qualities end */
 
 
 
@@ -252,6 +313,59 @@ height: 100%;
 /* frequent_questions end */
 
 
+
+
+/* news */
+
+.normal-title{
+    color: rgb(18, 18, 22);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 20px;
+}
+.news-container {
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.news-content {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* news end */
 
 /* Estilos para el footer */
 .footer {
@@ -357,3 +471,5 @@ height: 100%;
 .footer-credits a:hover {
     color: var(--w-hover-color);
 }
+
+

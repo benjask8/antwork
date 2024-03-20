@@ -19,4 +19,16 @@ class Index_Controller extends Controlador
   }
  
 
+  // noticias
+  public function news()
+  {
+    $this->cargarVista("index/news");
+  }
+
+  public function new()
+  {
+    $this->cargarVista("index/new");
+  }
+
+
 }
