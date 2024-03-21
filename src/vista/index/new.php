@@ -1,5 +1,6 @@
 <?php
 require 'src/vista/partials/head.php';
+require 'src/datos/newsData.php';
 
 if (isset($_GET['id'])) {
     $idNoticia = $_GET['id'];

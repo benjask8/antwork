@@ -29,5 +29,54 @@
     /* .frequent_questions end */
 
 
+/* news */
+.normal-title{
+    padding: 10px 20px;
+}
+.news-container {
+    padding: 10px;
+}
+
+.news-item {
+    max-width:11110px; /* Ancho máximo para evitar que se bugee */
+    width: 100%; /* Toma el ancho máximo permitido */
+    padding: 10px 5px;
+}
+.news-img{
+    width: 100%;
+    height: 250px;
+}
+
+.news-title {
+    font-size: 1.4em;
+    margin: 4px 0px;
+}
+.news-content {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.news-info {
+    font-size: .8em;
+    color: var(--info-color);
+    margin-top: auto; /* Coloca este elemento siempre al final */
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* news end */
 
 }

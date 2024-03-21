@@ -40,10 +40,10 @@ require 'src/datos/data.php';
       <a class="header-logo-a" href="?c=index&m=index"><img class="header-logo-img" src="public/images/logo.png" alt=""></a>
     </div>
     <div class="header-links">
-      <a href="/" class="header-links-a">Inicio</a>
+      <a href="?c=index&m=index" class="header-links-a">Inicio</a>
       <a href="/" class="header-links-a">Servicios</a>
       <a href="/" class="header-links-a">Contacto</a>
-      <a href="/" class="header-links-a">Noticias</a>
+      <a href="?c=index&m=news" class="header-links-a">Noticias</a>
       <a href="?c=index&m=frequent_questions" class="header-links-a">Preguntas Frecuentes</a>
       <a href="/" class="header-links-a">Trabaja Con Nosotros</a>
     </div>
