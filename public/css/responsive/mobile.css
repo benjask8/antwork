@@ -1,4 +1,4 @@
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 540px) {
     /* Estilos para teléfono celular */
 
     /* HOME */
@@ -78,5 +78,50 @@
 }
 
 /* news end */
+
+
+/* new */
+.new-container{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+}
+.new-item{
+    width: 100%;
+    padding: 0px 5px;
+}
+
+.new-title{
+    font-size: 1.5em;
+}
+.new-img{
+}
+.new-content{
+}   
+.new-info{
+}
+
+
+.more-news{
+    width: 100%;
+    padding: 20px 5px;
+}
+.more-news-title{
+}
+
+.more-news-item{
+}
+
+.more-news-item-title{
+}
+.more-news-item-title a{
+}
+.more-news-item-title a:hover{
+}
+.more-news-item-info{
+}
+/* new end */
+
 
 }

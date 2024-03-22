@@ -324,6 +324,46 @@ height: 100%;
     font-size: 1.2em;
     padding: 10px 30px;
 }
+.filter-container{
+    padding: 20px;
+}
+.filters-open{
+    display: flex !important;
+}
+.filters{
+    background-color: #fafafa;
+    display: none;
+    width: max-content;
+    padding: 20px;
+    position: absolute;
+    flex-direction: column;
+}
+.filter-button:hover{
+    background-color: rgb(241, 241, 241);
+}
+.filter-button{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+    border: none;
+    display: flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    color: rgb(97, 97, 97);
+}
+.filters-title{
+    color: rgb(20, 20, 20);
+    font-weight: 700;
+}
+.filters a{
+    color: rgb(97, 97, 97)  ;
+    padding: 1px 0px;
+    padding-left: 10px;
+}
+.filters a:hover{
+    text-decoration: underline;
+}
 .news-container {
     padding-bottom: 30px;
     display: flex;
@@ -383,6 +423,85 @@ height: 100%;
 }
 
 /* news end */
+
+
+
+/* new */
+.new-container{
+    padding: 10px 5%;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+}
+.new-item{
+    width: 70%;
+    padding: 0px 20px;
+}
+
+.new-title{
+    font-size: 2.3em;
+    letter-spacing: 1px;
+    padding:40px  0px ;
+}
+.new-img{
+    width: 100%;
+}
+.new-content{
+    padding: 20px 0px;
+    white-space: pre-line;
+    color: rgb(20, 20, 20);
+    font-size: 1em;
+    letter-spacing: 1px;
+}   
+.new-info{
+    color: rgb(97, 97, 97);
+    font-style: italic;
+    font-size: .9em;
+}
+
+.new-views{
+    display: flex;
+    align-items: center;
+}
+.new-views span{
+    padding-right: 5px;
+    color: rgb(97, 97, 97);
+}
+
+.more-news{
+    width: 30%;
+    padding: 10px 20px;
+    padding-top: 40px;
+}
+.more-news-title{
+    padding: 10px 0px;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.more-news-item{
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0px;
+}
+
+.more-news-item-title{
+    padding: 5px 0px;
+}
+.more-news-item-title a{
+    color:rgb(20, 20, 20) ;
+}
+.more-news-item-title a:hover{
+    text-decoration: underline;
+}
+.more-news-item-info{
+    color: rgb(49, 49, 49);
+    font-size: .8em;
+}
+
+/* new end */
+
+
+
 
 /* Estilos para el footer */
 .footer {

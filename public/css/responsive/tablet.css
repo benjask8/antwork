@@ -91,4 +91,58 @@
         padding: 0px 30px;
     }
     /* .home-qualities end */
+
+
+    
+
+
+
+
+
+
+
+
+    
+/* new */
+.new-container{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+}
+.new-item{
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.new-title{
+    font-size: 2em;
+}
+.new-img{
+}
+.new-content{
+}   
+.new-info{
+}
+
+
+.more-news{
+    width: 100%;
+}
+.more-news-title{
+}
+
+.more-news-item{
+}
+
+.more-news-item-title{
+}
+.more-news-item-title a{
+}
+.more-news-item-title a:hover{
+}
+.more-news-item-info{
+}
+
+/* new end */
 }
