@@ -1,5 +1,17 @@
 <?php
 require 'src/vista/partials/head.php';
+require 'src/datos/newsData.php';
+
+// Número de noticias por página en la sección de noticias del index
+$noticias_por_pagina_index = 5;
+
+// Obtener todas las noticias disponibles
+// Suponiendo que $noticias es tu array de noticias proveniente de newsData.php
+$noticias_todas = $noticias; 
+
+// Obtener las últimas 5 noticias para mostrar en la página de inicio
+$noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_index);
+
 ?>
 <div class="swiper hero-swiper">
   <div class="swiper-wrapper">
@@ -85,6 +97,31 @@ require 'src/vista/partials/head.php';
         </ul>
     </div>
 </div>
+
+<!-- Agregar noticias aquí -->
+<div class="news-section">
+    <h2 class="normal-title">Últimas Noticias</h2>
+    <div class="news-container">
+        <?php
+        // Obtener las últimas 5 noticias
+        $ultimas_noticias = array_slice($noticias_todas, 0, 5);
+        
+        foreach ($ultimas_noticias as $noticia) : ?>
+            <a href="?c=index&m=new&id=<?php echo $noticia['id']; ?>" class="news-item">
+                <img src="<?php echo $noticia['img']; ?>" alt="" class="news-img">
+                <h3 class="news-title">
+                    <?php echo strlen($noticia['titulo']) > 100 ? substr($noticia['titulo'], 0, 100) . "..." : $noticia['titulo']; ?>
+                </h3>
+                <p class="news-content">
+                    <?php echo strlen($noticia['contenido']) > 50 ? substr($noticia['contenido'], 0, 50) . "..." : $noticia['contenido']; ?>
+                </p>
+                <p class="news-info"><?php echo date('d/m/Y', strtotime($noticia['fecha'])); ?></p>
+            </a>
+        <?php endforeach; ?>
+    </div>
+    <a href="?c=index&m=news" class="view-more-news">Ver Todas las Noticias</a>
+</div>
+
 
 <script type="module" src="public/js/frequent_questions.js"></script>
 

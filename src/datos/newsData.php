@@ -177,7 +177,7 @@
     'fecha' => '2024-03-05',
     'autor' => 'Ana Martínez',
     'contenido' => 'Descubre las últimas tendencias en moda para la temporada primavera-verano de este año.',
-    'vistas' => 26,
+    'vistas' => 28,
     'categoria' => 'Moda',
     'etiquetas' => 
     array (
@@ -194,7 +194,7 @@
     'fecha' => '2024-03-05',
     'autor' => 'Ana Martínez',
     'contenido' => 'Descubre las últimas tendencias en moda para la temporada primavera-verano de este año.',
-    'vistas' => 26,
+    'vistas' => 27,
     'categoria' => 'Moda',
     'etiquetas' => 
     array (

@@ -75,22 +75,22 @@ $noticias_pagina = array_slice($noticias, $indice_inicio, $noticias_por_pagina);
         </a>
     <?php endforeach; ?>
 </div>
-
 <div class="pagination">
     <?php if ($total_paginas > 1) : ?>
         <ul>
             <?php if ($pagina_actual > 1) : ?>
-                <li><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual - 1; ?>">Anterior</a></li>
+                <li class="pagination-arrow"><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual - 1; ?>"><span class="material-symbols-outlined">chevron_left</span></a></li>
             <?php endif; ?>
             <?php for ($i = 1; $i <= $total_paginas; $i++) : ?>
-                <li <?php echo $i == $pagina_actual ? 'class="active"' : ''; ?>><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
-<?php endfor; ?>
-<?php if ($pagina_actual < $total_paginas) : ?>
-    <li><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual + 1; ?>">Siguiente</a></li>
-<?php endif; ?>
-</ul>
-<?php endif; ?>
+                <li <?php echo $i == $pagina_actual ? 'class="active"' : ''; ?>><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $i; ?>" class="pagination-num"><?php echo $i; ?></a></li>
+            <?php endfor; ?>
+            <?php if ($pagina_actual < $total_paginas) : ?>
+                <li class="pagination-arrow"><a  href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual + 1; ?>"><span class="material-symbols-outlined">chevron_right</span></a></li>
+            <?php endif; ?>
+        </ul>
+    <?php endif; ?>
 </div>
+
 
 <script>
 document.title = "Noticias<?php echo $categoria_seleccionada ? ' de ' . ucwords($categoria_seleccionada) : ''; ?> | AntWork";
