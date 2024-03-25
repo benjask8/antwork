@@ -3,7 +3,7 @@
 :root{
     --bg: #fff;
     --a-color: #221a50;
-    --btn-bg-color: #e72929;
+    --btn-bg-color: #e72929e7;
     --time: .3s;
     --radius:2px;
 
@@ -714,3 +714,87 @@ height: 100%;
 }
 
 
+
+
+
+
+/* contact */
+
+/* contact */
+.contact-form-container{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+}
+.contact-form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-img img{
+    width: 70%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-title{
+    color: rgb(20, 20, 20);
+    font-size: 2.2em;
+    padding: 10px 0px;
+    font-weight: 900;    
+}
+.contact-form-info{
+    color:rgba(20, 20, 20, 0.842);
+}
+.contact-form input,
+.contact-form textarea{
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    padding: 5px 10px;
+    margin: 5px 0px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+}
+.contact-form textarea:focus,
+.contact-form input:focus{
+    border-color: #99f575;
+    background-color: rgba(43, 255, 0, 0.014);
+}
+.contact-form button{
+    background-color: #76c755;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: filter var(--time);
+    font-weight: 700;
+    height: 40px;
+    border: none;
+}
+
+.contact-form button:hover{
+    filter: brightness(1.2);
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 100px;
+}
+.loading-msg {
+    display: inline-block;
+    border: 4px solid #f3f3f3; /* color del borde del indicador de carga */
+    border-top: 4px solid #3498db; /* color del borde superior del indicador de carga */
+    border-radius: 50%; /* para crear un círculo */
+    width: 24px; /* ancho del indicador de carga */
+    height: 24px; /* altura del indicador de carga */
+    animation: spin 1s linear infinite; /* animación de giro */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* el indicador de carga comienza en 0 grados */
+    100% { transform: rotate(360deg); } /* el indicador de carga completa una vuelta completa (360 grados) */
+}
+
+
+/* contact end */

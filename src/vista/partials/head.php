@@ -42,7 +42,7 @@ require 'src/datos/data.php';
     <div class="header-links">
       <a href="?c=index&m=index" class="header-links-a">Inicio</a>
       <a href="/" class="header-links-a">Servicios</a>
-      <a href="/" class="header-links-a">Contacto</a>
+      <a href="?c=index&m=contact" class="header-links-a">Contacto</a>
       <a href="?c=index&m=news" class="header-links-a">Noticias</a>
       <a href="?c=index&m=frequent_questions" class="header-links-a">Preguntas Frecuentes</a>
       <a href="/" class="header-links-a">Trabaja Con Nosotros</a>
