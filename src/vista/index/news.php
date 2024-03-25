@@ -92,27 +92,11 @@ $noticias_pagina = array_slice($noticias, $indice_inicio, $noticias_por_pagina);
 </div>
 
 
+<script src="public/js/news.js">
+</script>
+
 <script>
-document.title = "Noticias<?php echo $categoria_seleccionada ? ' de ' . ucwords($categoria_seleccionada) : ''; ?> | AntWork";
-var filters = document.getElementById("filters");
-
-// Script para mostrar/ocultar el menú desplegable al hacer clic en el botón de filtro
-document.getElementById("filterBtn").addEventListener("click", function() {
-filters.classList.toggle("filters-open");
-});
-
-// Cerrar el menú desplegable si el usuario hace clic fuera de él
-window.onclick = function(event) {
-if (!event.target.matches('.filter-button')) {
-var dropdowns = document.getElementsByClassName("filters");
-for (var i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('filters-open')) {
-        openDropdown.classList.remove('filters-open');
-    }
-}
-}
-}
+    document.title = "Noticias <?php echo $categoria_seleccionada ? ' de ' . ucwords($categoria_seleccionada) : ''; ?> | AntWork";
 </script>
 
 <?php require 'src/vista/partials/footer.php'; ?>

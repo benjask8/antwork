@@ -31,12 +31,13 @@ if (isset($_GET['id'])) {
     // Si se encuentra la noticia, renderiza su contenido
     if ($noticiaEncontrada) {
         ?>
+        <p class="volver-btn"><a href="?c=index&m=news">Volver</a></p> <!-- Enlace para volver a la página anterior -->
         <div class="new-container">
             <div class="new-item">
                 <h3 class="new-title"><?php echo $noticia['titulo']; ?></h3>
                 <img src="<?php echo $noticia['img']; ?>" alt="" class="new-img">
                 <p class="new-info"><?php echo date('d/m/Y', strtotime($noticia['fecha'])); ?> - <?php echo $noticia['autor']; ?></p>
-                <p class="new-content"><?php echo $noticia['contenido']; ?></p>
+                <div class="new-content"><?php echo $noticia['contenido']; ?></div>
                 <p class="new-category">Categoría: <?php echo $noticia['categoria']; ?></p>
                 <p class="new-views"><span class="material-symbols-outlined">visibility</span>
                 <?php echo $noticia['vistas']; ?></p>
@@ -56,12 +57,44 @@ if (isset($_GET['id'])) {
                             // Verificar si la noticia tiene la misma categoría que la noticia actual
                             if ($otraNoticia['categoria'] == $categoriaNoticiaActual) {
                                 ?>
-                                <div class="more-news-item">
+                                <a href="?c=index&m=new&id=<?php echo $otraNoticia['id']; ?>" class="more-news-item">
                                     <h4 class="more-news-item-title">
-                                        <a href="?c=index&m=new&id=<?php echo $otraNoticia['id']; ?>"><?php echo $otraNoticia['titulo']; ?></a>
+                                        <p><?php echo $otraNoticia['titulo']; ?></p>
                                     </h4>
                                     <p class="more-news-item-info"><?php echo date('d/m/Y', strtotime($otraNoticia['fecha'])); ?> - <?php echo $otraNoticia['autor']; ?></p>
-                                </div>
+                            </a>
+                                <?php
+                                $contador++;
+                            }
+
+                            // Detener el bucle una vez que se han mostrado 10 noticias relacionadas
+                            if ($contador >= 10) {
+                                break;
+                            }
+                        }
+                    }
+                    ?>
+                </div>
+                <p class="more-news-title">Mas Noticias</p>
+                <div class="more-news-container">
+                    <?php
+                    // Obtener la categoría de la noticia actual
+                    $categoriaNoticiaActual = $noticia['categoria'];
+
+                    // Mostrar las siguientes 10 noticias después de la noticia actual con la misma categoría
+                    $contador = 0;
+                    foreach ($noticias as $otraNoticia) {
+                        // Evitar mostrar la misma noticia actual
+                        if ($otraNoticia['id'] != $idNoticia) {
+                            // Verificar si la noticia no tiene la misma categoría que la noticia actual
+                            if ($otraNoticia['categoria'] != $categoriaNoticiaActual) {
+                                ?>
+                                <a href="?c=index&m=new&id=<?php echo $otraNoticia['id']; ?>" style="background-image: url(<?php echo $otraNoticia['img']; ?>);" class="more-news-item more-news-item-2">
+                                    <h4 class="more-news-item-title">
+                                        <p><?php echo $otraNoticia['titulo']; ?></p>
+                                    </h4>
+                                    <p class="more-news-item-info"><?php echo date('d/m/Y', strtotime($otraNoticia['fecha'])); ?> - <?php echo $otraNoticia['autor']; ?></p>
+                                </a>
                                 <?php
                                 $contador++;
                             }
@@ -75,7 +108,6 @@ if (isset($_GET['id'])) {
                     ?>
                 </div>
             </div>
-            <p><a href="<?php echo $url_referencia; ?>">Volver</a></p> <!-- Enlace para volver a la página anterior -->
         </div>
         <?php
         // JavaScript para agregar metadatos
