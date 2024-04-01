@@ -222,7 +222,7 @@ height: 100%;
 }
 .home-qualities-qualitie-img span{
     font-size: 4em;
-    color: rgb(39, 206, 235);
+    color: rgb(235, 39, 39);
     font-variation-settings:
     'FILL' 0,
     'wght' 300,
@@ -859,7 +859,7 @@ height: 100%;
 .contact-form-container{
     display: flex;
     width: 100%;
-    padding: 40px 0px;
+    padding: 40px 30px;
     background-color: rgb(243, 243, 243);
 }
 .contact-form-img{
