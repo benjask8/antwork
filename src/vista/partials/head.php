@@ -8,7 +8,7 @@ require 'src/datos/data.php';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AntWork</title>
-  <link rel="icon" href="public/images/mini-logo.png" type="image/x-icon">
+  <link rel="icon" href="public/images/logo/mini-logo.png" type="image/x-icon">
 
 
   <!-- Estilos css -->
@@ -37,7 +37,7 @@ require 'src/datos/data.php';
 <body>
   <header class="header">
     <div class="header-logo">
-      <a class="header-logo-a" href="?c=index&m=index"><img class="header-logo-img" src="public/images/logo.png" alt=""></a>
+      <a class="header-logo-a" href="?c=index&m=index"><img class="header-logo-img" src="public/images/logo/logo.png" alt=""></a>
     </div>
     <div class="header-links">
       <a href="?c=index&m=index" class="header-links-a">Inicio</a>

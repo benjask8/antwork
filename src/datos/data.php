@@ -4,7 +4,7 @@
 $heroSlidesData = [
     [
         'title' => 'Especialistas en Personal Temporal',
-        'info' => 'Somos una empresa dedicada a ofrecer servicios especializados en personal.',
+        'info' => 'Somos una empresa dedicada a ofrecer servicios especializados en personal Somos una empresa dedicada a ofrecer servicios especializados en personal',
         'buttonText' => 'Ver más',
         'bgUrl' => 'https://vonhallerlaboratorios.com/attachments/Image/Von-Haller_-Trabaje-con-nosotros.jpg?template=generic',
         'linkUrl' => 'goku.com'

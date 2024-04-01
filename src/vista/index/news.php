@@ -3,7 +3,7 @@ require 'src/vista/partials/head.php';
 require 'src/datos/newsData.php';
 
 // Número de noticias por página
-$noticias_por_pagina = 5;
+$noticias_por_pagina = 30;
 
 // Función de comparación para ordenar las noticias por fecha
 function compararFechas($a, $b) {

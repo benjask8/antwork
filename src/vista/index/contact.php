@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="contact-form-container">
     <div class="contact-form-img">
-        <img src="https://www.servinform.es/wp-content/uploads/2022/03/Beneficios-de-la-atencion-al-cliente-virtual.jpg" alt="">
+        <img src="public/images/index/contact.png" alt="">
     </div>
     <form id="contactForm" class="contact-form">
     <h1 class="contact-form-title">Contacta Con Nosotros</h1>

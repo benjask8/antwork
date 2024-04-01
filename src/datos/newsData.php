@@ -19,7 +19,7 @@
     nim illum nobis minima soluta quisquam deserunt dicta fugit vel repudiandae tempore rerum, molestiae eos id magni dignissimos, cum praesentium fugiat nesciunt! Delectus reiciendis vel repudiandae omnis. Incidunt sapiente illo, magni illum totam distinctio sed nostrum molestiae temporibus cupiditate qui. .
     
     Sint consectetur officiis est odit dolores necessitatibus quasi ratione, totam rerum tenetur sed ex illo magni fuga molestiae unde praesentium quaerat facilis adipisci, libero ea blanditiis magnam? Nostrum suscipit odio minus in reprehenderit laboriosam non ipsum maxime rem consequatur libero iure incidunt qui blanditiis cupiditate maiores, aliquam culpa sapiente laborum. Magni ipsa vitae error rem reprehenderit iste eligendi mollitia rerum maxime laboriosam cumque iure quisquam enim sit deserunt illum, veritatis beatae? Dolor corrupti sapiente voluptas, recusandae harum maiores saepe. Facere, voluptate unde in ipsam harum minus repellendus repellat dolorem cupiditate veniam ea iste cumque id numquam quos quo quibusdam ullam odit, illum qui voluptatem aperiam! Culpa sapiente laboriosam aliquam ducimus adipisci quia laudantium recusandae corrupti accusantium perferendis tempore vero corporis, quod qui commodi quis at sint nostrum doloremque architecto eligendi numquam odit blanditiis totam? Fugiat fugit vitae quisquam inventore. Quaerat voluptatibus quisquam minima amet, repudiandae quibusdam, eos maxime molestiae accusamus corporis ad iusto ab impedit deleniti! Qui sint minima autem dignissimos, rem recusandae?',
-    'vistas' => 95,
+    'vistas' => 99,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (
@@ -36,7 +36,7 @@
     'fecha' => '2024-03-15',
     'autor' => 'María Gómez',
     'contenido' => 'Descubre la nueva plataforma en línea de Antwork para una mejor experiencia de usuario.',
-    'vistas' => 53,
+    'vistas' => 54,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (
@@ -53,7 +53,7 @@
     'fecha' => '2024-03-15',
     'autor' => 'María Gómez',
     'contenido' => 'Descubre la nueva plataforma en línea de Antwork para una mejor experiencia de usuario.',
-    'vistas' => 48,
+    'vistas' => 50,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (
@@ -70,7 +70,7 @@
     'fecha' => '2024-03-12',
     'autor' => 'Elena Martínez',
     'contenido' => 'Descubre el último dispositivo móvil con tecnología innovadora y características avanzadas.',
-    'vistas' => 54,
+    'vistas' => 55,
     'categoria' => 'Tecnología',
     'etiquetas' => 
     array (
@@ -223,13 +223,30 @@
     'fecha' => '2024-03-05',
     'autor' => 'Ana Martínez',
     'contenido' => 'Descubre las últimas tendencias en moda para la temporada primavera-verano de este año.',
-    'vistas' => 27,
+    'vistas' => 29,
     'categoria' => 'Moda',
     'etiquetas' => 
     array (
       0 => 'moda',
       1 => 'tendencias',
       2 => 'primavera-verano',
+    ),
+  ),
+  13 => 
+  array (
+    'id' => 14,
+    'img' => 'https://s1.significados.com/foto/paisaje-og.jpg?class=ogImageWide',
+    'titulo' => 'prueba 1',
+    'fecha' => '2024-03-28',
+    'autor' => 'Gonchi',
+    'contenido' => 'Informacion de la noticia',
+    'vistas' => 3,
+    'categoria' => 'Gonchi',
+    'etiquetas' => 
+    array (
+      0 => 'paisaje',
+      1 => 'gocnchi',
+      2 => 'csgo',
     ),
   ),
 );
