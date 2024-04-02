@@ -154,6 +154,23 @@
 
 
 
+/* wwu */
+.wwu-form-container{
+    padding: 60px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.wwu-form{
+    padding: 40px;
+    width: 100%;
+}
+.wwu-form-img{
+    display: none;
+}
+/* wwu end */
+
+
+
 /* contact */
 .contact-form-container{
     padding: 60px 10px;
@@ -162,7 +179,7 @@
 }
 .contact-form{
     padding: 40px;
-    width: 70%;
+    width: 100%;
 }
 .contact-form-img{
     display: none;
@@ -236,12 +253,5 @@
     width: 100%;
 }
 
-
-/* contact */
-
-.contact-form{
-    width: 100%;
-}
-/* contact end*/
 
 }

@@ -131,8 +131,19 @@
     }
     /* about end */
 
-    /* .contact */
-    .contact-form{
+    /* .wwu */
+    .wwu-form{
+        padding: 10px;
+    }
+
+    .wwu-form-title{
+        font-size: 1.8em;
+    }
+    /* .wwu end */
+
+
+     /* .contact */
+     .contact-form{
         padding: 10px;
     }
 

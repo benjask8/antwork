@@ -45,4 +45,12 @@ class Index_Controller extends Controlador
   }
 
 
+  //work with us
+  
+  public function work_with_us()
+  {
+    $this->cargarVista("index/work_with_us");
+  }
+
+
 }
