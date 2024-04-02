@@ -5,7 +5,7 @@ require 'src/vista/partials/head.php';
 
 <div class="frequent_questions-box">
     <div class="frequent_questions-img">
-        <img src="https://www.shutterstock.com/image-photo/young-bearded-adult-business-man-600nw-1005607636.jpg" alt="">
+        <img src="public/images/logo/ant_tink.png" alt="">
     </div>
     <div class="frequent_questions-text">
         <h2 class="frequent_questions-text-title">
@@ -28,6 +28,16 @@ require 'src/vista/partials/head.php';
         </ul>
     </div>
 </div>
+
+
+<h3 class="normal-title">Preguntas frecuentes</h3>
+    <p class="more-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe numquam laudantium nisi labore debitis minima! Quisquam ut velit obcaecati earum esse et tempore exercitationem consequatur reiciendis! Necessitatibus, vel minima!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi itaque quo voluptate exercitationem obcaecati. Cumque quod quos, repellat sed consequuntur dolores optio, dicta quasi possimus est, ex magnam eaque praesentium. Tenetur consequatur molestiae optio laboriosam quas adipisci deleniti, quidem magni unde quod neque perspiciatis natus aliquam dolore eius explicabo. Libero minus dolor amet magni vel soluta ratione illo magnam incidunt consequatur blanditiis dolores voluptatibus sit enim accusantium itaque, quis id iusto ad impedit quisquam quae assumenda ut fuga! Quaerat odit quidem, quod nemo numquam sunt ullam maxime sit dignissimos eos sed atque voluptatem rerum voluptatibus a cum sint? Quidem, vel?
+
+    </p>
 <script type="module" src="public/js/frequent_questions.js"></script>
 
 <?php

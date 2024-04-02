@@ -217,15 +217,6 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <!-- frequen questions end-->
 
 
-
-<!-- trust companies -->
-<div class="trust-companies-container">
-    <div class="trust-companies">
-        
-    </div>
-</div>
-<!-- trust companies end-->
-
 <script type="module" src="public/js/frequent_questions.js"></script>
 <script src="public/js/services.js"></script>
 
@@ -237,6 +228,3 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <?php
 require 'src/vista/partials/footer.php';
 ?>
-
-
-<script src="public/js/animations.js"></script>

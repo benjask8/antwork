@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Si el elemento está más de 100 píxeles por debajo de la parte superior y
             // menos de 100 píxeles por encima de la parte inferior de la ventana,
             // lo marcamos como visible
-            if (rect.top <= windowHeight - 200 && rect.bottom >= 200) {
+            if (rect.top <= windowHeight - 100 && rect.bottom >= 100) {
                 setTimeout(() => {
                     qualitie.classList.add('show');
                 }, index * 500); // Agregar un retraso a cada elemento
@@ -21,21 +21,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Verificar si el formulario de contacto está visible unos píxeles después de hacer scroll hacia arriba
-        const formRect = contactForm.getBoundingClientRect();
-        if (formRect.top <= window.innerHeight - 100 && formRect.bottom >= 100) {
-            contactForm.classList.add('show');
+        if (contactForm) {
+            const formRect = contactForm.getBoundingClientRect();
+            if (formRect.top <= window.innerHeight - 100 && formRect.bottom >= 100) {
+                contactForm.classList.add('show');
+            }
         }
 
         // Verificar si la sección "Acerca de" está visible unos píxeles después de hacer scroll hacia arriba
-        const aboutRect = aboutContainer.getBoundingClientRect();
-        if (aboutRect.top <= window.innerHeight - 100 && aboutRect.bottom >= 100) {
-            aboutContainer.classList.add('show');
+        if (aboutContainer) {
+            const aboutRect = aboutContainer.getBoundingClientRect();
+            if (aboutRect.top <= window.innerHeight - 100 && aboutRect.bottom >= 100) {
+                aboutContainer.classList.add('show');
+            }
         }
 
         // Verificar si la imagen de la sección "Acerca de" está visible unos píxeles después de hacer scroll hacia arriba
-        const imgRect = aboutImg.getBoundingClientRect();
-        if (imgRect.top <= window.innerHeight - 100 && imgRect.bottom >= 100) {
-            aboutImg.classList.add('show');
+        if (aboutImg) {
+            const imgRect = aboutImg.getBoundingClientRect();
+            if (imgRect.top <= window.innerHeight - 100 && imgRect.bottom >= 100) {
+                aboutImg.classList.add('show');
+            }
         }
 
         // Verificar la visibilidad de los elementos del servicio unos píxeles después de hacer scroll hacia arriba

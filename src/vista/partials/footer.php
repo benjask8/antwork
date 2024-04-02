@@ -2,41 +2,55 @@
 
 </section>
 
-<div class="footer-wave">
-    <img src="public/images/index/footer_wave.svg" alt="">
-</div>
+
 <footer class="footer">
-    <div class="footer-content">
-        <div class="footer-logo">
-            <img src="public/images/logo/logo_blanco.png" alt="Logo de Antwork">
-        </div>
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Contacto</a></li>
+    <nav class="footer-links-container">
+        <ul class="footer-links">
+            <li class="footer-links-title"><p>empresas</p></li>
+            <li class="footer-links-a"><a href="">contacto</a></li>
+            <li class="footer-links-a"><a href="">servicios</a></li>
+            <li class="footer-links-a"><a href="">preguntas frecuentes</a></li>
+        </ul>
+        <ul class="footer-links">
+            <li class="footer-links-title"><p>candidatos</p></li>
+            <li class="footer-links-a"><a href="">trabaja con nosotros</a></li>
+            <li class="footer-links-a"><a href="">informacion</a></li>
+        </ul>
+        <ul class="footer-links">
+            <li class="footer-links-title"><p>noticias</p></li>
+            <li class="footer-links-a"><a href="">nuevas noticias</a></li>
+            <li class="footer-links-a"><a href="">empleo</a></li>
+            <li class="footer-links-a"><a href="">blog</a></li>
+        </ul>
+        <ul class="footer-links">
+            <li class="footer-links-title"><p>quienes somos</p></li>
+            <li class="footer-links-a"><a href="">acerca de nosotros</a></li>
+            <li class="footer-links-a"><a href="">historia</a></li>
+            <li class="footer-links-a"><a href="">mision y vision</a></li>
+        </ul>
+    </nav>
+    <div class="footer-info-container">
+        <nav class="footer-social">
+            <ul class="footer-social-ul">
+                <li class="footer-social-li"><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li class="footer-social-li"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="footer-social-li"><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li class="footer-social-li"><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
             </ul>
-        </div>
-        <div class="footer-social">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-info">
-        <p>Derechos de autor © <?php echo date("Y"); ?> Antwork. Todos los derechos reservados.</p>
-    </div>
-    <div class="footer-credits">
-        <p>Desarrollado por Benjamin Rosano</p>
-        <p><a href="https://github.com/benjask8/">Visita mi Github</a></p>
+        </nav>
+
+        <p class="copyright-p">Derechos de autor © <?php echo date("Y"); ?> Antwork. Todos los derechos reservados.
+        </p>
+
+        
+        <p class="copyright-p">
+        Hecho por <a href="">Benjamin Rosano</a>
+        </p>
     </div>
 </footer>
 
 
+<script src="public/js/animations.js"></script>
 
 </body>
 

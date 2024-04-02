@@ -208,37 +208,17 @@
 
 
 
-/* Estilos para el footer */
-.footer {
-    padding: 40px 20px; /* Espaciado interno del footer */
-    padding-bottom: 100px;
+/* footer*/
+.footer{
+    padding: 40px 10px;
 }
-
-/* Estilos para el contenido del footer */
-.footer-content {
-    display: flex;
-    padding: 20px 0px;
+.footer-links-container{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
-
-/* Estilos para el logo del footer */
-.footer-logo img {
-    padding: 10px 0px;
-    width: 100px; /* Ancho del logo */
+.footer-links{
+    padding: 20px 0px;
 }
-
-/* Estilos para los enlaces de navegación del footer */
-.footer-links ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px 0px;
-}
-
-
+/* footer end */
 
 
 /* about */

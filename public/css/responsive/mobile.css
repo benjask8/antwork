@@ -125,6 +125,20 @@
 
 
 
+    /* about */
+    .about-text{
+        padding: 30px 10px;
+    }
+    /* about end */
 
+    /* .contact */
+    .contact-form{
+        padding: 10px;
+    }
+
+    .contact-form-title{
+        font-size: 1.8em;
+    }
+    /* .contact end */
 
 }
