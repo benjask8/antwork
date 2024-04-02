@@ -1,10 +1,14 @@
 </section>
 
 </section>
+
+<div class="footer-wave">
+    <img src="public/images/index/footer_wave.svg" alt="">
+</div>
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-logo">
-            <img src="public/images/logo.png" alt="Logo de Antwork">
+            <img src="public/images/logo/logo_blanco.png" alt="Logo de Antwork">
         </div>
         <div class="footer-links">
             <ul>

@@ -37,5 +37,12 @@ class Index_Controller extends Controlador
     $this->cargarVista("index/contact");
   }
 
+  //services
+  
+  public function services()
+  {
+    $this->cargarVista("index/services");
+  }
+
 
 }

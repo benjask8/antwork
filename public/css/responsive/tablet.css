@@ -21,6 +21,7 @@
     }
     .header-links-a:first-child{
         border: none;
+        box-shadow: none;
         background-color: transparent;
         color: var(--a-color);
     }
@@ -77,6 +78,7 @@
         flex-direction: column;
     }
     .home-qualities-qualitie{
+        flex-direction: column;
         width: 100%;
         margin: 25px 20px;
     }
@@ -154,12 +156,12 @@
 
 /* contact */
 .contact-form-container{
-    padding: 0px 10px;
+    padding: 60px 10px;
     flex-direction: column;
     align-items: center;
 }
 .contact-form{
-    padding: 10px;
+    padding: 40px;
     width: 70%;
 }
 .contact-form-img{
@@ -250,13 +252,14 @@
 .about-text{
     width: 100%;
 }
-
+.about-title{
+    width: 100%;
+}
 
 
 /* contact */
 
 .contact-form{
-    padding: 10px;
     width: 100%;
 }
 /* contact end*/

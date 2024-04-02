@@ -36,7 +36,7 @@
     'fecha' => '2024-03-15',
     'autor' => 'María Gómez',
     'contenido' => 'Descubre la nueva plataforma en línea de Antwork para una mejor experiencia de usuario.',
-    'vistas' => 54,
+    'vistas' => 55,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (
@@ -70,7 +70,7 @@
     'fecha' => '2024-03-12',
     'autor' => 'Elena Martínez',
     'contenido' => 'Descubre el último dispositivo móvil con tecnología innovadora y características avanzadas.',
-    'vistas' => 55,
+    'vistas' => 56,
     'categoria' => 'Tecnología',
     'etiquetas' => 
     array (
@@ -87,7 +87,7 @@
     'fecha' => '2024-03-10',
     'autor' => 'Carlos Rodríguez',
     'contenido' => 'Aprende estrategias efectivas para aumentar tu productividad laboral y alcanzar tus metas.',
-    'vistas' => 26,
+    'vistas' => 27,
     'categoria' => 'Productividad',
     'etiquetas' => 
     array (

@@ -35,13 +35,15 @@ require 'src/datos/data.php';
   <script type="module" src="public/js/head.js"></script>
 
 <body>
+  
+
   <header class="header">
     <div class="header-logo">
       <a class="header-logo-a" href="?c=index&m=index"><img class="header-logo-img" src="public/images/logo/logo.png" alt=""></a>
     </div>
     <div class="header-links">
       <a href="?c=index&m=index" class="header-links-a">Inicio</a>
-      <a href="/" class="header-links-a">Servicios</a>
+      <a href="?c=index&m=services" class="header-links-a">Servicios</a>
       <a href="?c=index&m=contact" class="header-links-a">Contacto</a>
       <a href="?c=index&m=news" class="header-links-a">Noticias</a>
       <a href="?c=index&m=frequent_questions" class="header-links-a">Preguntas Frecuentes</a>

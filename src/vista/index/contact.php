@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="contact-form-container">
     <div class="contact-form-img">
-        <img src="public/images/index/contact.png" alt="">
+        <img src="public/images/logo/ant_contact.png" alt="">
     </div>
     <form id="contactForm" class="contact-form">
     <h1 class="contact-form-title">Contacta Con Nosotros</h1>

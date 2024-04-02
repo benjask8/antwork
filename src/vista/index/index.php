@@ -33,20 +33,6 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 </div>
 
 
-<!-- about -->
-<div class="about-container">
-    <div class="about-img">
-        <img src="public/images/logo/ant_speak2.png" alt="">
-    </div>
-    <div class="about-text">
-        <h3 class="about-title">Acerca de antwork</h3>
-        <p class="about-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis molestias voluptates cumque quaerat. Modi ab repellendus, laborum deleniti tempore laudantium consequuntur pariatur commodi ipsam similique temporibus porro non dignissimos! Eos itaque error distinctio sapiente corrupti nemo odio, eius recusandae. Similique.</p>
-        <a href="" class="about-link">leer mas</a>
-    </div>
-</div>
-<!-- about end -->
-
-
 
 
 <!-- <h2 class="big-title">Cualidades</h2> -->
@@ -86,11 +72,75 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
     </div>
 </div>
 
+
+<div class="border-separator">
+    <div class="border-separator-border"></div>
+</div>
+
+<!-- about -->
+<div class="about-container">
+    <div class="about-img">
+        <img src="public/images/logo/ant_speak2.png" alt="">
+    </div>
+    <div class="about-text">
+        <h3 class="about-title">Acerca de antwork & Como trabajamos</h3>
+        <p class="about-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis molestias voluptates cumque quaerat. Modi ab repellendus, laborum deleniti tempore laudantium consequuntur pariatur commodi ipsam similique temporibus porro non dignissimos! Eos itaque error distinctio sapiente corrupti nemo odio, eius recusandae. Similique.</p>
+        <a href="" class="about-link">leer mas</a>
+    </div>
+</div>
+<!-- about end -->
+
+
+
+
+<!-- servicios -->
+<!-- servicios -->
+<div class="services-container">
+    <h2 class="services-title">Nuestros Servicios</h2>
+    <div class="services">
+        <div class="service-item" data-title="Carga y descarga jasjdajsdjas" data-info="info">
+            <span class="service-item-icon material-symbols-outlined">groups</span>
+            <h4 class="service-item-title">un titulo acerca de</h4>
+            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
+        </div>
+        <div class="service-item" data-title="Envío local" data-info="Información sobre el envío local">
+            <span class="service-item-icon material-symbols-outlined">local_shipping</span>
+            <h4 class="service-item-title">Servicio de Envío Local</h4>
+            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
+        </div>
+        <div class="service-item" data-title="Ingeniería especializada" data-info="Detalles de ingeniería especializada">
+            <span class="service-item-icon material-symbols-outlined">engineering</span>
+            <h4 class="service-item-title">Servicio de Ingeniería Especializada</h4>
+            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
+        </div>
+        <div class="service-item" data-title="Seguridad encriptada" data-info="Detalles sobre seguridad encriptada">
+            <span class="service-item-icon material-symbols-outlined">encrypted</span>
+            <h4 class="service-item-title">Servicio de Seguridad Encriptada</h4>
+            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
+        </div>
+    </div>
+</div>
+
+
+ 
+    <!-- Modal -->
+    <div id="myModal" class="services-modal">
+        <div class="services-modal-content">
+            <span class="close">&times;</span>
+            <h4 id="modal-title" class="services-modal-title"></h4>
+            <p id="modal-info" class="services-modal-info"></p>
+        </div>
+    </div>
+    
+<!-- servicios end -->
+
+
+
 <!-- contact -->
 
 <div class="contact-form-container">
     <div class="contact-form-img">
-        <img src="public/images/index/contact.png" alt="">
+        <img src="public/images/logo/ant_contact.png" alt="">
     </div>
     <form id="contactForm" class="contact-form">
     <h1 class="contact-form-title">Contacta Con Nosotros</h1>
@@ -135,35 +185,6 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 
 
-<!-- servicios -->
-<div class="services-container">
-    <h2 class="services-title">Nuestros Servicios</h2>
-    <div class="services">
-    <div class="service-item">
-            <span class="service-item-icon material-symbols-outlined">groups</span>
-            <h4 class="service-item-title">un titulo acerca de</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
-        <div class="service-item">
-            <span class="service-item-icon material-symbols-outlined">local_shipping</span>
-            <h4 class="service-item-title">un titulo acerca de</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
-        <div class="service-item">
-            <span class="service-item-icon material-symbols-outlined">engineering</span>
-            <h4 class="service-item-title">un titulo acerca de</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
-        <div class="service-item">
-            <span class="service-item-icon material-symbols-outlined">encrypted</span>
-            <h4 class="service-item-title">un titulo acerca de</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
-    </div>
-</div>
-<!-- servicios end -->
-
-
 
 <!-- frequen questions -->
 
@@ -196,8 +217,17 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <!-- frequen questions end-->
 
 
-<script type="module" src="public/js/frequent_questions.js"></script>
 
+<!-- trust companies -->
+<div class="trust-companies-container">
+    <div class="trust-companies">
+        
+    </div>
+</div>
+<!-- trust companies end-->
+
+<script type="module" src="public/js/frequent_questions.js"></script>
+<script src="public/js/services.js"></script>
 
 <script type="module" src="public/js/swiper.js"></script>
 
@@ -207,3 +237,6 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <?php
 require 'src/vista/partials/footer.php';
 ?>
+
+
+<script src="public/js/animations.js"></script>
