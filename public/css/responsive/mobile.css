@@ -13,11 +13,7 @@
         padding: 0px;
     }
     .hero-swiper-slide-title{
-        font-size: 2em ;
-    }
-    .hero-swiper-slide-info{
-        padding: 5px 0px;
-        padding-bottom: 10px;
+        font-size: 2.3em ;
     }
     /* HOME  END*/
 
@@ -45,10 +41,6 @@
 
 /* news */
 .normal-title{
-    padding: 10px 20px;
-}
-
-.small-title{
     padding: 10px 20px;
 }
 .more-info{

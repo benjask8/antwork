@@ -83,7 +83,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         <img src="public/images/logo/ant_speak2.png" alt="">
     </div>
     <div class="about-text">
-        <h3 class="about-title">Acerca de <span class="text-r">Antwork</span> & Como trabajamos</h3>
+        <h3 class="about-title">Acerca de antwork & Como trabajamos</h3>
         <p class="about-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis molestias voluptates cumque quaerat. Modi ab repellendus, laborum deleniti tempore laudantium consequuntur pariatur commodi ipsam similique temporibus porro non dignissimos! Eos itaque error distinctio sapiente corrupti nemo odio, eius recusandae. Similique.</p>
         <a href="?c=index&m=about" class="about-link">leer mas</a>
     </div>
@@ -194,7 +194,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
     </div>
     <div class="frequent_questions-text">
         <h2 class="frequent_questions-text-title">
-            Preguntas Frecuentes sobre <span class="text-r">Antwork</span>
+            Preguntas Frecuentes sobre Antwork
         </h2>
         <p class="frequent_questions-text-info">
             Encuentra respuestas a las preguntas más comunes sobre Antwork, tu empresa de personal temporal especializada en carga y descarga.

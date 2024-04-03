@@ -3,28 +3,20 @@
 // hero slides
 $heroSlidesData = [
     [
-        'title' => 'Líderes en Soluciones Tecnológicas',
-        'info' => 'Ofrecemos soluciones innovadoras y personalizadas para tus necesidades tecnológicas. Desde desarrollo de software hasta servicios de consultoría, estamos aquí para ayudarte a alcanzar tus objetivos.',
-        'buttonText' => 'Conoce más',
-        'bgUrl' => 'https://media.istockphoto.com/id/1291751221/es/foto/el-departamento-de-ventas-vuelve-a-puntuar.jpg?s=612x612&w=0&k=20&c=G-muleAth4dx3U2MEKgpv8ppz8J0Fb45oSHq6zhHymI=',
-        'linkUrl' => 'https://example.com/servicios'
+        'title' => 'Especialistas en Personal Temporal',
+        'info' => 'Somos una empresa dedicada a ofrecer servicios especializados en personal Somos una empresa dedicada a ofrecer servicios especializados en personal',
+        'buttonText' => 'Ver más',
+        'bgUrl' => 'https://vonhallerlaboratorios.com/attachments/Image/Von-Haller_-Trabaje-con-nosotros.jpg?template=generic',
+        'linkUrl' => 'goku.com'
     ],
     [
-        'title' => 'Tu Socio en Estrategias de Marketing',
-        'info' => 'Potenciamos tu marca y aumentamos tu visibilidad en línea con estrategias de marketing digital efectivas. Descubre cómo podemos ayudarte a destacarte en un mercado competitivo.',
-        'buttonText' => 'Descubre más',
-        'bgUrl' => 'https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?cs=srgb&dl=pexels-roberto-nickson-3082341.jpg&fm=jpg',
-        'linkUrl' => 'https://example.com/marketing'
-    ],
-    [
-        'title' => 'Expertos en Desarrollo Web',
-        'info' => 'Creamos sitios web atractivos y funcionales que impulsan el crecimiento de tu negocio en línea. Desde sitios web informativos hasta tiendas en línea, tenemos la solución perfecta para ti.',
-        'buttonText' => 'Explora nuestras soluciones',
-        'bgUrl' => 'https://tekla.io/wp-content/uploads/2022/03/Recurso1.png',
-        'linkUrl' => 'https://example.com/desarrollo-web'
+        'title' => 'Otro Slide con titulo',
+        'info' => 'Cualquier informacion que se necesite',
+        'buttonText' => 'Un Boton',
+        'bgUrl' => 'https://helpx.adobe.com/content/dam/help/en/stock/how-to/upload-content-to-adobe-stock/jcr%3Acontent/main-pars/image_1756880638/upload-content-to-adobe-stock_1408x792.jpg.img.jpg',
+        'linkUrl' => 'vamos.com'
     ]
 ];
-
 
 
 //preguntas frecuentes

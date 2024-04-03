@@ -76,8 +76,6 @@
     /* .home-qualities start */
     .home-qualities{
         flex-direction: column;
-        margin: 0px;
-        padding: 0px;
     }
     .home-qualities-qualitie{
         flex-direction: column;
@@ -264,7 +262,7 @@
 }
 .about-page-img img{
     width: 100%;
-    height: max-content;
+    height: 600px;
     object-fit: cover;
 }
 
