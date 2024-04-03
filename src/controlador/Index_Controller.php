@@ -53,4 +53,10 @@ class Index_Controller extends Controlador
   }
 
 
+  //abot
+  
+  public function about()
+  {
+    $this->cargarVista("index/about");
+  }
 }

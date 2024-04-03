@@ -2,6 +2,9 @@
     /* Estilos para teléfono celular */
 
     /* HOME */
+    .big-title{
+        padding: 10px 20px;
+    }
     .hero-swiper{
         padding: 0px;
         height: 90vh;
@@ -10,7 +13,11 @@
         padding: 0px;
     }
     .hero-swiper-slide-title{
-        font-size: 2.3em ;
+        font-size: 2em ;
+    }
+    .hero-swiper-slide-info{
+        padding: 5px 0px;
+        padding-bottom: 10px;
     }
     /* HOME  END*/
 
@@ -26,12 +33,27 @@
         width: 100%;
         padding: 20px 10px;
     }
+
+    
+    .frequent_questions-text-title{
+        color: var(--title-color);
+        font-size: 2.3em;
+        font-weight: 800;
+    }
     /* .frequent_questions end */
 
 
 /* news */
 .normal-title{
     padding: 10px 20px;
+}
+
+.small-title{
+    padding: 10px 20px;
+}
+.more-info{
+    padding: 0px 20px;
+
 }
 .news-container {
     padding: 10px;
@@ -126,14 +148,33 @@
 
 
     /* about */
-    .about-text{
-        padding: 30px 10px;
+    .about-title{
+        font-size: 2em;
     }
+    .about-text{
+        padding: 0px 20px;
+    }
+    .about-container{
+        padding: 0px;
+    }
+    .about-page-img{
+        padding: 0px 20px;
+        padding-bottom: 30px;
+    }
+    .about-page-img img{
+        height: max-content;
+    }
+    
     /* about end */
 
     /* .wwu */
+    .wwu-form-container{
+        padding: 60px 0px;
+    }
     .wwu-form{
         padding: 10px;
+        width: 100%;
+        margin: 0px;
     }
 
     .wwu-form-title{
@@ -143,6 +184,10 @@
 
 
      /* .contact */
+    .contact-form-container{
+        padding: 60px 0px;
+    }
+
      .contact-form{
         padding: 10px;
     }

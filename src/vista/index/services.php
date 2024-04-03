@@ -5,7 +5,7 @@
 
     <!-- servicios -->
     <div class="services-container">
-        <h2 class="normal-title">Nuestros Servicios</h2>
+        <h2 class="big-title">Nuestros Servicios</h2>
         <div class="services">
         <div class="service-item">
                 <span class="service-item-icon material-symbols-outlined">groups</span>

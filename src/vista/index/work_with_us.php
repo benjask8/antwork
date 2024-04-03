@@ -50,6 +50,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
+<div class="wwu-info">
+        
+    <h3 class="big-title">Trabaja con nosotros</h3>
+    <p class="more-info">En Antwork, creemos en un enfoque de trabajo colaborativo y dinámico que fomente la innovación y el crecimiento personal. Nuestra cultura organizacional se basa en valores como la transparencia, la empatía y el compromiso con la excelencia.
+
+    </p>
+    <p class="more-info">Al unirte a nuestro equipo, tendrás la oportunidad de trabajar en proyectos desafiantes y significativos que impactan positivamente en la sociedad. Valoramos la diversidad de ideas y perspectivas, y fomentamos un ambiente inclusivo donde cada miembro del equipo se sienta valorado y empoderado.</p>
+    <p class="more-info">Nos esforzamos por crear un entorno de trabajo que fomente la creatividad y el aprendizaje continuo. Nuestra filosofía se centra en el crecimiento y el desarrollo personal, brindando oportunidades para el desarrollo profesional y la realización personal.
+
+    </p>
+    <p class="more-info">Si estás buscando un lugar donde puedas crecer profesionalmente, colaborar con personas talentosas y hacer una diferencia en el mundo, ¡te invitamos a unirte a nosotros en Antwork!
+        
+    </p>
+</div>
+
 <div class="wwu-form-container">
     <div class="wwu-form-img">
         <img src="public/images/logo/ant_wwu.png" alt="">
@@ -69,19 +84,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Enviar</button>
     <p class="msg-p" id="msgP"></p>
 </form>
-
 </div>
 
 
 
-<h3 class="normal-title">Trabaja con nosotros</h3>
-    <p class="more-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe numquam laudantium nisi labore debitis minima! Quisquam ut velit obcaecati earum esse et tempore exercitationem consequatur reiciendis! Necessitatibus, vel minima!
+<div class="wwu-info">
+        
+    <h3 class="normal-title">Acerca de</h3>
+    <p class="more-info">En Antwork, creemos en un enfoque de trabajo colaborativo y dinámico que fomente la innovación y el crecimiento personal. Nuestra cultura organizacional se basa en valores como la transparencia, la empatía y el compromiso con la excelencia.
 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.
+    </p>
+    <p class="more-info">Al unirte a nuestro equipo, tendrás la oportunidad de trabajar en proyectos desafiantes y significativos que impactan positivamente en la sociedad. Valoramos la diversidad de ideas y perspectivas, y fomentamos un ambiente inclusivo donde cada miembro del equipo se sienta valorado y empoderado.</p>
+    <p class="more-info">Nos esforzamos por crear un entorno de trabajo que fomente la creatividad y el aprendizaje continuo. Nuestra filosofía se centra en el crecimiento y el desarrollo personal, brindando oportunidades para el desarrollo profesional y la realización personal.
 
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi itaque quo voluptate exercitationem obcaecati. Cumque quod quos, repellat sed consequuntur dolores optio, dicta quasi possimus est, ex magnam eaque praesentium. Tenetur consequatur molestiae optio laboriosam quas adipisci deleniti, quidem magni unde quod neque perspiciatis natus aliquam dolore eius explicabo. Libero minus dolor amet magni vel soluta ratione illo magnam incidunt consequatur blanditiis dolores voluptatibus sit enim accusantium itaque, quis id iusto ad impedit quisquam quae assumenda ut fuga! Quaerat odit quidem, quod nemo numquam sunt ullam maxime sit dignissimos eos sed atque voluptatem rerum voluptatibus a cum sint? Quidem, vel?
+    </p>
+    <p class="more-info">Si estás buscando un lugar donde puedas crecer profesionalmente, colaborar con personas talentosas y hacer una diferencia en el mundo, ¡te invitamos a unirte a nosotros en Antwork!
+        
+    </p>
+</div>
 
-    </p>    
 
 
 
