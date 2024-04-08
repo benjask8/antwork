@@ -17,6 +17,10 @@
     --ni-info-color:rgb(59, 59, 71);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     width: 100%;
     background-color: var(--bg);

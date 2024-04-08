@@ -7,26 +7,26 @@
     <nav class="footer-links-container">
         <ul class="footer-links">
             <li class="footer-links-title"><p>empresas</p></li>
-            <li class="footer-links-a"><a href="">contacto</a></li>
-            <li class="footer-links-a"><a href="">servicios</a></li>
-            <li class="footer-links-a"><a href="">preguntas frecuentes</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=contact">contacto</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=services">servicios</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=frequent_questions">preguntas frecuentes</a></li>
         </ul>
         <ul class="footer-links">
             <li class="footer-links-title"><p>candidatos</p></li>
-            <li class="footer-links-a"><a href="">trabaja con nosotros</a></li>
-            <li class="footer-links-a"><a href="">informacion</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=work_with_us">trabaja con nosotros</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=work_with_us#info">informacion</a></li>
         </ul>
         <ul class="footer-links">
             <li class="footer-links-title"><p>noticias</p></li>
-            <li class="footer-links-a"><a href="">nuevas noticias</a></li>
-            <li class="footer-links-a"><a href="">empleo</a></li>
-            <li class="footer-links-a"><a href="">blog</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=index">nuevas noticias</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=index&categoria=empleo">empleo</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=index&categoria=blog">blog</a></li>
         </ul>
         <ul class="footer-links">
             <li class="footer-links-title"><p>quienes somos</p></li>
-            <li class="footer-links-a"><a href="">acerca de nosotros</a></li>
-            <li class="footer-links-a"><a href="">historia</a></li>
-            <li class="footer-links-a"><a href="">mision y vision</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=about">acerca de nosotros</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=about#history">historia</a></li>
+            <li class="footer-links-a"><a href="?c=index&m=about#mission">mision y vision</a></li>
         </ul>
     </nav>
     <div class="footer-info-container">

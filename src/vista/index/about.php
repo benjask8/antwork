@@ -12,11 +12,10 @@ require 'src/vista/partials/head.php';
     </div>
 </div>
 
-<div class="about-page-img">
+<div class="about-page-img" >
     <img src="https://www.unleashedsoftware.com/wp-content/uploads/2017/08/Fotolia_106861962_Subscription_Monthly_M.jpg" alt="">
 </div>
-
-<h3 class="big-title">Nuestra Historia</h3>
+<h3 class="big-title" id="history">Nuestra Historia</h3>
 <p class="more-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe numquam laudantium nisi labore debitis minima! Quisquam ut velit obcaecati earum esse et tempore exercitationem consequatur reiciendis! Necessitatibus, vel minima!
     
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.
@@ -28,7 +27,7 @@ require 'src/vista/partials/head.php';
 
 <!-- mision y vision -->
 
-<div class="mission">
+<div class="mission" id="mission">
     <h3 class="section-title big-title">Misión</h3>
     <p class="section-info more-info"><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam labore tenetur inventore aliquid beatae obcaecati ratione illum praesentium repudiandae officia dignissimos deserunt, dolorum iste rerum rem nostrum vitae provident eaque autem laudantium. Illo aperiam quos aliquid tempora, ex harum.</p>
 </div>
