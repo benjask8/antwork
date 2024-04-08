@@ -36,7 +36,7 @@
     'fecha' => '2024-03-15',
     'autor' => 'María Gómez',
     'contenido' => 'Descubre la nueva plataforma en línea de Antwork para una mejor experiencia de usuario.',
-    'vistas' => 55,
+    'vistas' => 57,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (

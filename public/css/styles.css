@@ -186,6 +186,7 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px;
 }
 
 .border-separator-border{
@@ -209,6 +210,13 @@ height: 100%;
   }
   
 
+.xl-title{
+    text-align: center;
+    color: rgb(189, 189, 189);
+    font-weight: 900;
+    font-size: 4em;
+    padding: 200px 0px;
+}
 
 .big-title{
     color: rgb(35, 35, 46);
@@ -472,7 +480,6 @@ height: 100%;
 
 .more-info{
     padding: 0px 30px;
-    padding-bottom: 40px;
     white-space: pre-line;
 }
 /* services endd */
@@ -860,6 +867,7 @@ height: 100%;
 
 /* footer */
 .footer {
+    margin-top: 20px;
     background-color: #222231; 
     display: flex;
     flex-direction: column;

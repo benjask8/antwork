@@ -131,13 +131,13 @@ if (isset($_GET['id'])) {
     } else {
         // Si no se encuentra la noticia, muestra un mensaje de que la noticia no existe
         ?>
-        <p>La noticia no existe.</p>
+        <p class="xl-title">La noticia no existe <i class="fa-solid fa-ban"></i></p>
         <?php
     }
 } else {
     // Si no hay ID de noticia en la URL, muestra un mensaje de error
     ?>
-    <p>No se proporcionó un ID de noticia.</p>
+    <p class="xl-title">No se proporcionó un ID de noticia <i class="fa-solid fa-ban"></i></p>
     <?php
 }
 ?>

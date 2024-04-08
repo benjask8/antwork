@@ -41,4 +41,27 @@ require 'src/vista/partials/head.php';
 
 <!-- mision y vision  end-->
 
+<div class="border-separator">
+    <div class="border-separator-border"></div>
+</div>
+
+<h3 class="big-title">Lorem, ipsum dolor.</h3>
+<p class="more-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptatem deleniti dolore illo. Explicabo, fuga quia, omnis consectetur vel porro quis adipisci et sapiente veritatis nihil doloremque voluptatum placeat earum error labore. Temporibus repellat debitis aperiam quia maiores distinctio. Dignissimos.</p>
+
+<h4 class="normal-title">1. Lorem ipsum dolor sit.</h4>
+<p class="more-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem quas accusamus ipsum ex quaerat sapiente similique qui, officiis, dignissimos nam magnam consectetur autem. Tenetur cumque voluptates magnam impedit doloremque?</p>
+
+
+<h4 class="normal-title">2. Lorem ipsum dolor sit.</h4>
+<p class="more-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem quas accusamus ipsum ex quaerat sapiente similique qui, officiis, dignissimos nam magnam consectetur autem. Tenetur cumque voluptates magnam impedit doloremque?</p>
+
+
+<h4 class="normal-title">3. Lorem ipsum dolor sit.</h4>
+<p class="more-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem quas accusamus ipsum ex quaerat sapiente similique qui, officiis, dignissimos nam magnam consectetur autem. Tenetur cumque voluptates magnam impedit doloremque?</p>
+
+
+<h4 class="normal-title">4. Lorem ipsum dolor sit.</h4>
+<p class="more-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem quas accusamus ipsum ex quaerat sapiente similique qui, officiis, dignissimos nam magnam consectetur autem. Tenetur cumque voluptates magnam impedit doloremque?</p>
+
+
 <?php require 'src/vista/partials/footer.php'; ?>
