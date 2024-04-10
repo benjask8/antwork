@@ -32,10 +32,17 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 </div>
 
-
-
+<!-- texto informativo start-->
+<div class="info-text">
+    <h2 class="big-title centred">Personal Temporal Capacitado para Tu Área</h2>
+    <p class="more-info centred">¿Necesitas apoyo puntual para tu proyecto? En nuestro equipo, entendemos la importancia de contar con colaboradores flexibles. Desde <b>tareas específicas hasta proyectos completos,</b> estamos listos para contribuir al éxito de tu empresa. ¡Hablemos!</p>
+</div>
+<!-- texto informativo end -->
 
 <!-- <h2 class="big-title">Cualidades</h2> -->
+
+<h2 class="qualities-title centred">Sobre Nuetros  <span class="span-big-b-border">Servicios</span> </h2>
+
 <div class="home-qualities">
     <div class="home-qualities-qualitie">
         <div class="home-qualities-qualitie-img">
@@ -45,7 +52,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         </div>
         <div class="home-qualities-qualitie-text">
             <p class="home-qualities-qualitie-text-title">Bajo Costo</p>
-            <p class="home-qualities-qualitie-text-info">Una informacion bastante detallada explicando la cualidad de la empresa en este apartado Lorem, ipsum dolor.</p>
+            <p class="home-qualities-qualitie-text-info">Ofrecemos soluciones asequibles para tus necesidades. Nuestro enfoque en la eficiencia nos permite mantener costos bajos sin comprometer la calidad. ¡Ahorra mientras obtienes resultados excepcionales!</p>
         </div>  
     </div>
     <div class="home-qualities-qualitie">
@@ -56,7 +63,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         </div>
         <div class="home-qualities-qualitie-text">
             <p class="home-qualities-qualitie-text-title">Carga y Descarga</p>
-            <p class="home-qualities-qualitie-text-info">Una informacion bastante detallada explicando la cualidad de la empresa en este apartado Lorem, ipsum dolor.</p>
+            <p class="home-qualities-qualitie-text-info">Nuestro equipo está capacitado para manejar todo, desde la carga hasta la descarga. Con experiencia en logística y seguridad, garantizamos un proceso fluido y sin complicaciones. Confía en nosotros para tus necesidades de transporte.</p>
         </div>  
     </div>
     <div class="home-qualities-qualitie">
@@ -67,7 +74,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         </div>
         <div class="home-qualities-qualitie-text">
             <p class="home-qualities-qualitie-text-title">Trabajo Eficiente</p>
-            <p class="home-qualities-qualitie-text-info">Una informacion bastante detallada explicando la cualidad de la empresa en este apartado Lorem, ipsum dolor.</p>
+            <p class="home-qualities-qualitie-text-info">La eficiencia es nuestra prioridad. Desde la planificación hasta la ejecución, optimizamos cada paso para maximizar la productividad. Obtén resultados rápidos y precisos con nuestro equipo altamente capacitado.</p>
         </div>  
     </div>
 </div>
@@ -83,8 +90,8 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         <img src="public/images/logo/ant_speak2.png" alt="">
     </div>
     <div class="about-text">
-        <h3 class="about-title">Acerca de antwork & Como trabajamos</h3>
-        <p class="about-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis molestias voluptates cumque quaerat. Modi ab repellendus, laborum deleniti tempore laudantium consequuntur pariatur commodi ipsam similique temporibus porro non dignissimos! Eos itaque error distinctio sapiente corrupti nemo odio, eius recusandae. Similique.</p>
+        <h3 class="about-title">Acerca de antwork & <span class="span-big-b-border">Como trabajamos</span></h3>
+        <p class="about-info">Bienvenidos a <b>antwork</b>. Somos un equipo apasionado que conecta talento con <b> oportunidades laborales</b>. Nuestra misión es simple pero <b>poderosa</b> : ayudar a las personas a encontrar trabajos temporales que se adapten a sus habilidades y necesidades.</p>
         <a href="?c=index&m=about" class="about-link">leer mas</a>
     </div>
 </div>
@@ -134,6 +141,16 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
     
 <!-- servicios end -->
 
+
+<!-- texto insentivo -->
+
+<div class="info-text-2">
+        <h3 class="centred">¿Buscas personal temporal para tu proyecto?</h3>
+        <h2 class="centred">Nosotros tenemos la solución. <br> <span class="span-big-b-border">Comencemos a trabajar juntos</span></h2>
+        <a href="https://tu-sitio-web.com/contacto" class="centred">Contáctanos ahora</a>
+    </div>
+
+<!-- texto insentivo end -->
 
 
 <!-- contact -->

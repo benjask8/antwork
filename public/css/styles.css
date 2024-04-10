@@ -157,9 +157,9 @@ height: 100%;
     color: var(--info-color);
     background-color: #fff;
     display: flex;
-    padding: 10px 14px; 
+    padding: 7px 14px; 
     margin: 2px;
-    font-weight: 700;   
+    font-weight: 500;   
     transition: all var(--time);
 }
 
@@ -202,6 +202,13 @@ height: 100%;
 /* .home-qualities start */
 
 
+.qualities-title{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 3em;
+    color: rgb(35, 35, 46);
+    margin: 20px 0px;
+}
 .home-qualities-qualitie {
     opacity: 0;
     transform: scale(0.4); /* Desplaza hacia abajo inicialmente */
@@ -230,12 +237,24 @@ height: 100%;
     padding: 10px 30px;
     padding-top: 20px;  
 }
+
+
+.span-big-b-border{
+    position: relative;
+    box-shadow: inset 0 -.7em 0 0 rgb(245, 177, 177);
+
+}
+
+.centred{
+    text-align: center;
+}
+
+
 .home-qualities{
     margin: 10px 0px;
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
     padding: 20px 0px;
     /* padding-top: 0px;
     margin-top: 0px; */
@@ -244,6 +263,8 @@ height: 100%;
 .home-qualities-qualitie{
     width: 350px;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     padding: 10px;
     cursor: pointer;
     margin: 0px 20px;
@@ -258,10 +279,9 @@ height: 100%;
     align-items: start;
     justify-content: center;
     width: 100%;
-    padding-bottom: 20px;
 }
 .home-qualities-qualitie-img span{
-    font-size: 4em;
+    font-size: 3.4em;
     color: var(--btn-bg-color);
     font-variation-settings:
     'FILL' 0,
@@ -274,14 +294,14 @@ height: 100%;
     flex-direction: column;
 }
 .home-qualities-qualitie-text-title{
-    text-transform: uppercase;
-    color: rgb(18, 18, 22);
+    text-transform: none;
+    color: rgb(42, 42, 44);
     font-size: 1.2em;
-    font-weight: 900;
+    font-weight: 700;
 }
 .home-qualities-qualitie-text-info{
     font-size: 1em;
-    color: rgb(25, 29, 66);
+    color: rgb(80, 74, 74);
 }
 
 
@@ -343,28 +363,28 @@ height: 100%;
 
 .about-title{
     width: 100%;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 2.3em;
-    color: var(--title-color);
+    color: rgb(35, 35, 46);
     padding-bottom: 20px;
 }
 .about-info{
     padding-bottom: 20px;
-    color: rgb(20, 20, 20);
+    color: rgb(80, 74, 74);
     font-size: 1.2em;
 }
 
 .about-link{
     
     background-color: var(--btn-bg-color);
-    color: #fff;
+    color: #ffffffc7;
     display: flex;
-    font-weight: 400;
-    font-size: 1em;
+    font-weight: 500;
+    font-size: 1.2em;
     width: max-content;
-    padding: 10px 25px;
+    padding: 5px 25px;
     text-transform: capitalize  ;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid var(--btn-bg-color);
     transition: all var(--time);
 }
@@ -1240,3 +1260,67 @@ height: 100%;
 }
 
 /* mision y .vision end*/
+
+
+
+
+
+/* infop text start*/
+.info-text{
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text h2{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.info-text p{
+    width: 80%;
+    color: rgb(70, 70, 70);
+}
+/* infop text end */
+
+
+
+/* infop text2 start*/
+.info-text-2{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text-2 h3{
+    color: rgb(53, 53, 53);
+}
+.info-text-2 h2{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 3em;
+    color: rgb(27, 27, 27);
+    width: 90%;
+    margin: 40px 0px;
+}
+
+.info-text-2 a{
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #bd1f1f;
+    border-bottom: 3px solid #bd1f1f;
+    transition: all var(--time);
+}
+
+
+.info-text-2 a:hover{
+    filter: brightness(1.7);
+    transform: scale(1.04);
+}
+/* infop text 2 end */
