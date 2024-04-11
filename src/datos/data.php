@@ -4,20 +4,29 @@
 $heroSlidesData = [
     [
         'title' => 'Especialistas en Personal Temporal',
-        'info' => 'Somos una empresa dedicada a ofrecer servicios especializados en personal Somos una empresa dedicada a ofrecer servicios especializados en personal',
+        'sub-title' => 'Personal Temporal Capacitado',
+        'info' => 'Somos una empresa dedicada a ofrecer servicios especializados en personal temporal. Contamos con un equipo altamente capacitado y experimentado para satisfacer las necesidades laborales de nuestros clientes.',
         'buttonText' => 'Ver más',
         'bgUrl' => 'https://vonhallerlaboratorios.com/attachments/Image/Von-Haller_-Trabaje-con-nosotros.jpg?template=generic',
-        'linkUrl' => 'goku.com'
+        'linkUrl' => '?'
     ],
     [
-        'title' => 'Otro Slide con titulo',
-        'info' => 'Cualquier informacion que se necesite',
-        'buttonText' => 'Un Boton',
-        'bgUrl' => 'https://helpx.adobe.com/content/dam/help/en/stock/how-to/upload-content-to-adobe-stock/jcr%3Acontent/main-pars/image_1756880638/upload-content-to-adobe-stock_1408x792.jpg.img.jpg',
-        'linkUrl' => 'vamos.com'
+        'title' => 'Liderando el campo del personal temporal',
+        'sub-title' => 'Líderes en Personal Temporal',
+        'info' => 'En Antwork, nos enorgullece ser líderes en el mercado de personal temporal. Con una trayectoria de excelencia y un enfoque centrado en el cliente.',
+        'buttonText' => 'Más información',
+        'bgUrl' => 'https://st4.depositphotos.com/9401270/41064/i/450/depositphotos_410641916-stock-photo-foreman-show-thumb-signal-working.jpg',
+        'linkUrl' => '?'
+    ],
+    [
+        'title' => 'Experiencia y Compromiso',
+        'sub-title' => 'Nuestra Trayectoria',
+        'info' => 'Con más de una década de experiencia en el sector de personal temporal, Antwork se ha ganado una reputación sólida por su excelencia, integridad y compromiso con el éxito del cliente. Nuestro equipo está formado por profesionales.',
+        'buttonText' => 'Descubrir más',
+        'bgUrl' => 'https://www.finra.org/sites/default/files/2022-08/investor-ed-rev2022-iStock1320686132-3870x1845.jpg',
+        'linkUrl' => '?'
     ]
 ];
-
 
 //preguntas frecuentes
 $preguntasRespuestas = [

@@ -189,4 +189,24 @@
     }
     /* .contact end */
 
+
+
+
+    
+
+    /* infop text start*/
+
+    .info-text p{
+        width: 98%;
+    }
+    /* infop text end */
+
+
+
+    /* info text 2 */
+    
+    .info-text-2 h2{
+        font-size: 2.3em;
+    }
+    /* info text 2 end*/
 }

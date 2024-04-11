@@ -22,6 +22,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         <div class="hero-swiper-slide-content">
           <div class="hero-swiper-slide-bg" style="background-image: url('<?php echo $slide['bgUrl']; ?>')"></div>
           <h2 class="hero-swiper-slide-title"><?php echo $slide['title']; ?></h2>
+          <h3 class="hero-swiper-slide-sub-title"><?php echo $slide['sub-title']; ?></h3>
           <p class="hero-swiper-slide-info"><?php echo $slide['info']; ?></p>
           <a href="<?php echo $slide['linkUrl']; ?>" class="hero-swiper-slide-a"><?php echo $slide['buttonText']; ?></a>
         </div>
@@ -41,7 +42,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 <!-- <h2 class="big-title">Cualidades</h2> -->
 
-<h2 class="qualities-title centred">Sobre Nuetros  <span class="span-big-b-border">Servicios</span> </h2>
+<h2 class="qualities-title centred">Sobre Nuetras  <span class="span-big-b-border">Cualidades</span> </h2>
 
 <div class="home-qualities">
     <div class="home-qualities-qualitie">
@@ -103,7 +104,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <!-- servicios -->
 <!-- servicios -->
 <div class="services-container">
-    <h2 class="services-title">Nuestros Servicios</h2>
+    <h2 class="services-title centred">Sobre Nuestros <span class="span-big-b-border">Servicios</span></h2>
     <div class="services">
         <div class="service-item" data-title="Carga y descarga jasjdajsdjas" data-info="info">
             <span class="service-item-icon material-symbols-outlined">groups</span>
@@ -147,10 +148,50 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <div class="info-text-2">
         <h3 class="centred">¿Buscas personal temporal para tu proyecto?</h3>
         <h2 class="centred">Nosotros tenemos la solución. <br> <span class="span-big-b-border">Comencemos a trabajar juntos</span></h2>
-        <a href="https://tu-sitio-web.com/contacto" class="centred">Contáctanos ahora</a>
-    </div>
-
+        <button class="centred" id="contact-modal-btn">Contáctanos ahora</button>
+</div>
 <!-- texto insentivo end -->
+
+
+
+
+
+
+<!-- contact modal -->
+<div class="contact-modal">
+        <div class="contact-modal-header">
+            <img src="public/images/logo/logo.png" alt="" class="contact-modal-logo">
+            <button class="close-contact-modal" id="close-contact-modal">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <div class="contact-modal-flex">
+            <div class="contact-modal-flex-text">
+                <h2>Contanos un Poco sobre tu Empresa</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sapiente minus eum omnis velit exercitationem distinctio porro iure odio laborum molestiae culpa et ab temporibus, illum totam, earum quaerat doloribus.s</p>
+            </div>
+            <form class="contact-modal-flex-form">
+                <h3>Datos de contacto</h3>
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+</div>
+<!-- contact modal end -->
+
+
+
 
 
 <!-- contact -->
@@ -235,6 +276,8 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 
 
+
+<script src="public/js/contact_modal.js"></script>
 <script type="module" src="public/js/frequent_questions.js"></script>
 <script src="public/js/services.js"></script>
 
