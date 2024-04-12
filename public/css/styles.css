@@ -17,6 +17,19 @@
     --ni-info-color:rgb(59, 59, 71);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0); /* Transparente */
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0); /* Transparente */
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -86,7 +99,7 @@ height: 100%;
 }
 .hero-swiper-slide-title{
     font-size: 4.3em;
-    width: 60%;
+    width: 80%;
     font-weight: 600;
 }
 .hero-swiper-slide-sub-title{
@@ -496,26 +509,39 @@ height: 100%;
 
 .services-modal-content{
     background-color: #fff;
-    border-radius: 20px;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     position: relative;
     padding: 40px;
 }
 
+.services-modal-title{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 3em;
+    color: rgb(35, 35, 46);
+    margin: 20px 0px;   
+}
+
+.services-modal-info{
+    
+    padding-bottom: 20px;
+    color: rgb(80, 74, 74);
+    font-size: 1.2em;
+}
 .close{
-    background-color: rgba(0, 0, 0, 0.116);
     padding: 5px 10px;
-    display: flex;
+    background-color: transparent;
+    border: none;
     width: max-content;
     font-size: 1.2em;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
+}
+.close span{
+    font-size: 1.5em;
 }
 
 .more-info{
@@ -1349,20 +1375,26 @@ height: 100%;
 /* contact modal */
 .contact-modal{
     box-sizing: content-box;
-    display: none;
+    display: flex;
     flex-direction: column;
     position:fixed;
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100vh;
-    top: 0px;
+    top: 1110px;
+    opacity: 0;
+    transform: scale(0.1);
     overflow-y: scroll;
     left: 0px;
     color: #fff;
     z-index: 3010312123123;
+    transition: all .4s, opacity .7s;
 }
 
 .open{
+    transform: scale(1);
+    opacity: 1;
+    top: 0px;
     display: flex !important;
 }
 
@@ -1378,7 +1410,7 @@ height: 100%;
 }
 
 .contact-modal-logo{
-    width: 100px;
+    width: 50px;
 }
 
 .close-contact-modal{
@@ -1407,7 +1439,7 @@ height: 100%;
 }
 .contact-modal-flex-text p{
     color: #ffffffb9;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .contact-modal-flex-form{
     width: 60%;
@@ -1448,8 +1480,9 @@ height: 100%;
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: none;
+    transition: all var(--time);
     outline: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.795);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.795);
 }
 
 
@@ -1462,7 +1495,25 @@ height: 100%;
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.795);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.795);
+    transition: all var(--time);
+}
+
+
+.contact-modal-flex-form button{
+    background-color: var(--btn-bg-color);
+    padding: 10px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid var(--btn-bg-color);
+    transition: all var(--time);
+}
+
+.contact-modal-flex-form button:hover{
+    background-color: transparent;
+    color: var(--btn-bg-color);
 }
 
 

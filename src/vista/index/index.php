@@ -121,7 +121,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
             <h4 class="service-item-title">Servicio de Ingeniería Especializada</h4>
             <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
         </div>
-        <div class="service-item" data-title="Seguridad encriptada" data-info="Detalles sobre seguridad encriptada">
+        <div class="service-item" data-title="Seguridad encriptada" data-info="Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada">
             <span class="service-item-icon material-symbols-outlined">encrypted</span>
             <h4 class="service-item-title">Servicio de Seguridad Encriptada</h4>
             <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
@@ -134,8 +134,11 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
     <!-- Modal -->
     <div id="myModal" class="services-modal">
         <div class="services-modal-content">
-            <span class="close">&times;</span>
-            <h4 id="modal-title" class="services-modal-title"></h4>
+            <button class="close" aria-label="Cerrar modal de services">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+
+            <h4 id="modal-title" class="services-modal-title centred"></h4>
             <p id="modal-info" class="services-modal-info"></p>
         </div>
     </div>
@@ -158,19 +161,20 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 
 <!-- contact modal -->
-<div class="contact-modal">
-        <div class="contact-modal-header">
-            <img src="public/images/logo/logo.png" alt="" class="contact-modal-logo">
-            <button class="close-contact-modal" id="close-contact-modal">
-                <span class="material-symbols-outlined">close</span>
-            </button>
-        </div>
+<div class="contact-modal" role="dialog" aria-labelledby="contact-modal-heading" aria-describedby="contact-modal-description">
+    <div class="contact-modal-header">
+        <img src="public/images/logo/mini-logo.png" alt="Logo de la empresa" class="contact-modal-logo">
+        <button class="close-contact-modal" id="close-contact-modal" aria-label="Cerrar modal de contacto">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+    <div class="contact-modal-content">
         <div class="contact-modal-flex">
             <div class="contact-modal-flex-text">
-                <h2>Contanos un Poco sobre tu Empresa</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sapiente minus eum omnis velit exercitationem distinctio porro iure odio laborum molestiae culpa et ab temporibus, illum totam, earum quaerat doloribus.s</p>
+                <h2 id="contact-modal-heading">Contáctanos para obtener más información</h2>
+                <p id="contact-modal-description">Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día. Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
             </div>
-            <form class="contact-modal-flex-form">
+            <form class="contact-modal-flex-form" action="/enviar-mensaje" method="post">
                 <h3>Datos de contacto</h3>
                 <label for="name">Nombre completo</label>
                 <input type="text" id="name" name="name" required>
@@ -187,7 +191,9 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
                 <button type="submit">Enviar</button>
             </form>
         </div>
+    </div>
 </div>
+
 <!-- contact modal end -->
 
 

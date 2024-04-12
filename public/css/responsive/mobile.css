@@ -1,26 +1,37 @@
 @media only screen and (max-width: 540px) {
     /* Estilos para teléfono celular */
 
-    /* HOME */
-    .big-title{
-        padding: 10px 20px;
-    }
-    .hero-swiper{
-        padding: 0px;
+     /* hero */
+
+     .hero-swiper{
         height: 90vh;
-    }
-    .hero-swiper-slide-content{
         padding: 0px;
+     }
+     .hero-swiper-slide{
+        height: 100%;
+     }
+     .hero-swiper-slide-content{
+        padding: 40px 10px;
+        justify-content: start;
     }
+    
     .hero-swiper-slide-title{
-        font-size: 2.3em ;
+        font-size: 2.3em;
+        width: 100%;
     }
-    /* HOME  END*/
+    .hero-swiper-slide-sub-title{
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .hero-swiper-slide-info{
+        width: 100%;
+        font-size: 1.2em;
+    } 
+    /* hero end */
 
     /* .frequent_questions */
-    .frequent_questions{
 
-    }
     .frequent_questions-img{
         display: none;
     }
@@ -94,48 +105,27 @@
 /* news end */
 
 
-/* new */
-.new-container{
-    padding: 0px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(243, 243, 243);
-}
-.new-item{
-    width: 100%;
-    padding: 0px 5px;
-}
+    /* new */
+    .new-container{
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(243, 243, 243);
+    }
+    .new-item{
+        width: 100%;
+        padding: 0px 5px;
+    }
 
-.new-title{
-    font-size: 1.5em;
-}
-.new-img{
-}
-.new-content{
-}   
-.new-info{
-}
+    .new-title{
+        font-size: 1.5em;
+    }
 
-
-.more-news{
-    width: 100%;
-    padding: 20px 5px;
-}
-.more-news-title{
-}
-
-.more-news-item{
-}
-
-.more-news-item-title{
-}
-.more-news-item-title a{
-}
-.more-news-item-title a:hover{
-}
-.more-news-item-info{
-}
-/* new end */
+    .more-news{
+        width: 100%;
+        padding: 20px 5px;
+    }
+    /* new end */
 
 
 
@@ -209,4 +199,71 @@
         font-size: 2.3em;
     }
     /* info text 2 end*/
+
+
+
+
+
+
+
+
+
+    /* contact modal */
+
+    .contact-modal-header{
+        padding: 0px 10px;
+        padding-top: 10px;
+    }
+
+    .contact-modal-flex{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-modal-flex-text{
+        width: 100%;
+    }
+    .contact-modal-flex-form{
+        width: 100%;
+        padding: 0px;
+        padding-top: 30px;
+    }
+
+
+    .contact-modal-flex-text h2{
+        font-size: 2em;
+    }
+
+    .contact-modal-flex-text p{
+        font-size: 1em;
+    }
+
+    /* contact modal end */
+
+
+    /* services modal */
+    
+    .services-modal-content{
+        padding: 40px 20px;
+    }
+
+    .services-modal-title{
+        font-size: 1.3em;
+    }
+    /* services modal end */
+
+    
+
+
+    /* home qualities  */
+    .home-qualities-qualitie{
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+    }
+    .home-qualities-qualitie-text{
+        padding: 0px;
+    }
+    /* home qualities  end*/
+
 }
