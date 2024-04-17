@@ -2,35 +2,28 @@
 require 'src/vista/partials/head.php';
 require 'src/datos/newsData.php';
 
-// Número de noticias por página en la sección de noticias del index
 $noticias_por_pagina_index = 5;
-
-// Obtener todas las noticias disponibles
-// Suponiendo que $noticias es tu array de noticias proveniente de newsData.php
 $noticias_todas = $noticias; 
-
-// Obtener las últimas 5 noticias para mostrar en la página de inicio
 $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_index);
-
 ?>
-<div class="swiper hero-swiper">
-  <div class="swiper-wrapper">
-    <?php
-    foreach ($heroSlidesData as $index => $slide) :
-    ?>
-      <div class="swiper-slide hero-swiper-slide hero-swiper-slide-<?php echo $index + 1; ?>">
-        <div class="hero-swiper-slide-content">
-          <div class="hero-swiper-slide-bg" style="background-image: url('<?php echo $slide['bgUrl']; ?>')"></div>
-          <h2 class="hero-swiper-slide-title"><?php echo $slide['title']; ?></h2>
-          <h3 class="hero-swiper-slide-sub-title"><?php echo $slide['sub-title']; ?></h3>
-          <p class="hero-swiper-slide-info"><?php echo $slide['info']; ?></p>
-          <a href="<?php echo $slide['linkUrl']; ?>" class="hero-swiper-slide-a"><?php echo $slide['buttonText']; ?></a>
-        </div>
-      </div>
-    <?php endforeach; ?>
-  </div>
-  <div class="swiper-pagination"></div>
 
+<div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+        <?php foreach ($heroSlidesData as $index => $slide) : ?>
+        <div class="swiper-slide hero-swiper-slide hero-swiper-slide-<?php echo $index + 1; ?>">
+            <div class="hero-swiper-slide-content">
+            <div class="hero-swiper-slide-bg" style="background-image: url('<?php echo $slide['bgUrl']; ?>')"></div>
+            <h2 class="hero-swiper-slide-title"><?php echo $slide['title']; ?></h2>
+            <h3 class="hero-swiper-slide-sub-title"><?php echo $slide['sub-title']; ?></h3>
+            <p class="hero-swiper-slide-info"><?php echo $slide['info']; ?></p>
+            <a href="<?php echo $slide['linkUrl']; ?>" class="hero-swiper-slide-a"><?php echo $slide['buttonText']; ?></a>
+            </div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
 
 <!-- texto informativo start-->
@@ -40,50 +33,6 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 </div>
 <!-- texto informativo end -->
 
-<!-- <h2 class="big-title">Cualidades</h2> -->
-
-<h2 class="qualities-title centred">Sobre Nuetras  <span class="span-big-b-border">Cualidades</span> </h2>
-
-<div class="home-qualities">
-    <div class="home-qualities-qualitie">
-        <div class="home-qualities-qualitie-img">
-            <span class="material-symbols-outlined">
-                savings
-            </span>
-        </div>
-        <div class="home-qualities-qualitie-text">
-            <p class="home-qualities-qualitie-text-title">Bajo Costo</p>
-            <p class="home-qualities-qualitie-text-info">Ofrecemos soluciones asequibles para tus necesidades. Nuestro enfoque en la eficiencia nos permite mantener costos bajos sin comprometer la calidad. ¡Ahorra mientras obtienes resultados excepcionales!</p>
-        </div>  
-    </div>
-    <div class="home-qualities-qualitie">
-        <div class="home-qualities-qualitie-img">
-            <span class="material-symbols-outlined">
-                local_shipping
-            </span>
-        </div>
-        <div class="home-qualities-qualitie-text">
-            <p class="home-qualities-qualitie-text-title">Carga y Descarga</p>
-            <p class="home-qualities-qualitie-text-info">Nuestro equipo está capacitado para manejar todo, desde la carga hasta la descarga. Con experiencia en logística y seguridad, garantizamos un proceso fluido y sin complicaciones. Confía en nosotros para tus necesidades de transporte.</p>
-        </div>  
-    </div>
-    <div class="home-qualities-qualitie">
-        <div class="home-qualities-qualitie-img">
-            <span class="material-symbols-outlined">
-                schedule
-            </span>
-        </div>
-        <div class="home-qualities-qualitie-text">
-            <p class="home-qualities-qualitie-text-title">Trabajo Eficiente</p>
-            <p class="home-qualities-qualitie-text-info">La eficiencia es nuestra prioridad. Desde la planificación hasta la ejecución, optimizamos cada paso para maximizar la productividad. Obtén resultados rápidos y precisos con nuestro equipo altamente capacitado.</p>
-        </div>  
-    </div>
-</div>
-
-
-<div class="border-separator">
-    <div class="border-separator-border"></div>
-</div>
 
 <!-- about -->
 <div class="about-container">
@@ -98,167 +47,133 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 </div>
 <!-- about end -->
 
-
-
-
-<!-- servicios -->
 <!-- servicios -->
 <div class="services-container">
     <h2 class="services-title centred">Sobre Nuestros <span class="span-big-b-border">Servicios</span></h2>
     <div class="services">
-        <div class="service-item" data-title="Carga y descarga jasjdajsdjas" data-info="info">
-            <span class="service-item-icon material-symbols-outlined">groups</span>
-            <h4 class="service-item-title">un titulo acerca de</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
-        <div class="service-item" data-title="Envío local" data-info="Información sobre el envío local">
-            <span class="service-item-icon material-symbols-outlined">local_shipping</span>
-            <h4 class="service-item-title">Servicio de Envío Local</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
-        <div class="service-item" data-title="Ingeniería especializada" data-info="Detalles de ingeniería especializada">
-            <span class="service-item-icon material-symbols-outlined">engineering</span>
-            <h4 class="service-item-title">Servicio de Ingeniería Especializada</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
-        <div class="service-item" data-title="Seguridad encriptada" data-info="Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada Detalles sobre seguridad encriptada">
-            <span class="service-item-icon material-symbols-outlined">encrypted</span>
-            <h4 class="service-item-title">Servicio de Seguridad Encriptada</h4>
-            <p class="service-item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur .</p>
-        </div>
+        <?php foreach ($services as $index => $service): ?>
+            <div class="service-item" onclick="openModal(<?= $index ?>)" data-title="<?= $service['title'] ?>" data-info="<?= $service['info'] ?>">
+                <span class="service-item-icon material-symbols-outlined"><?= $service['icon'] ?></span>
+                <h4 class="service-item-title"><?= $service['pre-title'] ?></h4>
+                <p class="service-item-info"><?= $service['pre-info'] ?></p>
+            </div>
+        <?php endforeach; ?>
     </div>
 </div>
-
-
- 
-    <!-- Modal -->
-    <div id="myModal" class="services-modal">
-        <div class="services-modal-content">
-            <button class="close" aria-label="Cerrar modal de services">
-                <span class="material-symbols-outlined">close</span>
-            </button>
-
-            <h4 id="modal-title" class="services-modal-title centred"></h4>
-            <p id="modal-info" class="services-modal-info"></p>
-        </div>
+<div id="myModal" class="services-modal">
+    <div class="services-modal-content">
+        <button class="close" aria-label="Cerrar modal de services">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <h4 id="modal-title" class="services-modal-title centred"></h4>
+        <p id="modal-info" class="services-modal-info"></p>
     </div>
-    
+</div>
 <!-- servicios end -->
 
 
 <!-- texto insentivo -->
-
 <div class="info-text-2">
-        <h3 class="centred">¿Buscas personal temporal para tu proyecto?</h3>
+        <h3 class="centred">¿Buscas personal temporal <strong>indmediato</strong> para tu proyecto?</h3>
         <h2 class="centred">Nosotros tenemos la solución. <br> <span class="span-big-b-border">Comencemos a trabajar juntos</span></h2>
-        <button class="centred" id="contact-modal-btn">Contáctanos ahora</button>
+        <a  href="?c=index&m=contact" class="centred" id="contact-modal-btn">Contáctanos ahora</a>
 </div>
 <!-- texto insentivo end -->
 
 
+<!-- Cualidades-->
+<h2 class="qualities-title centred">Sobre Nuetras  <span class="span-big-b-border">Cualidades</span> </h2>
 
-
+<div class="home-qualities">
+    <div class="home-qualities-qualitie">
+        <div class="home-qualities-qualitie-img">
+            <span class="material-symbols-outlined">
+                compare_arrows 
+            </span>
+        </div>
+        <div class="home-qualities-qualitie-text">
+            <p class="home-qualities-qualitie-text-title">Flexiblidad</p>
+            <p class="home-qualities-qualitie-text-info">Capacidad para adaptarse a las necesidades cambiantes de los clientes y del mercado laboral.</p>
+        </div>  
+    </div>
+    <div class="home-qualities-qualitie">
+        <div class="home-qualities-qualitie-img">
+            <span class="material-symbols-outlined">
+                error
+            </span>
+        </div>
+        <div class="home-qualities-qualitie-text">
+            <p class="home-qualities-qualitie-text-title">Resolución de problemas</p>
+            <p class="home-qualities-qualitie-text-info">Capacidad para abordar desafíos y encontrar soluciones efectivas en situaciones diversas.</p>
+        </div>  
+    </div>
+    <div class="home-qualities-qualitie">
+        <div class="home-qualities-qualitie-img">
+            <span class="material-symbols-outlined">
+                groups
+            </span>
+        </div>
+        <div class="home-qualities-qualitie-text">
+            <p class="home-qualities-qualitie-text-title">Selección cuidadosa del personal</p>
+            <p class="home-qualities-qualitie-text-info">Proceso de reclutamiento y selección que garantice la idoneidad y el compromiso de los empleados temporales.</p>
+        </div>  
+    </div>
+    <div class="home-qualities-qualitie">
+        <div class="home-qualities-qualitie-img">
+            <span class="material-symbols-outlined">
+                school
+            </span>
+        </div>
+        <div class="home-qualities-qualitie-text">
+            <p class="home-qualities-qualitie-text-title">Capacitación y desarrollo</p>
+            <p class="home-qualities-qualitie-text-info"> Ofrecimiento de oportunidades de capacitación y desarrollo profesional para mejorar las habilidades y competencias del personal temporal.</p>
+        </div>  
+    </div>
+</div>
+<!-- Cualidades end-->
 
 
 <!-- contact modal -->
-<div class="contact-modal" role="dialog" aria-labelledby="contact-modal-heading" aria-describedby="contact-modal-description">
-    <div class="contact-modal-header">
-        <img src="public/images/logo/mini-logo.png" alt="Logo de la empresa" class="contact-modal-logo">
-        <button class="close-contact-modal" id="close-contact-modal" aria-label="Cerrar modal de contacto">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div>
+<div class="contact-modal-2 open" role="dialog" aria-labelledby="contact-modal-heading" aria-describedby="contact-modal-description">
     <div class="contact-modal-content">
         <div class="contact-modal-flex">
             <div class="contact-modal-flex-text">
-                <h2 id="contact-modal-heading">Contáctanos para obtener más información</h2>
-                <p id="contact-modal-description">Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día. Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
+                <h2 id="contact-modal-heading">Contáctanos para calcular su presupuesto</h2>
+                <img src="public/images/logo/ant_contact.png" alt="">
+                <p id="contact-modal-description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
+                <p id="contact-modal-description-2">Estamos aquí para brindarte toda la ayuda que necesites en cualquier momento del día. Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
             </div>
-            <form class="contact-modal-flex-form" action="/enviar-mensaje" method="post">
+            <form id="contactForm" class="contact-modal-flex-form" method="post">
                 <h3>Datos de contacto</h3>
-                <label for="name">Nombre completo</label>
-                <input type="text" id="name" name="name" required>
+                <label class="contact-modal-label" for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
+                <label class="contact-modal-label" for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
 
-                <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone">
+                <label class="contact-modal-label" for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
 
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <label class="contact-modal-label" for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
                 <button type="submit">Enviar</button>
+                <p class="msg-p" id="msgP"></p>
             </form>
         </div>
     </div>
 </div>
-
 <!-- contact modal end -->
 
 
-
-
-
-<!-- contact -->
-
-<div class="contact-form-container">
-    <div class="contact-form-img">
-        <img src="public/images/logo/ant_contact.png" alt="">
-    </div>
-    <form id="contactForm" class="contact-form">
-    <h1 class="contact-form-title">Contacta Con Nosotros</h1>
-    <p class="contact-form-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, cupiditate?</p>
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
-    <button type="submit">Enviar</button>
-    <p class="msg-p" id="msgP"></p>
-</form>
-</div>
-<!-- contact  end-->
-
-
-
-
-<!-- Agregar noticias aquí -->
-<div class="news-section">
-    <h2 class="normal-title">Últimas Noticias</h2>
-    <div class="news-container">
-        <?php
-        // Obtener las últimas 5 noticias
-        $ultimas_noticias = array_slice($noticias_todas, 0, 5);
-        
-        foreach ($ultimas_noticias as $noticia) : ?>
-            <a href="?c=index&m=new&id=<?php echo $noticia['id']; ?>" class="news-item">
-                <img src="<?php echo $noticia['img']; ?>" alt="" class="news-img">
-                <h3 class="news-title">
-                    <?php echo strlen($noticia['titulo']) > 100 ? substr($noticia['titulo'], 0, 100) . "..." : $noticia['titulo']; ?>
-                </h3>
-                <p class="news-content">
-                    <?php echo strlen($noticia['contenido']) > 50 ? substr($noticia['contenido'], 0, 50) . "..." : $noticia['contenido']; ?>
-                </p>
-                <p class="news-info"><?php echo date('d/m/Y', strtotime($noticia['fecha'])); ?></p>
-            </a>
-        <?php endforeach; ?>
-    </div>
-    <a href="?c=index&m=news" class="view-more-news">Ver Todas las Noticias</a>
-</div>
-
-
-
-
-
 <!-- frequen questions -->
-
 <div class="frequent_questions-box">
     <div class="frequent_questions-img">
         <img src="public/images/logo/ant_tink.png" alt="">
     </div>
     <div class="frequent_questions-text">
         <h2 class="frequent_questions-text-title">
-            Preguntas Frecuentes sobre Antwork
+            Preguntas Frecuentes sobre <span class="span-big-b-border">Antwork</span>
         </h2>
         <p class="frequent_questions-text-info">
             Encuentra respuestas a las preguntas más comunes sobre Antwork, tu empresa de personal temporal especializada en carga y descarga.
@@ -277,20 +192,66 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         </ul>
     </div>
 </div>
-
 <!-- frequen questions end-->
 
 
 
+<!-- Noticias -->
+<div class="news-section">
+    <h2 class="normal-title">Últimas Noticias</h2>
+    <div class="news-container">
+        <?php
+        $ultimas_noticias = array_slice($noticias_todas, 0, 5);
+        
+        foreach ($ultimas_noticias as $noticia) : ?>
+            <a href="?c=index&m=new&id=<?php echo $noticia['id']; ?>" class="news-item">
+                <img src="<?php echo $noticia['img']; ?>" alt="" class="news-img">
+                <h3 class="news-title">
+                    <?php echo strlen($noticia['titulo']) > 100 ? substr($noticia['titulo'], 0, 100) . "..." : $noticia['titulo']; ?>
+                </h3>
+                <p class="news-content">
+                    <?php echo strlen($noticia['contenido']) > 50 ? substr($noticia['contenido'], 0, 50) . "..." : $noticia['contenido']; ?>
+                </p>
+                <p class="news-info"><?php echo date('d/m/Y', strtotime($noticia['fecha'])); ?></p>
+            </a>
+        <?php endforeach; ?>
+    </div>
+    <a href="?c=index&m=news" class="view-more-news">Ver Todas las Noticias</a>
+</div>
+<!-- Noticias  end-->
+
+
+<script>    
+    document.title = "Inicio | AntWork";
+    
+    function openModal(index) {
+        const modal = document.getElementById('myModal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalInfo = document.getElementById('modal-info');
+        const service = <?= json_encode($services) ?>[index];
+
+        modalTitle.textContent = service['title'];
+        modalInfo.textContent = service['info'];
+        modal.classList.add('services-modal-open');
+    }
+
+    document.querySelector('.close').addEventListener('click', function() {
+        const modal = document.getElementById('myModal');
+        modal.classList.remove('services-modal-open');
+    });
+
+    window.addEventListener('click', (event) => {
+        const modal = document.getElementById('myModal');
+        if (event.target == modal) {
+            modal.classList.remove('services-modal-open'); 
+        }
+    });
+</script>
 
 <script src="public/js/contact_modal.js"></script>
 <script type="module" src="public/js/frequent_questions.js"></script>
-<script src="public/js/services.js"></script>
-
 <script type="module" src="public/js/swiper.js"></script>
-
-<script src="fetch/contact.js">
-</script>
+<script src="fetch/contact.js"></script>
 
 <?php
 require 'src/vista/partials/footer.php';

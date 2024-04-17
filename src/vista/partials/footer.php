@@ -37,6 +37,9 @@
                 <li class="footer-social-li"><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
                 <li class="footer-social-li"><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
             </ul>
+            <p class="copyright-p">
+                <i class="fa-solid fa-envelope"></i> <a href="mailto:clientes@antworkuy.com.uy">clientes@antworkuy.com.uy</a>
+            </p>
         </nav>
 
         <p class="copyright-p">Derechos de autor © <?php echo date("Y"); ?> Antwork. Todos los derechos reservados.

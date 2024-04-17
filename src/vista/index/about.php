@@ -63,4 +63,8 @@ require 'src/vista/partials/head.php';
 <p class="more-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem quas accusamus ipsum ex quaerat sapiente similique qui, officiis, dignissimos nam magnam consectetur autem. Tenetur cumque voluptates magnam impedit doloremque?</p>
 
 
+<script>    
+    document.title = "Acerca de | AntWork";
+</script>    
+
 <?php require 'src/vista/partials/footer.php'; ?>

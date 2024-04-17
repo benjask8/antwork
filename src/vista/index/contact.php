@@ -3,10 +3,10 @@ require 'src/vista/partials/head.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configura PHPMailer
     $mail = new PHPMailer(true);
-
 
     try {
         // Configura el servidor de correo saliente (SMTP)
@@ -19,20 +19,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port       = 587; // Puerto SMTP de Gmail
 
         $mail->setFrom('rosanojuan65@gmail.com', 'Tu Nombre'); // Tu dirección de correo y tu nombre
-        $mail->addAddress('rosanojuan65@gmail.com', 'Nombre Destinatario'); // La dirección de correo del destinatario y su nombre
-
-        $mail->Subject = 'Asunto del correo';
-        $mail->Body    = 'Contenido del correo';
-
-        // Envía el correo electrónico
-        $mail->send();
+        $mail->addAddress('clientes@antworkuy.com.uy', 'Nombre Destinatario'); // La dirección de correo del destinatario y su nombre
 
         // Configura el asunto y el cuerpo del correo
         $mail->Subject = 'Mensaje de contacto';
-        $mail->Body    = 'Nombre: ' . $_POST['nombre'] . '<br>' .
-                         'Correo electrónico: ' . $_POST['correo'] . '<br>' .
-                         'Teléfono: ' . $_POST['telefono'] . '<br>' .
-                         'Mensaje: ' . $_POST['mensaje'];
+        $mail->Body = '
+            <html>
+            <head>
+                <style>
+                    /* Estilos CSS en línea */
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+                    .container {
+                        max-width: 600px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        background-color: #fff;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
+                    h1 {
+                        color: #007bff;
+                    }
+                    p {
+                        margin-bottom: 20px;
+                    }
+                    strong {
+                        color: #333;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Mensaje de contacto</h1>
+                    <p><strong>Nombre:</strong> ' . $_POST['nombre'] . '</p>
+                    <p><strong>Correo electrónico:</strong> ' . $_POST['correo'] . '</p>
+                    <p><strong>Teléfono:</strong> ' . $_POST['telefono'] . '</p>
+                    <p><strong>Mensaje:</strong> ' . $_POST['mensaje'] . '</p>
+                </div>
+            </body>
+            </html>
+        ';
+
+        $mail->CharSet = 'UTF-8'; // Establece el juego de caracteres como UTF-8
+        $mail->IsHTML(true);
 
         // Envía el correo electrónico
         $mail->send();
@@ -43,33 +76,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<div class="contact-form-container">
-    <div class="contact-form-img">
-        <img src="public/images/logo/ant_contact.png" alt="">
-    </div>
-    <form id="contactForm" class="contact-form">
-    <h1 class="contact-form-title">Contacta Con Nosotros</h1>
-    <p class="contact-form-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, cupiditate?</p>
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
-    <button type="submit">Enviar</button>
-    <p class="msg-p" id="msgP"></p>
-</form>
 
+
+
+<!-- contact modal -->
+<div class="contact-modal-2 open" role="dialog" aria-labelledby="contact-modal-heading" aria-describedby="contact-modal-description">
+    <div class="contact-modal-content">
+        <div class="contact-modal-flex">
+            <div class="contact-modal-flex-text">
+                <h2 id="contact-modal-heading">Contáctanos para obtener más información</h2>
+                <img src="public/images/logo/ant_contact.png" alt="">
+                <p id="contact-modal-description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
+                <p id="contact-modal-description-2">Estamos aquí para brindarte toda la ayuda que necesites en cualquier momento del día. Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
+            </div>
+            <form id="contactForm" class="contact-modal-flex-form" method="post">
+                <h3>Datos de contacto</h3>
+                <label class="contact-modal-label" for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label class="contact-modal-label" for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label class="contact-modal-label" for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label class="contact-modal-label" for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <p class="msg-p" id="msgP"></p>
+            </form>
+        </div>
+    </div>
 </div>
 
-<h3 class="normal-title">Contactate con nosotros</h3>
-    <p class="more-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe numquam laudantium nisi labore debitis minima! Quisquam ut velit obcaecati earum esse et tempore exercitationem consequatur reiciendis! Necessitatibus, vel minima!
+<!-- contact modal end -->
 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.
+<script>    
+    document.title = "Contacto | AntWork";
+</script>    
+<script src="public/js/contact_modal.js"></script>
 
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi itaque quo voluptate exercitationem obcaecati. Cumque quod quos, repellat sed consequuntur dolores optio, dicta quasi possimus est, ex magnam eaque praesentium. Tenetur consequatur molestiae optio laboriosam quas adipisci deleniti, quidem magni unde quod neque perspiciatis natus aliquam dolore eius explicabo. Libero minus dolor amet magni vel soluta ratione illo magnam incidunt consequatur blanditiis dolores voluptatibus sit enim accusantium itaque, quis id iusto ad impedit quisquam quae assumenda ut fuga! Quaerat odit quidem, quod nemo numquam sunt ullam maxime sit dignissimos eos sed atque voluptatem rerum voluptatibus a cum sint? Quidem, vel?
 
-    </p>
-
+    
 <?php require 'src/vista/partials/footer.php'; ?>
-
 <script src="fetch/contact.js">
 </script>

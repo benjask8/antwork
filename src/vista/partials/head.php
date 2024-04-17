@@ -1,6 +1,4 @@
-<?php
-require 'src/datos/data.php';
-?>
+<?php require 'src/datos/data.php';?>
 <!doctype html>
 <html lang="en">
 
@@ -9,6 +7,9 @@ require 'src/datos/data.php';
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AntWork</title>
   <link rel="icon" href="public/images/logo/mini-logo.png" type="image/x-icon">
+
+  <!-- para zoom de inputs -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 
   <!-- Estilos css -->
@@ -37,7 +38,7 @@ require 'src/datos/data.php';
 <body>
   
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="header-logo">
       <a class="header-logo-a" href="?c=index&m=index"><img class="header-logo-img" src="public/images/logo/logo.png" alt=""></a>
     </div>
@@ -61,4 +62,23 @@ require 'src/datos/data.php';
     </div>
   </header>
 
+
+  
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header');
+    const scrollThreshold = 200; // Píxeles de desplazamiento antes de activar el encabezado
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > scrollThreshold) {
+            header.classList.add('active');
+        } else {
+            header.classList.remove('active');
+        }
+    });
+});
+
+</script>
   <section class="container-fluid">

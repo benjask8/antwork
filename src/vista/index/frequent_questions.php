@@ -40,6 +40,9 @@ require 'src/vista/partials/head.php';
     </p>
 <script type="module" src="public/js/frequent_questions.js"></script>
 
+<script>    
+    document.title = "Preguntas Frecuentes | AntWork";
+</script>    
 <?php
 require 'src/vista/partials/footer.php';
 ?>

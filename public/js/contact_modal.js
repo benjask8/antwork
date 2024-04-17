@@ -1,11 +1,3 @@
-document.getElementById('contact-modal-btn').addEventListener('click', function() {
-    document.querySelector('.contact-modal').classList.toggle('open');
-});
-
-document.getElementById('close-contact-modal').addEventListener('click', function() {
-    document.querySelector('.contact-modal').classList.toggle('open');
-});
-
 const labels = document.querySelectorAll('.contact-modal-flex-form label');
 
 labels.forEach(label => {
