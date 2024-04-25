@@ -3,28 +3,28 @@
 // hero slides
 $heroSlidesData = [
     [
-        'title' => 'Especialistas en Personal Temporal',
-        'sub-title' => 'Personal Temporal Capacitado',
-        'info' => 'Somos una empresa dedicada a ofrecer servicios especializados en personal temporal. Contamos con un equipo altamente capacitado y experimentado para satisfacer las necesidades laborales de nuestros clientes.',
-        'buttonText' => 'Ver más',
+        'title' => 'Servicios de Personal Temporal',
+        'sub-title' => 'Personal Temporal de Calidad',
+        'info' => 'En nuestra empresa, nos dedicamos a proporcionar servicios de personal temporal de alta calidad. Contamos con un equipo altamente capacitado y comprometido para satisfacer las necesidades laborales de nuestros clientes de manera efectiva.',
+        'buttonText' => 'Descubre más',
         'bgUrl' => 'https://vonhallerlaboratorios.com/attachments/Image/Von-Haller_-Trabaje-con-nosotros.jpg?template=generic',
-        'linkUrl' => '?'
+        'linkUrl' => '#'
     ],
     [
-        'title' => 'Liderando el campo del personal temporal',
-        'sub-title' => 'Líderes en Personal Temporal',
-        'info' => 'En Antwork, nos enorgullece ser líderes en el mercado de personal temporal. Con una trayectoria de excelencia y un enfoque centrado en el cliente.',
-        'buttonText' => 'Más información',
+        'title' => 'Compromiso con la Excelencia',
+        'sub-title' => 'Excelencia en Servicios Temporales',
+        'info' => 'En Antwork, nos esforzamos por brindar servicios temporales de la más alta calidad. Nos enorgullece nuestra dedicación a la excelencia y nuestro compromiso con la satisfacción del cliente en todo momento.',
+        'buttonText' => 'Más detalles',
         'bgUrl' => 'https://st4.depositphotos.com/9401270/41064/i/450/depositphotos_410641916-stock-photo-foreman-show-thumb-signal-working.jpg',
-        'linkUrl' => '?'
+        'linkUrl' => '#'
     ],
     [
-        'title' => 'Experiencia y Compromiso',
+        'title' => 'Experiencia y Profesionalismo',
         'sub-title' => 'Nuestra Trayectoria',
-        'info' => 'Con más de una década de experiencia en el sector de personal temporal, Antwork se ha ganado una reputación sólida por su excelencia, integridad y compromiso con el éxito del cliente. Nuestro equipo está formado por profesionales.',
-        'buttonText' => 'Descubrir más',
+        'info' => 'Con una sólida trayectoria en el sector de personal temporal, en Antwork hemos ganado la confianza de nuestros clientes gracias a nuestro profesionalismo y dedicación. Nuestro equipo está comprometido con su éxito.',
+        'buttonText' => 'Conoce más',
         'bgUrl' => 'https://www.finra.org/sites/default/files/2022-08/investor-ed-rev2022-iStock1320686132-3870x1845.jpg',
-        'linkUrl' => '?'
+        'linkUrl' => '#'
     ]
 ];
 

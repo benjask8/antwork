@@ -7,6 +7,14 @@ $noticias_todas = $noticias;
 $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_index);
 ?>
 
+<style>
+        
+    .container-fluid{
+        padding-top:0px;
+    }
+
+</style>
+
 <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
         <?php foreach ($heroSlidesData as $index => $slide) : ?>
@@ -74,7 +82,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 <!-- texto insentivo -->
 <div class="info-text-2">
-        <h3 class="centred">¿Buscas personal temporal <strong>indmediato</strong> para tu proyecto?</h3>
+        <h3 class="centred">¿Buscas personal temporal <strong>inmediato</strong> para tu proyecto?</h3>
         <h2 class="centred">Nosotros tenemos la solución. <br> <span class="span-big-b-border">Comencemos a trabajar juntos</span></h2>
         <a  href="?c=index&m=contact" class="centred" id="contact-modal-btn">Contáctanos ahora</a>
 </div>
@@ -141,7 +149,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
                 <h2 id="contact-modal-heading">Contáctanos para calcular su presupuesto</h2>
                 <img src="public/images/logo/ant_contact.png" alt="">
                 <p id="contact-modal-description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
-                <p id="contact-modal-description-2">Estamos aquí para brindarte toda la ayuda que necesites en cualquier momento del día. Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
+                <p id="contact-modal-description-2">Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
             </div>
             <form id="contactForm" class="contact-modal-flex-form" method="post">
                 <h3>Datos de contacto</h3>

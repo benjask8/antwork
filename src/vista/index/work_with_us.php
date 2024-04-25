@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h2 id="contact-modal-heading">¿Quieres formar parte de nuestro equipo?</h2>
                 <img class="wwu-img" src="public/images/logo/ant_wwu.png" alt="">
                 <p id="contact-modal-description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
-                <p id="contact-modal-description-2">Estamos aquí para brindarte toda la ayuda que necesites en cualquier momento del día. Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
+                <p id="contact-modal-description-2">Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
             </div>
             <form id="contactForm" class="contact-modal-flex-form" method="post">
                 <h3>Datos de contacto</h3>

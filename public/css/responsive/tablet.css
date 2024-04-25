@@ -1,45 +1,61 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1114px) {
     /* header start */
     .header{
-        position: sticky;
+        position: fixed;
         padding: 10px 30px;
+        height: 70px;
+        align-items: start  ;
     }
+        
+    #header.header-full-height{
+        height: 100vh !important;
+    }
+    #header.active{
+        background-color: rgba(0, 0, 0, 0.644) !important;
+        top: 0px;
+        position: fixed;
+    }
+
+    .header-actions{
+        display: flex;
+        position: fixed;
+        opacity: 0;
+        bottom: -1000px;
+        right: -1000px;
+        transition: bottom .5s;
+    }
+
     .header-links{
+        opacity: 0;
         display: flex;
         position:absolute;
         flex-direction: column;
         top: 70px;
-        left: 0px;
+        left: -100px;
         width: 100%;
         height: 0% ;
-        background-color: #fff;
-        transition: height var(--time);
+        transition: all .3s ease-in-out;
         overflow: hidden;
+    }
+
+    .header-links-open ~ .header-actions{
+        display: flex !important;
+        bottom: 10px;
+        right: 10px;
+        opacity: 1;
+    }
+    .header-links-open{
+        left: 0px;
+        top: 70px;
+        z-index: -1;
+        opacity: 1;
+        height: 100vh;
     }
     .header-links-a{
         margin: 10px 30px;
         font-size: 1.3em;
         width: max-content;
         transition: all var(--time);
-    }
-    .header-links-a:first-child{
-        border: none;
-        box-shadow: none;
-        background-color: transparent;
-        color: var(--a-color);
-    }
-        
-    .header-links-a:hover{
-        color: var(--w-hover-color);
-        background-color: transparent;
-    }
-
-    .header-links-a:first-child:hover{
-        color: var(--w-hover-color);
-        background-color: transparent;
-    }
-    .header-links-open{
-        height: 100vh;
     }
     .header-btns{
         display: flex;
@@ -60,7 +76,7 @@
         border: none;
         border-radius: 0px;
         cursor: pointer;
-        color: var(--a-color);
+        color: #fff;
     }
 
     .header-btns-bars span,
@@ -74,7 +90,7 @@
     
     .header-btns-bars:hover,
     .header-btns-close:hover{
-        color: var(--w-hover-color);
+        color: rgba(255, 255, 255, 0.411);
         transition: color var(--time);
     }
 
@@ -89,28 +105,32 @@
     
     .hero-swiper {
         width: 100%;
-        height: 80vh;
+        height: 702px;
     }
     .hero-swiper-slide-content{
         padding: 40px 30px;
-        justify-content: start;
+        justify-content: center;
     }
     .hero-swiper-slide{
         width: 100%;
         height: 100%;
     }
     .hero-swiper-slide-title{
-        font-size: 3em;
+        font-size: 4em;
         width: 100%;
+        font-weight: 500;
+        line-height: 58px;
+        padding-bottom: 10px;
     }
     .hero-swiper-slide-sub-title{
         width: 100%;
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     .hero-swiper-slide-info{
+        line-height: 32px;
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1.5em;
     } 
     /* hero end */
 

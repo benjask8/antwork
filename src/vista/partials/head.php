@@ -42,14 +42,12 @@
     <div class="header-logo">
       <a class="header-logo-a" href="?c=index&m=index"><img class="header-logo-img" src="public/images/logo/logo.png" alt=""></a>
     </div>
-    <div class="header-links">
+    <nav class="header-links">
       <a href="?c=index&m=index" class="header-links-a">Inicio</a>
-      <a href="?c=index&m=services" class="header-links-a">Servicios</a>
       <a href="?c=index&m=contact" class="header-links-a">Contacto</a>
       <a href="?c=index&m=news" class="header-links-a">Noticias</a>
       <a href="?c=index&m=frequent_questions" class="header-links-a">Preguntas Frecuentes</a>
-      <a href="?c=index&m=work_with_us" class="header-links-a">Trabaja Con Nosotros</a>
-    </div>
+    </nav>
 
     <div class="header-btns">
       <button id="header-btns-bars" class="header-btns-bars">
@@ -59,6 +57,12 @@
       <button id="header-btns-close" class="header-btns-close header-btns-hiden">
         <span  class="material-symbols-outlined">close</span>
       </button>
+    </div>
+
+    <div class="header-actions">
+      <a href="?c=index&m=contact">
+      <i class="fa-solid fa-people-carry-box"></i> Personal a un Click
+      </a>
     </div>
   </header>
 
