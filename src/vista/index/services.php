@@ -1,6 +1,10 @@
 <?php
 require 'src/vista/partials/head.php';
 ?>    
+<br>
+<div class="location-msg">
+    <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <b>Servicios</b>
+</div>
 <!-- servicios -->
 <div class="services-container">
     <h2 class="services-title centred">Sobre Nuestros <span class="span-big-b-border">Servicios</span></h2>

@@ -1,8 +1,10 @@
 <?php
 require 'src/vista/partials/head.php';
-
 ?>
-
+<br>
+<div class="location-msg">
+    <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <b>Preguntas Frecuentes</b>
+</div>
 <div class="frequent_questions-box">
     <div class="frequent_questions-img">
         <img src="public/images/logo/ant_tink.png" alt="">

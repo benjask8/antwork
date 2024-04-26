@@ -19,12 +19,29 @@ $categoria_seleccionada = isset($_GET['categoria']) ? strtolower($_GET['categori
 // Obtener todas las categorías disponibles
 $categorias_disponibles = array_unique(array_column($noticias, 'categoria'));
 
-// Si hay una categoría seleccionada, filtrar las noticias por esa categoría
+// Filtrar las noticias por categoría, si se ha seleccionado una
 if ($categoria_seleccionada) {
     $noticias = array_filter($noticias, function($noticia) use ($categoria_seleccionada) {
         return strtolower($noticia['categoria']) === $categoria_seleccionada;
     });
 }
+
+// Obtener el término de búsqueda si está presente
+$termino_busqueda = isset($_GET['q']) ? $_GET['q'] : '';
+
+// Filtrar las noticias por término de búsqueda, si se ha ingresado uno
+if (!empty($termino_busqueda)) {
+    $noticias = array_filter($noticias, function($noticia) use ($termino_busqueda) {
+        $titulo = strtolower($noticia['titulo']);
+        $contenido = strtolower($noticia['contenido']);
+        // Buscar tanto en el título como en el contenido
+        $en_titulo = strpos($titulo, strtolower($termino_busqueda)) !== false;
+        $en_contenido = strpos($contenido, strtolower($termino_busqueda)) !== false;
+        // Devolver true si se encuentra el término de búsqueda en el título o en el contenido
+        return $en_titulo || $en_contenido;
+    });
+}
+
 
 // Obtener el número total de noticias
 $total_noticias = count($noticias);
@@ -42,8 +59,24 @@ $indice_fin = min($indice_inicio + $noticias_por_pagina, $total_noticias);
 // Obtener las noticias para la página actual
 $noticias_pagina = array_slice($noticias, $indice_inicio, $noticias_por_pagina);
 ?>
+<br>
+        
+<div class="location-msg">
+    <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <b>Noticias</b>
+</div>
 
-<h2 class="normal-title">Noticias<?php echo $categoria_seleccionada ? ' de ' . ucwords($categoria_seleccionada) : ''; ?> | AntWork</h2>
+<div class="news-header">
+    <h2 class="normal-title">Noticias<?php echo $categoria_seleccionada ? ' de ' . ucwords($categoria_seleccionada) : ''; ?> | AntWork</h2>
+    <form method="get" action="?c=index&m=news" class="news-search-container">
+        <input type="hidden" name="c" value="index">
+        <input type="hidden" name="m" value="news">
+        <input placeholder="Buscar noticias..." name="q" type="search" class="search-input" id="searchInput">   
+        <button class="search-btn" id="searchBtn" type="submit">
+            <span class="material-symbols-outlined">search</span>
+        </button>
+    </form>
+</div>
+
 
 <div class="filter-container">
     <button class="filter-button" id="filterBtn"><span class="material-symbols-outlined">tune</span> Filtrar</button>
@@ -55,15 +88,33 @@ $noticias_pagina = array_slice($noticias, $indice_inicio, $noticias_por_pagina);
         <?php endforeach; ?>
     </div>
 </div>
+<?php
+if (!empty($termino_busqueda)) {
+    if(count($noticias_pagina) == 0){
+?>
+    <p class="search-results-p">No hay Resultados de "<strong><?php echo $termino_busqueda; ?></strong>"</p>
+<?php
+    }
+    else{
+?>
+    <p class="search-results-p">Se ecnontro <?php echo count($noticias_pagina); ?> Resultados de "<strong><?php echo $termino_busqueda; ?></strong>"</p>
+<?php
+    }
+}
+?>
 
 <div class="news-container">
     <?php foreach ($noticias_pagina as $noticia) : ?>
+        <?php
+        // Resaltar la palabra buscada en el título y el contenido
+        $titulo_resaltado = str_ireplace($termino_busqueda, '<span class="resaltado">' . $termino_busqueda . '</span>', $noticia['titulo']);
+        ?>
         <a href="?c=index&m=new&id=<?php echo $noticia['id']; ?>" class="news-item">
             <img src="<?php echo $noticia['img']; ?>" alt="" class="news-img">
             <h3 class="news-title">
                 <?php 
                 // Limita el título a 100 caracteres
-                echo strlen($noticia['titulo']) > 100 ? substr($noticia['titulo'], 0, 100) . "..." : $noticia['titulo']; 
+                echo strlen($titulo_resaltado) > 100 ? substr($titulo_resaltado, 0, 100) . "..." : $titulo_resaltado; 
                 ?>
             </h3>
             <p class="news-content">
@@ -91,12 +142,25 @@ $noticias_pagina = array_slice($noticias, $indice_inicio, $noticias_por_pagina);
     <?php endif; ?>
 </div>
 
+<script src="public/js/news.js"></script>
 
-<script src="public/js/news.js">
-</script>
 
+<?php
+if (!empty($termino_busqueda)) {
+?>
+    <script>
+        document.title = "<?php echo $termino_busqueda; ?> | AntWork";
+    </script>
+<?php
+}
+else{
+?>
 <script>
     document.title = "Noticias <?php echo $categoria_seleccionada ? ' de ' . ucwords($categoria_seleccionada) : ''; ?> | AntWork";
 </script>
+<?php  
+}
+?>
+
 
 <?php require 'src/vista/partials/footer.php'; ?>

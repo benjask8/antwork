@@ -31,7 +31,17 @@ if (isset($_GET['id'])) {
     // Si se encuentra la noticia, renderiza su contenido
     if ($noticiaEncontrada) {
         ?>
-        <p class="volver-btn"><a href="?c=index&m=news">Volver</a></p> <!-- Enlace para volver a la página anterior -->
+        
+
+        <script>    
+            document.title = "<?php echo $noticia['titulo']; ?>";
+        </script>    
+
+        <br>    
+        <div class="location-msg">
+                <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <a href="?c=index&m=news">Noticias</a> <strong>></strong> <a href="?c=index&m=news&categoria=<?php echo $noticia['categoria']; ?>"><?php echo $noticia['categoria']; ?></a> <strong>></strong> <b><?php echo $noticia['titulo']; ?></b>
+        </div>
+
         <div class="new-container">
             <div class="new-item">
                 <h3 class="new-title"><?php echo $noticia['titulo']; ?></h3>

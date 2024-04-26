@@ -1,7 +1,10 @@
 <?php
 require 'src/vista/partials/head.php';
 ?>
-
+<br>
+<div class="location-msg">
+    <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <b>Acerca de Antwork</b>
+</div>
 <div class="about-container">
     <div class="about-img">
         <img src="public/images/logo/ant_speak2.png" alt="">

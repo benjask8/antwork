@@ -174,6 +174,33 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <!-- contact modal end -->
 
 
+
+<!-- our clients -->
+<div class="our_clients">
+    <h3 class="our_clients-title centred">Nuestros Socios de Confianza</h3>
+    <h4 class="our_clients-sub-title centred">Aliados que Respaldan Nuestra Experiencia</h4>
+    <div class="our_clients-flex">
+    <div class="our_clients-flex-item">
+            <img src="https://content.click2printsolutions.com/big/logo-gab62a3f3f_640-fb557.png" alt="" class="our_clients-flex-item-img">
+        </div>
+        <div class="our_clients-flex-item">
+            <img src="https://marketplace.canva.com/EAEy7JD7NuM/1/0/1600w/canva-logotipo-moderno-empresa-innovadora-IJaU2JwtTsk.jpg" alt="" class="our_clients-flex-item-img">
+        </div>
+        <div class="our_clients-flex-item">
+            <img src="https://marketplace.canva.com/EAFnIOTigF8/1/0/1600w/canva-logotipo-de-empresa-tecnol%C3%B3gica-moderno-azul-y-verde-3hBU9QtUovE.jpg" alt="" class="our_clients-flex-item-img">
+        </div>
+        <div class="our_clients-flex-item">
+            <img src="https://seeklogo.com/images/L/light-bulb-and-gear-logo-23D3802A54-seeklogo.com.png" alt="" class="our_clients-flex-item-img">
+        </div>
+        <div class="our_clients-flex-item">
+            <img src="https://img.freepik.com/vector-premium/logotipo-globo-tecnologia-diseno_731006-188.jpg" alt="" class="our_clients-flex-item-img">
+        </div>
+        
+    </div>
+</div>
+<!-- our clients end -->
+
+
 <!-- frequen questions -->
 <div class="frequent_questions-box">
     <div class="frequent_questions-img">

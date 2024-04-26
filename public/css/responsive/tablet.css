@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1114px) {
+    .location-msg{
+        padding: 0px 30px;
+    }
+
     /* header start */
     .header{
         position: fixed;
@@ -209,6 +213,22 @@
 
         
     /* new */
+        
+    .news-header{
+        padding: 0px 30px;
+    }
+    .search-results-p{
+        padding: 10px 30px;
+    }
+    .normal-title{
+        padding: 10px 30px;
+    }
+    .filter-container{
+        padding: 20px 30px;
+    }
+    .news-container{
+        padding: 0px 30px;
+    }
     .new-container{
         padding: 0px 10px;
         display: flex;
