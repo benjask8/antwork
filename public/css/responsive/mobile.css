@@ -42,18 +42,23 @@
     } 
     /* hero end */
 
+
+
     /* .frequent_questions */
 
     .frequent_questions-img{
-        top: 40px;
+        padding: 0px;
+        top: unset;
+        bottom: 0px;
         right: 10px;
     }
     .frequent_questions-img img{
-        width: 90px;
+        width: 190px;
     }
 
     .frequent_questions-box{
-        padding: 30px 10px;
+        padding: 100px 10px;
+        padding-bottom: 200px;
     }
     .frequent_questions-text{
         width: 100%;
@@ -85,7 +90,21 @@
 .news-search-container{
     order: -1;
     width: 100%;
+    height: 70px;
 }
+
+.news-search-container .search-input{
+    height: 100%;
+    font-size: 1.5em;
+}
+.news-search-container .search-btn{
+    width: 70px;
+}
+.news-search-container .search-btn span{
+    font-size: 2em;
+}
+
+
 .search-results-p{
     padding: 10px 10px;
 }
@@ -182,30 +201,36 @@
 
 
     /* about */
-
     .about-img {
-        top: 50px;
-        right: 0px;
+        top:unset;
+        bottom: 0px;
+        right: 20px;
     }
     .about-img img{
-        width: 60px;
+        width: 160px;
+        transform: rotate(10deg) scaleX(-1);
     }
     .about-title{
         width: 100%;
         font-size: 2em;
     }
     .about-text{
-        padding: 0px 10px;
+        padding: 100px 10px;
+        padding-bottom: 150px;
     }
     .about-container{
         padding: 0px;
     }
-    .about-page-img{
-        padding: 0px 20px;
+    .about-page-text{
+        padding: 10px 10px;
+        box-sizing: content-box;
         padding-bottom: 30px;
     }
-    .about-page-img img{
-        height: max-content;
+    .about-page-text img{
+        display: flex;
+        padding: 20px 0px;
+        width: 100%;
+        height: auto;
     }
     
     /* about end */
@@ -246,7 +271,9 @@
     
 
     /* infop text start*/
-
+    .info-text{
+        padding: 100px 0px;
+    }
     .info-text p{
         width: 98%;
         padding: 10px;
@@ -320,6 +347,10 @@
 
 
     /* services modal */
+
+    .services-container{
+        padding: 100px 0px;
+    }
     
     .services-modal-content{
         padding: 40px 20px;
@@ -334,6 +365,12 @@
 
 
     /* home qualities  */
+    .home-qualities{
+        padding-bottom: 100px;
+    }
+    .qualities-title{
+        padding-top: 100px;
+    }
     .home-qualities-qualitie{
         width: 100%;
         max-width: none;

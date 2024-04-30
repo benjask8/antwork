@@ -50,7 +50,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
     <div class="about-text">
         <h3 class="about-title">Acerca de antwork & <span class="span-big-b-border">Como trabajamos</span></h3>
         <p class="about-info">Bienvenidos a <b>antwork</b>. Somos un equipo apasionado que conecta talento con <b> oportunidades laborales</b>. Nuestra misión es simple pero <b>poderosa</b> : ayudar a las personas a encontrar trabajos temporales que se adapten a sus habilidades y necesidades.</p>
-        <a href="?c=index&m=about" class="about-link">leer mas</a>
+        <a href="?c=index&m=about" class="about-link">¡leer mas!</a>
     </div>
 </div>
 <!-- about end -->
@@ -84,7 +84,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <div class="info-text-2">
         <h3 class="centred">¿Buscas personal temporal <strong>inmediato</strong> para tu proyecto?</h3>
         <h2 class="centred">Nosotros tenemos la solución. <br> <span class="span-big-b-border">Comencemos a trabajar juntos</span></h2>
-        <a  href="?c=index&m=contact" class="centred" id="contact-modal-btn">Contáctanos ahora</a>
+        <a  href="?c=index&m=contact" class="centred" id="contact-modal-btn">¡Contáctanos ahora!</a>
 </div>
 <!-- texto insentivo end -->
 
@@ -176,7 +176,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 
 <!-- our clients -->
-<div class="our_clients">
+<!-- <div class="our_clients">
     <h3 class="our_clients-title centred">Nuestros Socios de Confianza</h3>
     <h4 class="our_clients-sub-title centred">Aliados que Respaldan Nuestra Experiencia</h4>
     <div class="our_clients-flex">
@@ -197,7 +197,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         </div>
         
     </div>
-</div>
+</div> -->
 <!-- our clients end -->
 
 

@@ -67,6 +67,10 @@
   </header>
 
 
+  <div class="wsp-btn-box">
+    <a href="https://wa.me/59898033994"><i class="fa-brands fa-whatsapp"></i> Charlemos</a>
+  </div>
+
   
 
 <script>

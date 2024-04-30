@@ -62,7 +62,14 @@ $noticias_pagina = array_slice($noticias, $indice_inicio, $noticias_por_pagina);
 <br>
         
 <div class="location-msg">
-    <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <b>Noticias</b>
+    <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a>
+    <?php
+    if(isset($_GET['categoria'])) {
+        echo ' <strong>></strong> <a href="?c=index&m=news">Noticias</a> <strong>></strong><b>' . htmlspecialchars($_GET['categoria']) . '</b>';
+    } else {
+        echo ' <strong>></strong> <b>Noticias</b>';
+    }
+    ?>
 </div>
 
 <div class="news-header">
@@ -105,16 +112,11 @@ if (!empty($termino_busqueda)) {
 
 <div class="news-container">
     <?php foreach ($noticias_pagina as $noticia) : ?>
-        <?php
-        // Resaltar la palabra buscada en el título y el contenido
-        $titulo_resaltado = str_ireplace($termino_busqueda, '<span class="resaltado">' . $termino_busqueda . '</span>', $noticia['titulo']);
-        ?>
         <a href="?c=index&m=new&id=<?php echo $noticia['id']; ?>" class="news-item">
             <img src="<?php echo $noticia['img']; ?>" alt="" class="news-img">
             <h3 class="news-title">
                 <?php 
-                // Limita el título a 100 caracteres
-                echo strlen($titulo_resaltado) > 100 ? substr($titulo_resaltado, 0, 100) . "..." : $titulo_resaltado; 
+                echo strlen($noticia['titulo']) > 100 ? substr($noticia['titulo'], 0, 100) . "..." : $noticia['titulo']; 
                 ?>
             </h3>
             <p class="news-content">
