@@ -114,6 +114,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!-- contact modal end -->
 
+<div class="contact-info">
+<h3 class="contact-info-title">Ubicación</h3>
+    <iframe class="contact-info-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.1502618259306!2d-56.13042!3d-34.80216130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a02bcec8489a61%3A0xf47662d2d812f036!2sManuel%20Insua%205494%2C%2013000%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1714506241692!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="contact-info-p"><i class="fa-solid fa-location-dot"></i> Manuel insua 5494 Montevideo</p>
+    
+    <h3 class="contact-info-title">información De Contacto</h3>
+    <a class="contact-info-a" href="mailto:clientes@antworkuy.com.uy"><i class="fa-regular fa-envelope"></i> clientes@antworkuy.com.uy</a>
+    <a class="contact-info-a" href="https://wa.me/59898033994"><i class="fa-brands fa-whatsapp"></i> 098 033 994</a>
+    <a class="contact-info-a" href="https://www.linkedin.com/in/nicolas-azcoitia-12a004283/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    
+</div>
+
 <script>    
     document.title = "Contacto | AntWork";
 </script>    

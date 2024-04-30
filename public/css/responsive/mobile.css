@@ -251,7 +251,29 @@
     /* .wwu end */
 
 
-     /* .contact */
+
+    /* .contact */
+    
+     .contact-info{
+        padding: 20px 10px;
+    }
+        
+    .contact-info-map{
+        width:100%;
+        height: 300px;
+    }
+    .contact-info-p{
+        font-size: 1em;
+    }
+    .contact-info-a{
+        font-size: 1em;
+    }
+    .contact-info-title{
+        font-size: 1.6em;
+    }
+
+
+
     .contact-form-container{
         padding: 60px 0px;
     }

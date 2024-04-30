@@ -80,6 +80,25 @@
 
 
     /* conctact */
+
+    .contact-info{
+        padding: 20px 130px;
+    }
+        
+    .contact-info-map{
+        width:100%;
+    }
+    .contact-info-p{
+        font-size: 1.5em;
+    }
+    .contact-info-a{
+        font-size: 1.5em;
+    }
+    .contact-info-title{
+        font-size: 3em;
+    }
+
+
     .contact-modal-flex{
         padding: 20px 130px; 
     }

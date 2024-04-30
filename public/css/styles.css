@@ -1285,7 +1285,39 @@ transform: translateY(0); /* Sin desplazamiento vertical */
 
 
 /* contact */
+.contact-info{
+    padding: 20px 80px;
+    padding-bottom: 100px;
+}
+.contact-info-map{
+    width:100%;
+}
+.contact-info-p{
+    color: var(--ni-info-color);
+    font-size: 1.4em;
+    font-weight: 500;
+}
 
+
+.contact-info-a{
+    display: block;
+    width: max-content;
+    margin: 10px 0px;
+    color: var(--ni-info-color);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.contact-info-a:hover{
+    text-decoration: underline;
+    color: rgb(31, 31, 31);
+}
+
+.contact-info-title{
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 2.5em;
+    padding-top: 20px;
+}
 
 .contact-form{
     opacity: 0;

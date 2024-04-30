@@ -326,7 +326,11 @@
 
 
     /* about */
-
+    .about-page-text{
+        padding: 10px 30px;
+        box-sizing: content-box;
+        padding-bottom: 30px;
+    }
 
     .about-container{
         display: flex;
@@ -392,6 +396,26 @@
         width: 100%;
         padding: 0px;
         padding-top: 30px;
+    }
+
+
+
+    
+    .contact-info{
+        padding: 20px 30px;
+    }
+        
+    .contact-info-map{
+        width:100%;
+    }
+    .contact-info-p{
+        font-size: 1.2em;
+    }
+    .contact-info-a{
+        font-size: 1.2em;
+    }
+    .contact-info-title{
+        font-size: 2em;
     }
 
 
