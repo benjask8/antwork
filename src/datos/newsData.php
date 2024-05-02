@@ -19,7 +19,7 @@
     nim illum nobis minima soluta quisquam deserunt dicta fugit vel repudiandae tempore rerum, molestiae eos id magni dignissimos, cum praesentium fugiat nesciunt! Delectus reiciendis vel repudiandae omnis. Incidunt sapiente illo, magni illum totam distinctio sed nostrum molestiae temporibus cupiditate qui. .
     
     Sint consectetur officiis est odit dolores necessitatibus quasi ratione, totam rerum tenetur sed ex illo magni fuga molestiae unde praesentium quaerat facilis adipisci, libero ea blanditiis magnam? Nostrum suscipit odio minus in reprehenderit laboriosam non ipsum maxime rem consequatur libero iure incidunt qui blanditiis cupiditate maiores, aliquam culpa sapiente laborum. Magni ipsa vitae error rem reprehenderit iste eligendi mollitia rerum maxime laboriosam cumque iure quisquam enim sit deserunt illum, veritatis beatae? Dolor corrupti sapiente voluptas, recusandae harum maiores saepe. Facere, voluptate unde in ipsam harum minus repellendus repellat dolorem cupiditate veniam ea iste cumque id numquam quos quo quibusdam ullam odit, illum qui voluptatem aperiam! Culpa sapiente laboriosam aliquam ducimus adipisci quia laudantium recusandae corrupti accusantium perferendis tempore vero corporis, quod qui commodi quis at sint nostrum doloremque architecto eligendi numquam odit blanditiis totam? Fugiat fugit vitae quisquam inventore. Quaerat voluptatibus quisquam minima amet, repudiandae quibusdam, eos maxime molestiae accusamus corporis ad iusto ab impedit deleniti! Qui sint minima autem dignissimos, rem recusandae?',
-    'vistas' => 150,
+    'vistas' => 155,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (
@@ -36,7 +36,7 @@
     'fecha' => '2024-03-15',
     'autor' => 'María Gómez',
     'contenido' => 'Descubre la nueva plataforma en línea de Antwork para una mejor experiencia de usuario.',
-    'vistas' => 73,
+    'vistas' => 75,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (
@@ -53,7 +53,7 @@
     'fecha' => '2024-03-15',
     'autor' => 'María Gómez',
     'contenido' => 'Descubre la nueva plataforma en línea de Antwork para una mejor experiencia de usuario.',
-    'vistas' => 51,
+    'vistas' => 84,
     'categoria' => 'Empleo',
     'etiquetas' => 
     array (
@@ -70,7 +70,7 @@
     'fecha' => '2024-03-12',
     'autor' => 'Elena Martínez',
     'contenido' => 'Descubre el último dispositivo móvil con tecnología innovadora y características avanzadas.',
-    'vistas' => 63,
+    'vistas' => 65,
     'categoria' => 'Tecnología',
     'etiquetas' => 
     array (
@@ -206,7 +206,7 @@
     'fecha' => '2024-03-05',
     'autor' => 'Ana Martínez',
     'contenido' => 'Descubre las últimas tendencias en moda para la temporada primavera-verano de este año.',
-    'vistas' => 29,
+    'vistas' => 32,
     'categoria' => 'Moda',
     'etiquetas' => 
     array (
@@ -218,46 +218,28 @@
   12 => 
   array (
     'id' => 13,
-    'img' => 'https://example.com/image7.jpg',
-    'titulo' => 'Nuevas tendencias en moda primavera-verano',
-    'fecha' => '2024-03-05',
-    'autor' => 'Ana Martínez',
-    'contenido' => 'Descubre las últimas tendencias en moda para la temporada primavera-verano de este año.',
-    'vistas' => 29,
-    'categoria' => 'Moda',
-    'etiquetas' => 
-    array (
-      0 => 'moda',
-      1 => 'tendencias',
-      2 => 'primavera-verano',
-    ),
-  ),
-  13 => 
-  array (
-    'id' => 14,
-    'img' => 'https://s1.significados.com/foto/paisaje-og.jpg?class=ogImageWide',
-    'titulo' => 'prueba 1',
-    'fecha' => '2024-03-28',
-    'autor' => 'Gonchi',
-    'contenido' => 'Informacion de la noticia 
+    'img' => 'https://vonhallerlaboratorios.com/attachments/Image/Von-Haller_-Trabaje-con-nosotros.jpg?template=generic',
+    'titulo' => 'Servicio de Personal Temporal',
+    'fecha' => '2024-04-02',
+    'autor' => 'Redactor',
+    'contenido' => '
+    En nuestra empresa, nos enorgullece ofrecer soluciones integrales en el ámbito de los servicios de personal temporal. Con una sólida trayectoria en el mercado, hemos consolidado nuestro compromiso de proporcionar a nuestros clientes una mano de obra calificada y adaptable a sus necesidades operativas. Nuestro enfoque se centra en entender las demandas específicas de cada proyecto y brindar soluciones ágiles y eficaces que impulsen el éxito de nuestros clientes.
 
-    border-top: 2px solid rgba(0, 0, 0, 0.644);
-    border-top: 2px solid rgba(0, 0, 0, 0.644);
-    border-top: 2px solid rgba(0, 0, 0, 0.644);
-    border-top: 2px solid rgba(0, 0, 0, 0.644);
-    border-top: 2px solid rgba(0, 0, 0, 0.644);
-    lo
+    Contamos con un equipo altamente capacitado y comprometido que se dedica a reclutar, seleccionar y asignar el personal más adecuado para cada tarea. Nuestra red de talento abarca diversos sectores industriales y profesionales, lo que nos permite atender una amplia gama de necesidades laborales con la calidad y el profesionalismo que nos distinguen. Además, nos mantenemos actualizados con las últimas tendencias y tecnologías en gestión de recursos humanos para garantizar un servicio de vanguardia.
 
+    En cada etapa del proceso, desde la identificación de los requisitos del cliente hasta la evaluación del desempeño del personal asignado, nos esforzamos por superar las expectativas y fomentar relaciones duraderas basadas en la confianza y la transparencia. Creemos en la importancia de establecer una comunicación abierta y fluida con nuestros clientes para entender sus necesidades en constante evolución y adaptar nuestros servicios en consecuencia.
 
-    asdasjdhas <a href="?">prueba 1</a> asdasd ad
+    Nuestro compromiso con la excelencia se refleja en cada interacción con nuestros clientes y empleados. Valoramos la diversidad, la inclusión y el respeto mutuo en todas nuestras operaciones, promoviendo un entorno de trabajo colaborativo y enriquecedor. Además, nos comprometemos con el desarrollo profesional y personal de nuestro equipo, brindando oportunidades de capacitación y crecimiento que les permitan alcanzar su máximo potencial y contribuir al éxito colectivo.
+
+    En resumen, en nuestra empresa, no solo proporcionamos servicios de personal temporal, sino que también nos comprometemos a ser socios estratégicos de nuestros clientes, ofreciendo soluciones a medida que impulsen su crecimiento y éxito a largo plazo. Estamos aquí para ayudarlo a satisfacer sus necesidades laborales de manera efectiva y eficiente, siempre con un enfoque centrado en la calidad, la innovación y la excelencia operativa.
     ',
-    'vistas' => 20,
-    'categoria' => 'Gonchi',
+    'vistas' => 45,
+    'categoria' => 'Información',
     'etiquetas' => 
     array (
-      0 => 'paisaje',
-      1 => 'gocnchi',
-      2 => 'csgo',
+      0 => 'antwork',
+      1 => 'trabajo',
+      2 => 'carga y descarga',
     ),
   ),
 );

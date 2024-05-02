@@ -46,7 +46,7 @@
       <a href="?c=index&m=index" class="header-links-a">Inicio</a>
       <a href="?c=index&m=contact" class="header-links-a">Contacto</a>
       <a href="?c=index&m=news" class="header-links-a">Noticias</a>
-      <a href="?c=index&m=frequent_questions" class="header-links-a">Preguntas Frecuentes</a>
+      <a href="?c=index&m=work_with_us" class="header-links-a">Trabaja Con Nosotros</a>
     </nav>
 
     <div class="header-btns">

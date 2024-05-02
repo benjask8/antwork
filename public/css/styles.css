@@ -893,6 +893,7 @@ transform: translateY(0); /* Sin desplazamiento vertical */
     display: flex;
     padding: 0px 80px;
     justify-content: space-between;
+    align-items: center;
 }
 .news-header h2{
     padding: 20px 0px;
@@ -1772,3 +1773,62 @@ transform: translateY(0); /* Sin desplazamiento vertical */
 }
 
 /* our clients end */
+
+
+
+
+
+
+
+
+/* infop text 3 start*/
+.info-text-3{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url(/antwork/public/images/index/wwu_bg.svg);
+    background-size: 100% 100%;
+}
+
+.info-text-3 h3{
+    font-weight: 600;
+    color: rgb(116, 116, 116);
+}
+.info-text-3 h2{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 3em;
+    color: var(--title-color);
+    width: 90%;
+    margin: 40px 0px;
+}
+.info-text-3 span{
+    box-shadow: inset 0 -.7em 0 0 #ff8f8f;
+}
+.info-text-3 a{
+    display: flex;
+    font-weight: 600;
+    font-size: 1em;
+    width: max-content;
+    padding: 15px 30px;
+    text-transform: capitalize  ;
+    border-radius: 25px;
+    transition: all var(--time);
+    background: rgb(213,45,44);
+    background: -moz-linear-gradient(56deg, rgba(213,45,44,1) 0%, rgba(246,86,84,1) 100%);
+    background: -webkit-linear-gradient(56deg, rgba(213,45,44,1) 0%, rgba(246,86,84,1) 100%);
+    background: linear-gradient(56deg, rgba(213,45,44,1) 0%, rgba(246,86,84,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d52d2c",endColorstr="#f65654",GradientType=1);
+    color: #fff;
+}
+
+
+.info-text-3 a:hover{
+    filter: brightness(1.1);
+    transform: scale(1.05);
+
+}
+/* infop text 3 end */

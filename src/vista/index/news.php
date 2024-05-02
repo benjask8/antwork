@@ -3,7 +3,7 @@ require 'src/vista/partials/head.php';
 require 'src/datos/newsData.php';
 
 // Número de noticias por página
-$noticias_por_pagina = 30;
+$noticias_por_pagina = 10;
 
 // Función de comparación para ordenar las noticias por fecha
 function compararFechas($a, $b) {
@@ -132,13 +132,25 @@ if (!empty($termino_busqueda)) {
     <?php if ($total_paginas > 1) : ?>
         <ul>
             <?php if ($pagina_actual > 1) : ?>
-                <li class="pagination-arrow"><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual - 1; ?>"><span class="material-symbols-outlined">chevron_left</span></a></li>
+                <?php if (!empty($termino_busqueda)) : ?>
+                    <li class="pagination-arrow"><a href="?q=<?php echo urlencode($termino_busqueda); ?>&page=<?php echo $pagina_actual - 1; ?>"><span class="material-symbols-outlined">chevron_left</span></a></li>
+                <?php else: ?>
+                    <li class="pagination-arrow"><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual - 1; ?>"><span class="material-symbols-outlined">chevron_left</span></a></li>
+                <?php endif; ?>
             <?php endif; ?>
             <?php for ($i = 1; $i <= $total_paginas; $i++) : ?>
-                <li <?php echo $i == $pagina_actual ? 'class="active"' : ''; ?>><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $i; ?>" class="pagination-num"><?php echo $i; ?></a></li>
+                <?php if (!empty($termino_busqueda)) : ?>
+                    <li <?php echo $i == $pagina_actual ? 'class="active"' : ''; ?>><a href="?c=index&m=news&q=<?php echo urlencode($termino_busqueda); ?>&page=<?php echo $i; ?>" class="pagination-num"><?php echo $i; ?></a></li>
+                <?php else: ?>
+                    <li <?php echo $i == $pagina_actual ? 'class="active"' : ''; ?>><a href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $i; ?>" class="pagination-num"><?php echo $i; ?></a></li>
+                <?php endif; ?>
             <?php endfor; ?>
             <?php if ($pagina_actual < $total_paginas) : ?>
-                <li class="pagination-arrow"><a  href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual + 1; ?>"><span class="material-symbols-outlined">chevron_right</span></a></li>
+                <?php if (!empty($termino_busqueda)) : ?>
+                    <li class="pagination-arrow"><a  href="?q=<?php echo urlencode($termino_busqueda); ?>&page=<?php echo $pagina_actual + 1; ?>"><span class="material-symbols-outlined">chevron_right</span></a></li>
+                <?php else: ?>
+                    <li class="pagination-arrow"><a  href="?c=index&m=news&categoria=<?php echo $categoria_seleccionada ? urlencode($categoria_seleccionada) : ''; ?>&page=<?php echo $pagina_actual + 1; ?>"><span class="material-symbols-outlined">chevron_right</span></a></li>
+                <?php endif; ?>
             <?php endif; ?>
         </ul>
     <?php endif; ?>

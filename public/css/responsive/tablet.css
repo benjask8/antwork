@@ -233,7 +233,7 @@
         padding: 0px 10px;
         display: flex;
         flex-direction: column;
-        background-color: rgb(243, 243, 243);
+        background-color: rgb(255, 255, 255);
     }
     .new-item{
         width: 100%;
@@ -242,6 +242,24 @@
 
     .new-title{
         font-size: 2em;
+    }
+
+    .more-news{
+        width: 100%;
+        background-color: #fff;
+    }
+    .more-news-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .more-news-item-r{
+        max-width: 100% !important;
+    }
+    .more-news-item{
+        max-width: 240px;
+        width: 100%;
     }
 
     /* new end */

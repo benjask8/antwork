@@ -175,6 +175,15 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 
 
+<!-- texto insentivo -->
+<div class="info-text-3">
+        <h3 class="centred">¿Estás en búsqueda de trabajo?</h3>
+        <h2 class="centred">¡Envíanos tu currículum y <br> <span>únete a nuestro equipo!</span></h2>
+        <a  href="?c=index&m=work_with_us" class="centred" id="contact-modal-btn">¡Envía tu currículum ahora!</a>
+</div>
+<!-- texto insentivo end -->
+
+
 <!-- our clients -->
 <!-- <div class="our_clients">
     <h3 class="our_clients-title centred">Nuestros Socios de Confianza</h3>

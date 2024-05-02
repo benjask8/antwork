@@ -5,10 +5,10 @@ $heroSlidesData = [
     [
         'title' => 'Servicios de Personal Temporal',
         'sub-title' => 'Personal Temporal de Calidad',
-        'info' => 'En nuestra empresa, nos dedicamos a proporcionar servicios de personal temporal de alta calidad. Contamos con un equipo altamente capacitado y comprometido para satisfacer las necesidades laborales de nuestros clientes de manera efectiva.',
+        'info' => 'En nuestra empresa, nos dedicamos a proporcionar servicios de personal temporal . Contamos con un equipo capacitado y comprometido para satisfacer las necesidades laborales de nuestros clientes de manera efectiva',
         'buttonText' => 'Descubre más',
         'bgUrl' => 'https://vonhallerlaboratorios.com/attachments/Image/Von-Haller_-Trabaje-con-nosotros.jpg?template=generic',
-        'linkUrl' => '#'
+        'linkUrl' => '?c=index&m=new&id=13'
     ],
     [
         'title' => 'Compromiso con la Excelencia',
