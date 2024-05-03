@@ -90,7 +90,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 
 <!-- Cualidades-->
-<h2 class="qualities-title centred">Sobre Nuetras  <span class="span-big-b-border">Cualidades</span> </h2>
+<!-- <h2 class="qualities-title centred">Sobre Nuetras  <span class="span-big-b-border">Cualidades</span> </h2>
 
 <div class="home-qualities">
     <div class="home-qualities-qualitie">
@@ -137,8 +137,71 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
             <p class="home-qualities-qualitie-text-info"> Ofrecimiento de oportunidades de capacitación y desarrollo profesional para mejorar las habilidades y competencias del personal temporal.</p>
         </div>  
     </div>
-</div>
+</div> -->
 <!-- Cualidades end-->
+
+
+
+
+<!-- projects start-->
+
+<section class="projects">
+    <h3 class="qualities-sub-title">Nosotros</h3>
+    <h2 class="qualities-title">Sobre Nuetras Cualidades</h2>
+    
+    <div class="swiper mySwiper projects-swiper" role="region" aria-label="Proyectos">
+        <div class="swiper-wrapper projects-swiper-wrapper">
+            <div class="swiper-slide home-qualities-qualitie">
+                <div class="home-qualities-qualitie-img">
+                    <span class="material-symbols-outlined">
+                        compare_arrows 
+                    </span>
+                </div>
+                <div class="home-qualities-qualitie-text">
+                    <p class="home-qualities-qualitie-text-title">Flexiblidad</p>
+                    <p class="home-qualities-qualitie-text-info">Capacidad para adaptarse a las necesidades cambiantes de los clientes y del mercado laboral.</p>
+                </div>  
+            </div>
+            <div class="swiper-slide home-qualities-qualitie">
+                <div class="home-qualities-qualitie-img">
+                    <span class="material-symbols-outlined">
+                        error
+                    </span>
+                </div>
+                <div class="home-qualities-qualitie-text">
+                    <p class="home-qualities-qualitie-text-title">Resolución de problemas</p>
+                    <p class="home-qualities-qualitie-text-info">Capacidad para abordar desafíos y encontrar soluciones efectivas en situaciones diversas.</p>
+                </div>  
+            </div>
+            <div class="swiper-slide home-qualities-qualitie">
+                <div class="home-qualities-qualitie-img">
+                    <span class="material-symbols-outlined">
+                        groups
+                    </span>
+                </div>
+                <div class="home-qualities-qualitie-text">
+                    <p class="home-qualities-qualitie-text-title">Selección cuidadosa del personal</p>
+                    <p class="home-qualities-qualitie-text-info">Proceso de reclutamiento y selección que garantice la idoneidad y el compromiso de los empleados temporales.</p>
+                </div>  
+            </div>
+            <div class="swiper-slide home-qualities-qualitie">
+                <div class="home-qualities-qualitie-img">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                </div>
+                <div class="home-qualities-qualitie-text">
+                    <p class="home-qualities-qualitie-text-title">Capacitación y desarrollo</p>
+                    <p class="home-qualities-qualitie-text-info"> Ofrecimiento de oportunidades de capacitación y desarrollo profesional para mejorar las habilidades y competencias del personal temporal.</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+<!-- projects end -->
+
+
+
 
 
 <!-- contact modal -->

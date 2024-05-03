@@ -313,6 +313,33 @@ height: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.103);
 }
+/* .home-qualities start */
+
+
+.qualities-title{
+    
+    background-image: url(/public/images/index/bg-2.svg);
+    background-size: cover;
+    background-position: top;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 2.3em;
+    color: rgb(35, 35, 46);
+    margin: 0px 0px;
+    padding-top: 100px;
+}
+.home-qualities-qualitie {
+    opacity: 0;
+    transform: scale(0.4); /* Desplaza hacia abajo inicialmente */
+    transition: opacity var(--time) ease, transform var(--time) ease;
+  }
+  
+  .home-qualities-qualitie.show {
+    opacity: 1;
+    transform: scale(1); /* Sin desplazamiento vertical */
+  }
+  
+
 
 .xl-title{
     text-align: center;
@@ -349,34 +376,6 @@ height: 100%;
 }
 
 
-/* .home-qualities start */
-
-.qualities-title{
-    padding: 0px 130px;
-    background-size: cover;
-    background-position: top;
-    text-transform: none;
-    font-weight: 700;
-    font-size: 1.7em;
-    color: rgb(35, 35, 46);
-    margin: 0px 0px;
-}
-
-
-.qualities-sub-title{
-    background-image: url(/antwork/public/images/index/bg-2.svg);
-    padding: 0px 130px;
-    background-size: cover;
-    background-position: top;
-    text-transform: none;
-    font-weight: 500;
-    font-size: 1.5em;
-    color: rgb(50, 50, 61);
-    margin: 0px 0px;
-    padding-top: 200px;
-}
-
-
 .home-qualities{
     margin: 10px 0px;
     display: flex;
@@ -390,44 +389,28 @@ height: 100%;
 }
 
 .home-qualities-qualitie{
-    background-color: #f7f7f7;
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.11);
-    width: 450px !important;
-    height: 300px !important;
-    border-radius: 10px;
-    display: flex !important;
+    width: max-content;
+    max-width: 300px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 30px;
+    text-align: center;
+    padding: 10px;
     cursor: pointer;
-    transition: all var(--time) !important;
+    margin: 0px 20px;
+    transition: transform .3s;
 }
 .home-qualities-qualitie:hover{
-    transform: scale(1.1) !important;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.24);
-    background-color: #1b1b25;
-}
-.home-qualities-qualitie:hover .home-qualities-qualitie-text-info{
-    color: #ffffff6b !important;
-}
-.home-qualities-qualitie:hover .home-qualities-qualitie-img span{
-    color: #ffffff !important;
-}
-.home-qualities-qualitie:hover .home-qualities-qualitie-text-title{
-    border-top: 2px solid #ffffff6b !important;
-    color: #fff !important;
+    transform: scale(1.01);
 }
 
 .home-qualities-qualitie-img{
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
 }
 .home-qualities-qualitie-img span{
-    font-size: 4em;
-    padding-bottom: 20px;
+    font-size: 3.4em;
     color: var(--btn-bg-color);
     font-variation-settings:
     'FILL' 0,
@@ -440,8 +423,6 @@ height: 100%;
     flex-direction: column;
 }
 .home-qualities-qualitie-text-title{
-    border-top: 2px solid rgba(0, 0, 0, 0.089) !important;
-    padding-top: 20px;
     text-transform: none;
     color: rgb(42, 42, 44);
     font-size: 1.2em;
@@ -482,7 +463,7 @@ height: 100%;
     height: unset;
 }
 .about-container{
-    background-image: url(/antwork/public/images/index/bg-4.svg);
+    background-image: url(/public/images/index/bg-4.svg);
     background-size: cover;
     background-position: top;
     opacity: 0;
@@ -569,7 +550,8 @@ transform: translateY(0); /* Sin desplazamiento vertical */
 
 /* services */
 .services-container{
-    background-image: url(/antwork/public/images/index/bg-1.svg);
+    background-image: url(
+        /public/images/index/bg-1.svg);
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -1315,9 +1297,6 @@ transform: translateY(0); /* Sin desplazamiento vertical */
 
 /* contact */
 .contact-info{
-    background-image: url(/antwork/public/images/index/wwu_bg.svg);
-    background-size: cover;
-    background-position: top;
     padding: 20px 80px;
     padding-bottom: 100px;
 }
@@ -1514,7 +1493,7 @@ transform: translateY(0); /* Sin desplazamiento vertical */
 
 /* infop text start*/
 .info-text{
-    background-image: url(/antwork/public/images/index/bg-3.svg);
+    background-image: url(/public/images/index/bg-3.svg);
     background-size: cover;
     background-position: bottom;
     padding: 70px 0px;
@@ -1603,7 +1582,7 @@ transform: translateY(0); /* Sin desplazamiento vertical */
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    background-color: #fff4ea;
+    background-color: rgb(245, 245, 245);
     padding: 40px 0px;
     width: 100%;
     height: max-content;
@@ -1813,8 +1792,6 @@ transform: translateY(0); /* Sin desplazamiento vertical */
 
 
 
-
-
 /* infop text 3 start*/
 .info-text-3{
     padding: 100px 0px;
@@ -1823,10 +1800,8 @@ transform: translateY(0); /* Sin desplazamiento vertical */
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    background-size: cover;
-    background-position: top;
-    background-image: url(/antwork/public/images/index/wwu_bg.svg);
-    background-size:cover;
+    background-image: url(/public/images/index/wwu_bg.svg);
+    background-size: 100% 100%;
 }
 
 .info-text-3 h3{
@@ -1868,46 +1843,3 @@ transform: translateY(0); /* Sin desplazamiento vertical */
 
 }
 /* infop text 3 end */
-
-
-
-
-
-
-
-
-/* projects start */
-
-.projects{
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px;
-    padding-bottom: 40px;
-    background-image: url(/antwork/public/images/index/bg-5.svg);
-    background-size: cover;
-    background-position: bottom;
-}
-.projects-swiper {
-    padding: 0px 100px !important;
-    display: flex !important;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-}
-.projects-swiper-wrapper{
-    padding-top: 120px !important;
-    padding: 20px;
-}
-.projects-swiper-slide {
-    font-size: 18px;
-    display: flex !important;
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.034);
-    background-color: rgb(255, 255, 255);
-    padding: 40px;
-    align-items: center;
-    border-radius: 10px;
-    width: 550px !important;
-    height: 200px !important;
-}
-/* projects end */
-
