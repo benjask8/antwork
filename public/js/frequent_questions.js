@@ -7,10 +7,14 @@ const questionInfos = document.querySelectorAll(".frequent_questions-text-ul-li-
 const openInfo = (numeroPregunta) => {
     // Verifica si el elemento de información de la pregunta seleccionada ya está abierto
     const isOpen = questionInfos[numeroPregunta - 1].classList.contains("frequent_questions-text-ul-li-info-open");
+    const isOpen1 = questionTitles[numeroPregunta - 1].classList.contains("frequent_questions-text-ul-li-title-open");
 
     // Cierra todos los elementos de información y establece todos los íconos a "+"
     questionInfos.forEach(info => {
         info.classList.remove("frequent_questions-text-ul-li-info-open");
+    });
+    questionTitles.forEach(title => {
+        title.classList.remove("frequent_questions-text-ul-li-title-open");
     });
     icons.forEach(icon => {
         icon.textContent = "add";
@@ -19,6 +23,10 @@ const openInfo = (numeroPregunta) => {
     // Si la pregunta seleccionada no estaba abierta, la abre y cambia su ícono a "-"
     if (!isOpen) {
         questionInfos[numeroPregunta - 1].classList.add("frequent_questions-text-ul-li-info-open");
+        icons[numeroPregunta - 1 ].textContent = "remove";
+    }
+    if (!isOpen1) {
+        questionTitles[numeroPregunta - 1].classList.add("frequent_questions-text-ul-li-title-open");
         icons[numeroPregunta - 1 ].textContent = "remove";
     }
 }

@@ -2,6 +2,7 @@
 
 </section>
 
+<div class="footer-bg"></div>
 
 <footer class="footer">
     <nav class="footer-links-container">

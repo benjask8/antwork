@@ -141,13 +141,16 @@
 
     
     /* .home-qualities start */
-    .home-qualities{
-        padding: 0px;
+        
+    .qualities-swiper {
+        padding: 0px 10px !important;
+    }
+    .qualities-swiper-slide {
+        width: 550px !important;
     }
     .home-qualities-qualitie{
-        flex-direction: column;
-        margin: 25px 0px;
-        padding: 0px;
+        width: 350px !important;
+        height: 350px !important;
     }
     .home-qualities-qualitie-img{
         width: 100%;
@@ -160,6 +163,18 @@
         text-align: center;
         padding: 0px 30px;
     }
+
+        
+    .qualities-title{
+        padding: 0px 30px;
+        margin: 0px 0px;
+    }
+
+
+    .qualities-sub-title{
+        padding: 0px 30px;
+        padding-top: 200px;
+    }
     /* .home-qualities end */
 
 
@@ -170,7 +185,7 @@
     }
     .frequent_questions-text{
         width: 100%;
-        padding: 10px 0px;
+        padding: 30px;
     }
     .frequent_questions-box{
         padding:30px;
@@ -194,7 +209,7 @@
           transform: translateY(0); /* Inicia sin transformación */
         }
         50% {
-          transform: translateY(-20px); /* Levanta 20px en la mitad de la animación */
+          transform: translateY(20px); /* Levanta 20px en la mitad de la animación */
         }
         100% {
           transform: translateY(0); /* Vuelve a la posición original al final */

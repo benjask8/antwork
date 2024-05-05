@@ -145,12 +145,12 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 <!-- projects start-->
 
-<section class="projects">
+<section class="qualities">
     <h3 class="qualities-sub-title">Nosotros</h3>
     <h2 class="qualities-title">Sobre Nuetras Cualidades</h2>
     
-    <div class="swiper mySwiper projects-swiper" role="region" aria-label="Proyectos">
-        <div class="swiper-wrapper projects-swiper-wrapper">
+    <div class="swiper mySwiper qualities-swiper" role="region" aria-label="Proyectos">
+        <div class="swiper-wrapper qualities-swiper-wrapper">
             <div class="swiper-slide home-qualities-qualitie">
                 <div class="home-qualities-qualitie-img">
                     <span class="material-symbols-outlined">
@@ -196,6 +196,8 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
                 </div>  
             </div>
         </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     </div>
 </section>
 <!-- projects end -->
