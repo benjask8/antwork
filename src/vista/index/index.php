@@ -15,24 +15,21 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 
 </style>
 
-<div class="swiper hero-swiper">
-    <div class="swiper-wrapper">
-        <?php foreach ($heroSlidesData as $index => $slide) : ?>
-        <div class="swiper-slide hero-swiper-slide hero-swiper-slide-<?php echo $index + 1; ?>">
-            <div class="hero-swiper-slide-content">
-            <div class="hero-swiper-slide-bg" style="background-image: url('<?php echo $slide['bgUrl']; ?>')"></div>
-            <h2 class="hero-swiper-slide-title"><?php echo $slide['title']; ?></h2>
-            <h3 class="hero-swiper-slide-sub-title"><?php echo $slide['sub-title']; ?></h3>
-            <p class="hero-swiper-slide-info"><?php echo $slide['info']; ?></p>
-            <a href="<?php echo $slide['linkUrl']; ?>" class="hero-swiper-slide-a"><?php echo $slide['buttonText']; ?></a>
-            </div>
-        </div>
-        <?php endforeach; ?>
+
+<!-- -----hero start------ -->
+<div class="hero-container">
+    <div class="hero-text">
+        <h1 class="hero-title">Servicio de Personal Temporal</h1>
+        <h2 class="hero-sub-title">Personal Temporal de Calidad</h2>
+        <p class="hero-info">En nuestra empresa, nos dedicamos a proporcionar servicios de personal temporal . Contamos con un equipo capacitado y comprometido para satisfacer las necesidades laborales de nuestros clientes de manera efectiva</p>
+        <a href="" class="hero-link">Descubre más</a>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="hero-img">
+        <img src="public/images/logo/antwork bolsa marron.png" alt="">
+    </div>
 </div>
+<!-- -----hero end------ -->
+
 
 <!-- texto informativo start-->
 <div class="info-text">
@@ -48,33 +45,35 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
         <img src="public/images/logo/ant_speak2.png" alt="">
     </div>
     <div class="about-text">
-        <h3 class="about-title">Acerca de antwork & <span class="span-big-b-border">Como trabajamos</span></h3>
-        <p class="about-info">Bienvenidos a <b>antwork</b>. Somos un equipo apasionado que conecta talento con <b> oportunidades laborales</b>. Nuestra misión es simple pero <b>poderosa</b> : ayudar a las personas a encontrar trabajos temporales que se adapten a sus habilidades y necesidades.</p>
-        <a href="?c=index&m=about" class="about-link">¡leer mas!</a>
+        <h3 class="about-title">Acerca de <span>Antwork</span> & Como trabajamos</h3>
+        <h4 class="about-sub-title">Personal Temporal de Calidad</h3>
+        <p class="about-info">Bienvenidos a antwork. Somos un equipo apasionado que conecta talento con oportunidades laborales. Nuestra misión es simple pero poderosa : ayudar a las personas a encontrar trabajos temporales que se adapten a sus habilidades y necesidades.</p>
+        <a href="?c=index&m=about" class="about-link">Descubre más</a>
     </div>
 </div>
 <!-- about end -->
 
 <!-- servicios -->
 <div class="services-container">
-    <h2 class="services-title centred">Sobre Nuestros <span class="span-big-b-border">Servicios</span></h2>
-    <div class="services">
+    <div class="services-text">
+        <h3 class="services-title">Sobre nuestros <span>Servicios</span></h3>
+        <div class="services">
         <?php foreach ($services as $index => $service): ?>
-            <div class="service-item" onclick="openModal(<?= $index ?>)" data-title="<?= $service['title'] ?>" data-info="<?= $service['info'] ?>">
-                <span class="service-item-icon material-symbols-outlined"><?= $service['icon'] ?></span>
-                <h4 class="service-item-title"><?= $service['pre-title'] ?></h4>
-                <p class="service-item-info"><?= $service['pre-info'] ?></p>
+            <div class="service">
+                <div class="service-icon">
+                    <span class="service-item-icon material-symbols-outlined"><?= $service['icon'] ?></span>
+                </div>
+                <div class="service-text">
+                    <h4 class="service-title"><?= $service['pre-title'] ?></h4>
+                    <p class="service-info"><?= $service['pre-info'] ?></p>
+                </div>
             </div>
         <?php endforeach; ?>
+        </div>
     </div>
-</div>
-<div id="myModal" class="services-modal">
-    <div class="services-modal-content">
-        <button class="close" aria-label="Cerrar modal de services">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-        <h4 id="modal-title" class="services-modal-title centred"></h4>
-        <p id="modal-info" class="services-modal-info"></p>
+
+    <div class="services-img">
+        <img src="public/images/logo/antwork caja 2.png" alt="">
     </div>
 </div>
 <!-- servicios end -->

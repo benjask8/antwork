@@ -5,7 +5,6 @@
 
     /* header start */
     .header{
-        position: fixed;
         padding: 10px 30px;
         height: 70px;
         align-items: start  ;
@@ -15,7 +14,7 @@
         height: 100vh !important;
     }
     #header.active{
-        background-color: rgba(0, 0, 0, 0.644) !important;
+        height: 70px;
         top: 0px;
         position: fixed;
     }
@@ -67,7 +66,7 @@
     .header-btns-close span,
     .header-btns-bars span{
         font-size: 3em;
-
+        color: #2c2c2c;
         font-variation-settings:
         'FILL' 0,
         'wght' 400,
@@ -80,7 +79,7 @@
         border: none;
         border-radius: 0px;
         cursor: pointer;
-        color: #fff;
+        color: #2c2c2c;
     }
 
     .header-btns-bars span,

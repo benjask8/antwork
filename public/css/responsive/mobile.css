@@ -57,7 +57,7 @@
 
     .frequent_questions-box{
         padding: 100px 10px;
-        padding-bottom: 200px;
+        padding-bottom: 40px;
     }
     .frequent_questions-text{
         width: 100%;
@@ -298,8 +298,7 @@
 
     /* infop text start*/
     .info-text{
-        padding: 100px 0px;
-        padding-top: 200px;
+        padding: 40px 0px;
     }
     .info-text p{
         width: 98%;
@@ -394,7 +393,7 @@
     /* services modal */
 
     .services-container{
-        padding: 100px 0px;
+        padding: 30px 0px;
     }
     
     .services-modal-content{
@@ -451,7 +450,7 @@
 
     .qualities-sub-title{
         padding: 0px 10px;
-        padding-top: 200px;
+        padding-top: 100px;
     }
     /* home qualities  end*/
 

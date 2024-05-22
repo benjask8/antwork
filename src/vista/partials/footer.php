@@ -47,12 +47,12 @@
 
         <p class="copyright-p">Derechos de autor © <?php echo date("Y"); ?> Antwork. Todos los derechos reservados.
         </p>
-
+<!-- 
         <p class="copyright-p-dev">
              Desarrollado por <a href="https://www.linkedin.com/in/tuperfil" target="_blank">Benjamin Rosano</a> - Sígueme en <a href="https://twitter.com/tuperfil" target="_blank">
                 <i class="fa-brands fa-x-twitter"></i> Twitter
             </a>
-        </p>
+        </p> -->
 
 
 
