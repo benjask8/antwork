@@ -19,7 +19,7 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <!-- -----hero start------ -->
 <div class="hero-container">
     <div class="hero-text">
-        <h1 class="hero-title">Servicio de Personal Temporal</h1>
+        <h1 class="hero-title">Servicio de Personal <span>Temporal</span></h1>
         <h2 class="hero-sub-title">Personal Temporal de Calidad</h2>
         <p class="hero-info">En nuestra empresa, nos dedicamos a proporcionar servicios de personal temporal . Contamos con un equipo capacitado y comprometido para satisfacer las necesidades laborales de nuestros clientes de manera efectiva</p>
         <a href="" class="hero-link">Descubre más</a>
@@ -87,146 +87,79 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 </div>
 <!-- texto insentivo end -->
 
+<!-- cualidads -->
+<div class="qualities-container">
+    <div class="container-text">
+        <h2 class="title">Sobre nuestras <span>Cualidades</span></h2>
 
-<!-- Cualidades-->
-<!-- <h2 class="qualities-title centred">Sobre Nuetras  <span class="span-big-b-border">Cualidades</span> </h2>
-
-<div class="home-qualities">
-    <div class="home-qualities-qualitie">
-        <div class="home-qualities-qualitie-img">
-            <span class="material-symbols-outlined">
-                compare_arrows 
-            </span>
-        </div>
-        <div class="home-qualities-qualitie-text">
-            <p class="home-qualities-qualitie-text-title">Flexiblidad</p>
-            <p class="home-qualities-qualitie-text-info">Capacidad para adaptarse a las necesidades cambiantes de los clientes y del mercado laboral.</p>
-        </div>  
-    </div>
-    <div class="home-qualities-qualitie">
-        <div class="home-qualities-qualitie-img">
-            <span class="material-symbols-outlined">
-                error
-            </span>
-        </div>
-        <div class="home-qualities-qualitie-text">
-            <p class="home-qualities-qualitie-text-title">Resolución de problemas</p>
-            <p class="home-qualities-qualitie-text-info">Capacidad para abordar desafíos y encontrar soluciones efectivas en situaciones diversas.</p>
-        </div>  
-    </div>
-    <div class="home-qualities-qualitie">
-        <div class="home-qualities-qualitie-img">
-            <span class="material-symbols-outlined">
-                groups
-            </span>
-        </div>
-        <div class="home-qualities-qualitie-text">
-            <p class="home-qualities-qualitie-text-title">Selección cuidadosa del personal</p>
-            <p class="home-qualities-qualitie-text-info">Proceso de reclutamiento y selección que garantice la idoneidad y el compromiso de los empleados temporales.</p>
-        </div>  
-    </div>
-    <div class="home-qualities-qualitie">
-        <div class="home-qualities-qualitie-img">
-            <span class="material-symbols-outlined">
-                school
-            </span>
-        </div>
-        <div class="home-qualities-qualitie-text">
-            <p class="home-qualities-qualitie-text-title">Capacitación y desarrollo</p>
-            <p class="home-qualities-qualitie-text-info"> Ofrecimiento de oportunidades de capacitación y desarrollo profesional para mejorar las habilidades y competencias del personal temporal.</p>
-        </div>  
-    </div>
-</div> -->
-<!-- Cualidades end-->
-
-
-
-
-<!-- projects start-->
-
-<section class="qualities">
-    <h3 class="qualities-sub-title">Nosotros</h3>
-    <h2 class="qualities-title">Sobre Nuetras Cualidades</h2>
-    
-    <div class="swiper mySwiper qualities-swiper" role="region" aria-label="Proyectos">
-        <div class="swiper-wrapper qualities-swiper-wrapper">
-            <div class="swiper-slide home-qualities-qualitie">
-                <div class="home-qualities-qualitie-img">
-                    <span class="material-symbols-outlined">
-                        compare_arrows 
-                    </span>
+        <div class="qualities">
+        <div class="qualitie">
+                <div class="icon">
+                    <span class="material-symbols-outlined">compare_arrows </span>
                 </div>
-                <div class="home-qualities-qualitie-text">
-                    <p class="home-qualities-qualitie-text-title">Flexiblidad</p>
-                    <p class="home-qualities-qualitie-text-info">Capacidad para adaptarse a las necesidades cambiantes de los clientes y del mercado laboral.</p>
-                </div>  
+                <div class="text">
+                    <span class="title">Flexibilidad</span>
+                    <p class="info">Capacidad para adaptarse a las necesidades cambiantes de los clientes y del mercado laboral.</p>
+                </div>
             </div>
-            <div class="swiper-slide home-qualities-qualitie">
-                <div class="home-qualities-qualitie-img">
-                    <span class="material-symbols-outlined">
-                        error
-                    </span>
+            <div class="qualitie">
+                <div class="icon">
+                    <span class="material-symbols-outlined">error </span>
                 </div>
-                <div class="home-qualities-qualitie-text">
-                    <p class="home-qualities-qualitie-text-title">Resolución de problemas</p>
-                    <p class="home-qualities-qualitie-text-info">Capacidad para abordar desafíos y encontrar soluciones efectivas en situaciones diversas.</p>
-                </div>  
+                <div class="text">
+                    <span class="title">Resolución de Problemas</span>
+                    <p class="info">Capacidad para abordar desafíos y encontrar soluciones efectivas en situaciones diversas.</p>
+                </div>
             </div>
-            <div class="swiper-slide home-qualities-qualitie">
-                <div class="home-qualities-qualitie-img">
-                    <span class="material-symbols-outlined">
-                        groups
-                    </span>
+            <div class="qualitie">
+                <div class="icon">
+                    <span class="material-symbols-outlined">groups </span>
                 </div>
-                <div class="home-qualities-qualitie-text">
-                    <p class="home-qualities-qualitie-text-title">Selección cuidadosa del personal</p>
-                    <p class="home-qualities-qualitie-text-info">Proceso de reclutamiento y selección que garantice la idoneidad y el compromiso de los empleados temporales.</p>
-                </div>  
+                <div class="text">
+                    <span class="title">Selección cuidadosa del Personal</span>
+                    <p class="info">Proceso de reclutamiento y selección que garantice la idoneidad y el compromiso de los empleados temporales.</p>
+                </div>
             </div>
-            <div class="swiper-slide home-qualities-qualitie">
-                <div class="home-qualities-qualitie-img">
-                    <span class="material-symbols-outlined">
-                        school
-                    </span>
+            <div class="qualitie">
+                <div class="icon">
+                    <span class="material-symbols-outlined">school </span>
                 </div>
-                <div class="home-qualities-qualitie-text">
-                    <p class="home-qualities-qualitie-text-title">Capacitación y desarrollo</p>
-                    <p class="home-qualities-qualitie-text-info"> Ofrecimiento de oportunidades de capacitación y desarrollo profesional para mejorar las habilidades y competencias del personal temporal.</p>
-                </div>  
+                <div class="text">
+                    <span class="title">Capacitación y desarrollo</span>
+                    <p class="info"> Ofrecimiento de oportunidades de capacitación y desarrollo profesional para mejorar las habilidades y competencias del personal temporal.</p>
+                </div>
             </div>
         </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
     </div>
-</section>
-<!-- projects end -->
-
-
-
-
+    <div class="container-imgs">
+            <img src="public/images/logo/antwork bolsa marron.png" alt="">
+            <img src="public/images/logo/hormiga rollo2.png" alt="">
+    </div>
+</div>
+<!-- cualidads end -->
 
 <!-- contact modal -->
-<div class="contact-modal-2 open" role="dialog" aria-labelledby="contact-modal-heading" aria-describedby="contact-modal-description">
-    <div class="contact-modal-content">
-        <div class="contact-modal-flex">
-            <div class="contact-modal-flex-text">
-                <h2 id="contact-modal-heading">Contáctanos para calcular su presupuesto</h2>
+<div class="contact" role="dialog" aria-labelledby="heading" aria-describedby="description">
+    <div class="content">
+        <div class="flex">
+            <div class="text">
+                <h2 id="heading">Contáctanos para calcular su presupuesto</h2>
                 <img src="public/images/logo/ant_contact.png" alt="">
-                <p id="contact-modal-description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
-                <p id="contact-modal-description-2">Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
+                <p id="description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
+                <p id="description-2">Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
             </div>
-            <form id="contactForm" class="contact-modal-flex-form" method="post">
+            <form id="contactForm" class="form" method="post">
                 <h3>Datos de contacto</h3>
-                <label class="contact-modal-label" for="nombre">Nombre completo</label>
+                <label class="label" for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" required>
 
-                <label class="contact-modal-label" for="correo">Correo electrónico</label>
+                <label class="label" for="correo">Correo electrónico</label>
                 <input type="email" id="correo" name="correo" required>
 
-                <label class="contact-modal-label" for="telefono">Teléfono</label>
+                <label class="label" for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" name="telefono">
 
-                <label class="contact-modal-label" for="mensaje">Mensaje</label>
+                <label class="label" for="mensaje">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
                 <button type="submit">Enviar</button>
@@ -248,47 +181,40 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <!-- texto insentivo end -->
 
 
-<!-- our clients -->
-<!-- <div class="our_clients">
-    <h3 class="our_clients-title centred">Nuestros Socios de Confianza</h3>
-    <h4 class="our_clients-sub-title centred">Aliados que Respaldan Nuestra Experiencia</h4>
-    <div class="our_clients-flex">
-    <div class="our_clients-flex-item">
-            <img src="https://content.click2printsolutions.com/big/logo-gab62a3f3f_640-fb557.png" alt="" class="our_clients-flex-item-img">
-        </div>
-        <div class="our_clients-flex-item">
-            <img src="https://marketplace.canva.com/EAEy7JD7NuM/1/0/1600w/canva-logotipo-moderno-empresa-innovadora-IJaU2JwtTsk.jpg" alt="" class="our_clients-flex-item-img">
-        </div>
-        <div class="our_clients-flex-item">
-            <img src="https://marketplace.canva.com/EAFnIOTigF8/1/0/1600w/canva-logotipo-de-empresa-tecnol%C3%B3gica-moderno-azul-y-verde-3hBU9QtUovE.jpg" alt="" class="our_clients-flex-item-img">
-        </div>
-        <div class="our_clients-flex-item">
-            <img src="https://seeklogo.com/images/L/light-bulb-and-gear-logo-23D3802A54-seeklogo.com.png" alt="" class="our_clients-flex-item-img">
-        </div>
-        <div class="our_clients-flex-item">
-            <img src="https://img.freepik.com/vector-premium/logotipo-globo-tecnologia-diseno_731006-188.jpg" alt="" class="our_clients-flex-item-img">
-        </div>
-        
+
+<!-- about -->
+<div class="news-ads">
+    <div class="img">
+        <img src="public/images/logo/antmegafono.png" alt="">
     </div>
-</div> -->
-<!-- our clients end -->
+    <div class="text">
+        <h3 class="title">¿Buscas Noticias sobre <span>Antwork</span>?</h3>
+        <h4 class="sub-title">Encuentra aqui las ultimas noticias</h3>
+        <p class="info">Aquí encontrarás las noticias más recientes sobre sus actividades, ofertas de trabajo, innovaciones en el sector, y cómo están impactando la industria logística y laboral. Mantente informado con la información más actualizada y relevante sobre Antwork.</p>
+        <a href="?c=index&m=news" class="link">Ver Noticias</a>
+    </div>
+</div>
+<!-- about end -->
+
 
 
 <!-- frequen questions -->
 <div class="frequent_questions-box">
-    <div class="frequent_questions-img">
-        <img src="public/images/logo/ant_tink.png" alt="">
-    </div>
-    <div class="frequent_questions-text">
-        <h2 class="frequent_questions-text-title">
-            Preguntas Frecuentes sobre <span class="span-big-b-border">Antwork</span>
-        </h2>
-        <p class="frequent_questions-text-info">
-            Encuentra respuestas a las preguntas más comunes sobre Antwork, tu empresa de personal temporal especializada en carga y descarga.
-        </p>
-        <ul class="frequent_questions-text-ul">
+    <div class="text">
+        <div class="fq-header">
+            <div class="img">
+                    <img src="public/images/logo/ant_tink.png" alt="">
+                </div>
+            <div class="desc">
+                <h2 class="title">Preguntas Frecuentes</h2>
+                <p class="info">
+                    Encuentra respuestas a las preguntas más comunes sobre Antwork, tu empresa de personal temporal especializada en carga y descarga.
+                </p>
+            </div>
+        </div>
+        <ul class="ul">
             <?php foreach ($preguntasRespuestas as $index => $preguntaRespuesta) { ?>
-                <li class="frequent_questions-text-ul-li">
+                <li class="li">
                     <p id="question-title-<?php echo $index + 1; ?>" class="frequent_questions-text-ul-li-title">
                         <span id="icon-<?php echo $index + 1; ?>" class="material-symbols-outlined frequent_questions-icon">add</span> <?php echo $preguntaRespuesta['pregunta']; ?>
                     </p>
@@ -301,33 +227,6 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
     </div>
 </div>
 <!-- frequen questions end-->
-
-
-
-<!-- Noticias -->
-<div class="news-section">
-    <h2 class="normal-title">Últimas Noticias</h2>
-    <div class="news-container">
-        <?php
-        $ultimas_noticias = array_slice($noticias_todas, 0, 5);
-        
-        foreach ($ultimas_noticias as $noticia) : ?>
-            <a href="?c=index&m=new&id=<?php echo $noticia['id']; ?>" class="news-item">
-                <img src="<?php echo $noticia['img']; ?>" alt="" class="news-img">
-                <h3 class="news-title">
-                    <?php echo strlen($noticia['titulo']) > 100 ? substr($noticia['titulo'], 0, 100) . "..." : $noticia['titulo']; ?>
-                </h3>
-                <p class="news-content">
-                    <?php echo strlen($noticia['contenido']) > 50 ? substr($noticia['contenido'], 0, 50) . "..." : $noticia['contenido']; ?>
-                </p>
-                <p class="news-info"><?php echo date('d/m/Y', strtotime($noticia['fecha'])); ?></p>
-            </a>
-        <?php endforeach; ?>
-    </div>
-    <a href="?c=index&m=news" class="view-more-news">Ver Todas las Noticias</a>
-</div>
-<!-- Noticias  end-->
-
 
 <script>    
     document.title = "Inicio | AntWork";
