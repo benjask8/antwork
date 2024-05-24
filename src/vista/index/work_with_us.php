@@ -85,11 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="location-msg">
         <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <b>Trabaja Con Nosotros</b>
     </div>
-    <style>
-        .location-msg{
-            padding: 0px;
-        }
-    </style>
     <div class="content">
         <div class="flex">
             <div class="text">

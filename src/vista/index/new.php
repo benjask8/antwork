@@ -32,7 +32,12 @@ if (isset($_GET['id'])) {
     if ($noticiaEncontrada) {
         ?>
         
-
+                
+        <style>
+            .location-msg{
+                padding: 20px 140px;
+            }
+        </style>
 
         <script>    
             document.title = "<?php echo $noticia['titulo']; ?>";

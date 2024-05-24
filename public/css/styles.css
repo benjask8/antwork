@@ -58,7 +58,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    padding: 20px 80px;
+    padding: 20px 0px;
     color: #0c0c0c;
 }
 
@@ -194,14 +194,6 @@ body{
 
 
 /* about */
-.about-page-text{
-    padding: 20px 80px;
-}
-.about-page-text img{
-    width: 100%;
-    margin: auto;
-    height: unset;
-}
 .about-container{
     background-image: url(/antwork/public/images/index/bg-4.svg);
     background-size: cover;
@@ -277,6 +269,106 @@ body{
     filter: brightness(1.1);
     transform: scale(1.05);
 }
+
+
+/* page */
+
+.about-history{
+    padding: 30px 140px;
+    display: flex;
+    justify-content: space-between;
+
+
+    .text{
+        max-width: 600px;
+
+                
+        .title{
+            font-size: 45px;
+            color: rgb(35, 35, 46);
+            span{
+                color: var(--btn-bg-color);
+            }
+        }
+        .info{
+            color: rgb(80, 74, 74);
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
+    }
+
+    .img{
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+.mv-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 140px;
+    padding-top: 100px;
+    text-align: center;
+
+        
+    .title{
+        padding-bottom: 10px;
+        font-size: 35px;
+        color: rgb(35, 35, 46);
+    }
+    
+    .sub-title{
+        color:rgb(58, 58, 63);
+        font-size: 25px;
+    
+    }
+
+
+    .mv{
+        display: flex;
+        padding: 30px 0px;
+        gap: 20px;
+        justify-content: space-between;
+
+        .item{
+            width: 500px;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.027);
+            text-align: center;
+
+            .icon{
+                padding-bottom: 20px;
+
+                i{
+                    font-size: 40px;
+                    color: var(--btn-bg-color);
+                }
+            }
+
+            .text{
+
+                .title{
+                    font-size: 25px;
+                    padding-bottom: 0px;
+                }
+
+                .info{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: rgb(80, 74, 74);
+                }
+            }
+        }
+    }
+}
+
 /* about end */
 
 
@@ -394,6 +486,8 @@ body{
     z-index: 1011211212;
     width: 100%;
     height: 70px;
+    top: 0px;
+    position: sticky;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -403,13 +497,6 @@ body{
     transition: all .5s;
     backdrop-filter: blur(5px);
 }
-
-#header.active{
-    height: 70px;
-    top: 0px;
-    position: sticky;
-}
-
 .header-logo{
     width: 200px;
 }
@@ -806,7 +893,7 @@ body{
     padding: 10px 80px;
 }
 .filter-container{
-    padding: 20px 80px;
+    padding: 20px 140px;
 }
 .filters-open{
     display: flex !important;
@@ -903,7 +990,7 @@ body{
 }
 .news-header{
     display: flex;
-    padding: 0px 80px;
+    padding: 0px 140px;
     justify-content: space-between;
     align-items: center;
 }
@@ -946,19 +1033,20 @@ body{
     filter: brightness(1.3);
 }
 .search-results-p{
-    padding: 10px 80px;
+    padding: 10px 140px;
 }
 .news-container {
     padding-bottom: 30px;
-    padding: 0px 80px;
+    padding: 0px 140px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Centrar horizontalmente */
+    gap:5px;
+    justify-content: center; 
 }
 
 .news-item {
-    max-width: 234px; /* Ancho máximo para evitar que se bugee */
-    width: 100%; /* Toma el ancho máximo permitido */
+    max-width: 330px; 
+    width: 100%;
     padding: 15px 0px;
     display: flex;
     flex-direction: column;
@@ -979,7 +1067,7 @@ body{
 }
 .news-img{
     width: 100%;
-    height: 140px;
+    height: 190px;
     object-fit: cover;
 }
 
@@ -1029,7 +1117,7 @@ body{
 
 /* new */
 .new-container{
-    padding: 10px 80px;
+    padding: 10px 140px;
     display: flex;
 }
 .new-item{
@@ -1443,66 +1531,6 @@ body{
     100% { transform: rotate(360deg); } /* el indicador de carga completa una vuelta completa (360 grados) */
 }
 /* contact end */
-
-
-/* mision y .vision */
-
-.vision-container{
-    background-color: #222231;
-
-}
-
-.mission{
-    background: linear-gradient(#111118 10%, #222231 90%);
-    height: 400px;
-    color: #fff;
-    padding: 100px 0px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mission .more-info{
-    color: #ffffff6b;
-    width: 80vw;
-}
-
-.vision .more-info i,
-.mission .more-info i{
-    font-size: 2em;
-    padding: 0 10px;
-}
-
-.mission h3{
-    color: #fff;
-}
-
-
-
-
-.vision{
-    background-color: var(--bg);
-    border-radius: 200px 0px 0px 0px;
-    height: 400px;
-    padding: 200px 0px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.vision p{
-    width: 80vw;
-    color: var(--ni-info-color);
-}
-
-/* mision y .vision end*/
-
-
 
 
 /* infop text2 start*/

@@ -59,8 +59,12 @@ $indice_fin = min($indice_inicio + $noticias_por_pagina, $total_noticias);
 // Obtener las noticias para la página actual
 $noticias_pagina = array_slice($noticias, $indice_inicio, $noticias_por_pagina);
 ?>
-<br>
-        
+
+<style>
+    .location-msg{
+        padding: 20px 140px;
+    }
+</style>
 <div class="location-msg">
     <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a>
     <?php
