@@ -1,4 +1,4 @@
-const labels = document.querySelectorAll('.contact-modal-flex-form label');
+const labels = document.querySelectorAll('.label');
 
 labels.forEach(label => {
     const inputId = label.getAttribute('for');

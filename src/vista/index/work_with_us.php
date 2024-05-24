@@ -81,27 +81,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<div class="contact-modal-2 open" role="dialog" aria-labelledby="contact-modal-heading" aria-describedby="contact-modal-description">
+<div class="contact" role="dialog" aria-labelledby="contact-modal-heading" aria-describedby="contact-modal-description">
     <div class="location-msg">
         <a href="?c=index&m=index"><i class="fa-solid fa-house-chimney"></i> Inicio</a> <strong>></strong> <b>Trabaja Con Nosotros</b>
     </div>
-    <div class="contact-modal-content">
-        <div class="contact-modal-flex">
-            <div class="contact-modal-flex-text">
-                <h2 id="contact-modal-heading">¿Quieres formar parte de nuestro equipo?</h2>
+    <style>
+        .location-msg{
+            padding: 0px;
+        }
+    </style>
+    <div class="content">
+        <div class="flex">
+            <div class="text">
+                <h2 id="heading">¿Quieres formar parte de nuestro equipo?</h2>
                 <img class="wwu-img" src="public/images/logo/ant_wwu.png" alt="">
-                <p id="contact-modal-description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
-                <p id="contact-modal-description-2">Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
+                <p id="description">—Estamos aquí para <strong>brindarte toda la ayuda que necesites</strong> en cualquier momento del día.</p>
+                <p id="description-2">Por favor, no dudes en proporcionar tus datos de contacto y te aseguramos que nos pondremos en contacto contigo lo antes posible para resolver cualquier consulta o pregunta que tengas.</p>
             </div>
-            <form id="contactForm" class="contact-modal-flex-form" method="post">
+            <form id="contactForm" class="form" method="post">
                 <h3>Datos de contacto</h3>
-                <label class="contact-modal-label" for="nombre">Nombre completo</label>
+                <label class="label" for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" required>
 
-                <label class="contact-modal-label" for="correo">Correo electrónico</label>
+                <label class="label" for="correo">Correo electrónico</label>
                 <input type="email" id="correo" name="correo" required>
 
-                <label class="contact-modal-label" for="telefono">Teléfono</label>
+                <label class="label" for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" name="telefono">
 
                 <label for="cv" class="cv-label">
@@ -110,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="file" accept=".pdf" id="cv" name="cv" style="display: none;">
                 <span id="fileName">Seleccionar archivo</span>
 
-                <label class="contact-modal-label" for="mensaje">Mensaje</label>
+                <label class="label" for="mensaje">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
                 <button type="submit">Enviar</button>

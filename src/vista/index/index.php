@@ -231,28 +231,6 @@ $noticias_pagina_index = array_slice($noticias_todas, 0, $noticias_por_pagina_in
 <script>    
     document.title = "Inicio | AntWork";
     
-    function openModal(index) {
-        const modal = document.getElementById('myModal');
-        const modalTitle = document.getElementById('modal-title');
-        const modalInfo = document.getElementById('modal-info');
-        const service = <?= json_encode($services) ?>[index];
-
-        modalTitle.textContent = service['title'];
-        modalInfo.textContent = service['info'];
-        modal.classList.add('services-modal-open');
-    }
-
-    document.querySelector('.close').addEventListener('click', function() {
-        const modal = document.getElementById('myModal');
-        modal.classList.remove('services-modal-open');
-    });
-
-    window.addEventListener('click', (event) => {
-        const modal = document.getElementById('myModal');
-        if (event.target == modal) {
-            modal.classList.remove('services-modal-open'); 
-        }
-    });
 </script>
 
 <script src="public/js/contact_modal.js"></script>
